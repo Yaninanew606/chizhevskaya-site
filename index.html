@@ -174,25 +174,23 @@
 
   /* HERO */
   .hero {
-    padding: 160px 0 140px;
-    min-height: 92vh;
-    display: flex;
-    align-items: center;
+    padding: 40px 0 80px;
     background: linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
   }
   @media (max-width: 768px) {
-    .hero { padding: 80px 0; min-height: auto; }
+    .hero { padding: 24px 0 56px; }
   }
   .hero-grid {
     display: grid;
-    grid-template-columns: 1.25fr 1fr;
+    grid-template-columns: 1fr 1.25fr;
     gap: 64px;
     align-items: center;
   }
   @media (max-width: 900px) {
-    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 28px; }
+    .hero-visual { order: -1; max-width: 320px; margin: 0 auto; }
   }
-  .hero-content { max-width: 680px; }
+  .hero-content { max-width: 640px; }
   .hero-tag {
     display: inline-flex;
     align-items: center;
@@ -276,6 +274,8 @@
     .hero-visual { max-width: 380px; margin: 0 auto; }
   }
   .hero-visual img {
+    filter: grayscale(100%) contrast(1.05);
+    transition: filter 0.5s ease;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -986,7 +986,7 @@
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a href="#" class="logo">Чижевская<span>.pro</span></a>
+    <a href="#" class="logo">Chizhevskaya</a>
     <div class="nav-links">
       <a href="#cases">Кейсы</a>
       <a href="#offers">Услуги</a>
@@ -1021,7 +1021,7 @@
       </div>
 
       <div class="hero-visual">
-        <img src="me.jpg" alt="Янина Чижевская — AI Product Manager" loading="eager">
+        <img src="me.jpg" alt="Yanina Chizhevskaya — AI Product Manager" loading="eager">
       </div>
     </div>
   </div>
@@ -1054,7 +1054,7 @@
           Запускаю AI-приложения и SaaS в одиночку с помощью Claude Code, Cursor и Lovable — это в 5–10 раз быстрее найма команды и в 10 раз дешевле классической разработки.
         </p>
         <p>
-          Специализируюсь на нише <b style="color: var(--ink)">здоровье, велнес, женское здоровье 35+, фитнес, нутрициология, долголетие</b>. Запустила wellness Mini App для женщин 35+ «Своя» с цикло-адаптивной логикой; год работала продактом в международной face fitness платформе MindBodyFace (US/UK/EU); делала MVP для нутрициологического стартапа Biogenom; 6 лет вела техдирекцию онлайн-школ нутрициологии.
+          Специализируюсь на нише <b style="color: var(--ink)">здоровье, велнес, женское здоровье 35+, фитнес, нутрициология, долголетие</b>. Запустила wellness Mini App для женщин 35+ «Перия» с цикло-адаптивной логикой; год работала продактом в международной face fitness платформе MindBodyFace (US/UK/EU); делала MVP для нутрициологического стартапа Biogenom; 6 лет вела техдирекцию онлайн-школ нутрициологии.
         </p>
         <div class="deco-line"></div>
         <div class="pull-quote">
@@ -1075,13 +1075,25 @@
     </p>
 
     <div class="cases-grid">
+      <article class="case">
+        <span class="case-status">В продакшене · 2025 — настоящее</span>
+        <h3>Rentra AI</h3>
+        <div class="case-meta">B2B SaaS для управляющих компаний краткосрочной аренды · rentra.ai · 2 рынка: RF + UK</div>
+        <p>
+          AI-платформа для УК краткосрочной аренды и апарт-отелей: AI-консьерж, аналитика, SmartUpsell, управление задачами. Веду как Vibe Coding Product Manager: продуктовая стратегия, упаковка под 2 рынка с i18n, контент-контур (блог под Яндекс и AI-поиск, YouTube с автопостингом), CRM-обвязка (Paperclip / pc-crm), QC-система проверки HTML-креативов, sales board. Прошла путь Lovable → Claude Code при упоре в потолок no-code.
+        </p>
+        <div class="case-stack">
+          <span>React + TypeScript</span><span>Vite + Next.js</span><span>shadcn/ui</span><span>Supabase</span>
+          <span>i18n (RU/EN)</span><span>SSR prerender</span><span>Lovable → Claude Code</span>
+        </div>
+      </article>
 
       <article class="case">
         <span class="case-status">В продакшене · 2026</span>
-        <h3>Своя</h3>
-        <div class="case-meta">Wellness Telegram Mini App для женщин 35+ · @SvoyaApp_bot</div>
+        <h3>Перия</h3>
+        <div class="case-meta">Wellness Telegram Mini App для женщин 35+ · @PeriyaApp_bot · periya.pro</div>
         <p>
-          Персональный план питания и тренировок с учётом цикла, перименопаузы, ИГ, ограничений по здоровью. Цикло-адаптивная логика (4 фазы), дневник питания с AI-оценкой калорий по фото, тазовое дно, чек-ин, аналитика. Backend на VPS под systemd с auto-restart, Claude API с fallback на расчёт по Миффлину-Сан Жеору.
+          Персональный план питания и тренировок с учётом цикла, перименопаузы, ИГ, ограничений по здоровью. Продукт переименован со «Своя» на «Перия», домен — periya.pro. Цикло-адаптивная логика (4 фазы), дневник питания с AI-оценкой калорий по фото, тазовое дно, чек-ин, аналитика. Backend на VPS под systemd с auto-restart, Claude API с fallback на расчёт по Миффлину-Сан Жеору.
         </p>
         <div class="case-stack">
           <span>React 19</span><span>TypeScript</span><span>Tailwind v4</span>
@@ -1152,7 +1164,7 @@
     </div>
 
     <div class="other-projects">
-      <b>Другие проекты:</b> Rentra AI — AI-платформа для управляющих компаний краткосрочной аренды, упакованная на 2 рынка (RF + UK). Interior AI Content Automation — мультиагентная система автоматизации SMM и блога. EdTech — 6 лет техдирекции онлайн-школ нутрициологии (Beauty Education).
+      <b>Также в портфолио:</b> Interior AI Content Automation — мультиагентная система автоматизации SMM, блога и YouTube для ниши «дизайн интерьера». EdTech: 6 лет техдирекции 4 онлайн-школ нутрициологии (Beauty Education) — отстройка тех-отдела с нуля, регламенты, база знаний, снижение возвратов клиентов из-за несвоевременного доступа.
     </div>
   </div>
 </section>
@@ -1704,7 +1716,7 @@
       <details class="faq-item">
         <summary class="faq-q">Какие AI-провайдеры используете и почему именно их?</summary>
         <p class="faq-a">
-          Под продукт выбираю стек, который даёт лучшее соотношение качество × стоимость для задачи. Claude (Anthropic) — для контентной генерации, диалогов, экспертных рекомендаций. GPT (OpenAI) — для интеграций с GPTs-агентами и широкой экосистемы. Gemini (Google) — для multimodal задач и фото-распознавания (например, оценка калорий по фото в Своя). На уровне архитектуры всегда делаю fallback между двумя провайдерами и feature-flag переключение, чтобы продукт работал даже если один из API падает.
+          Под продукт выбираю стек, который даёт лучшее соотношение качество × стоимость для задачи. Claude (Anthropic) — для контентной генерации, диалогов, экспертных рекомендаций. GPT (OpenAI) — для интеграций с GPTs-агентами и широкой экосистемы. Gemini (Google) — для multimodal задач и фото-распознавания (например, оценка калорий по фото в Перия). На уровне архитектуры всегда делаю fallback между двумя провайдерами и feature-flag переключение, чтобы продукт работал даже если один из API падает.
         </p>
       </details>
 
@@ -1805,7 +1817,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="#" class="logo">Чижевская<span>.pro</span></a>
+        <a href="#" class="logo">Chizhevskaya</a>
         <p>
           AI-приложения и SaaS под ключ для health, wellness и longevity-компаний. Vibe coding · Claude Code · продуктовая стратегия.
         </p>
@@ -1910,5 +1922,7 @@
 
 </body>
 </html>
+
+
 
 
