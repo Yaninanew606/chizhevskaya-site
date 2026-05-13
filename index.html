@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -55,7 +55,10 @@
     --terracotta-deep: #8C6750;
     --terracotta-tint: rgba(181,136,106,0.10);
     --terracotta-line: rgba(181,136,106,0.30);
-    --gold: #C9A961;
+    --gold: #fbc908;
+    --gold-deep: #d4a800;
+    --gold-tint: rgba(251,201,8,0.14);
+    --gold-line: rgba(251,201,8,0.45);
     --border: rgba(26,26,26,0.08);
     --border-soft: rgba(26,26,26,0.05);
     --shadow: 0 4px 16px rgba(26,26,26,0.04);
@@ -207,14 +210,16 @@
   }
   .hero-tag::before {
     content: '';
-    width: 6px; height: 6px;
+    width: 8px; height: 8px;
     border-radius: 50%;
-    background: var(--terracotta);
+    background: var(--gold);
+    box-shadow: 0 0 0 0 rgba(251,201,8,0.7);
     animation: pulse 2s infinite;
   }
   @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.4; }
+    0% { opacity: 1; box-shadow: 0 0 0 0 rgba(251,201,8,0.7); }
+    70% { opacity: 0.6; box-shadow: 0 0 0 10px rgba(251,201,8,0); }
+    100% { opacity: 1; box-shadow: 0 0 0 0 rgba(251,201,8,0); }
   }
 
   .hero h1 {
@@ -502,7 +507,7 @@
   }
   .offer.lead-magnet .offer-tag {
     background: var(--gold);
-    color: white;
+    color: var(--ink);
     border-color: var(--gold);
   }
 
@@ -1001,8 +1006,8 @@
           <div>Vibe coding · Claude Code</div>
         </div>
         <div class="cta-row">
-          <a href="#lead" class="btn btn-primary">AI-аудит за 5 дней <span class="arrow">→</span></a>
-          <a href="#cases" class="btn btn-ghost">Кейсы</a>
+          <a href="#lead" class="btn btn-primary" data-ym-goal="cta_hero_audit">AI-аудит за 5 дней <span class="arrow">→</span></a>
+          <a href="#cases" class="btn btn-ghost" data-ym-goal="cta_hero_cases">Кейсы</a>
         </div>
       </div>
 
@@ -1236,7 +1241,7 @@
               Если за 5 дней не получите ясной картины своего AI-продукта — я работала час впустую и ничего вам не должна. Это бесплатно. Вы рискуете только 60 минутами разговора.
             </div>
 
-            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;">Записаться на AI-аудит <span class="arrow">→</span></a>
+            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;" data-ym-goal="cta_lead_magnet">Записаться на AI-аудит <span class="arrow">→</span></a>
 
             <div class="scarcity">
               <b>2 из 3 слотов</b> уже заняты в этом месяце
@@ -1297,7 +1302,7 @@
               Если в течение 14 дней после доставки концепт не даст вам ясного понимания продукта и его юнит-экономики — возвращаю всю сумму без вопросов. Концепт остаётся вам.
             </div>
 
-            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;">Записаться на Concept Sprint <span class="arrow">→</span></a>
+            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;" data-ym-goal="cta_concept_sprint">Записаться на Concept Sprint <span class="arrow">→</span></a>
 
             <div class="scarcity">
               <b>2 слота в месяц</b> · следующая партия — через 2 недели
@@ -1358,10 +1363,71 @@
               Запускаю в прод за 6 недель или каждая следующая неделя задержки — минус 10% от итоговой суммы. До полного возврата, если задержка дойдёт до 10 недель. Риск срока на мне, не на вас.
             </div>
 
-            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;">Обсудить ваш проект <span class="arrow">→</span></a>
+            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;" data-ym-goal="cta_product_launch">Обсудить ваш проект <span class="arrow">→</span></a>
 
             <div class="scarcity">
               <b>1 проект в работе</b> · следующий слот через 6 недель
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- TIER 2.5: Fractional Head of Product -->
+      <div class="offer">
+        <div class="offer-grid-2">
+          <div>
+            <div class="offer-tag">Тариф · Fractional · MRR</div>
+            <h3 class="offer-name">Fractional Head of Product — внешний продакт на 20-40 часов в неделю</h3>
+            <p class="offer-promise">
+              Для health-стартапов и компаний, которым нужен сеньорный продакт с AI-стеком, но не нужен фуллтайм-найм. Беру 1-2 проекта параллельно, веду как inhouse Head of Product: продуктовая стратегия, дорожная карта, AI-фичи, ритуалы команды. Без оффера на штатное место, без социального пакета, без срока обучения.
+            </p>
+            <ul class="stack-list">
+              <li>Продуктовая стратегия и roadmap на 6-12 месяцев</li>
+              <li>Управление продуктовыми спринтами и приоритизация бэклога</li>
+              <li>AI-интеграции в существующий продукт: Claude / GPT / Gemini с fallback</li>
+              <li>CustDev-исследования и валидация фич с реальной аудиторией</li>
+              <li>Юнит-экономика, метрики, A/B-тесты, retention-стратегия</li>
+              <li>Координация дизайнеров, разработчиков и подрядчиков</li>
+              <li>Еженедельные синки + дашборд прогресса для собственника</li>
+              <li>Без vendor lock-in: исходники, доки, аккаунты — ваши</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="tier-grid" style="display:grid; gap:16px; margin-bottom:24px;">
+              <div class="tier-row" style="padding:20px; border:1px solid var(--border); border-radius:16px;">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; gap:16px; margin-bottom:8px;">
+                  <b style="font-size:16px;">Light</b>
+                  <span style="font-size:24px; font-weight:800; color:var(--green-deep);">150 000 ₽/мес</span>
+                </div>
+                <div style="font-size:13px; color:var(--ink-mute);">20 часов в неделю · стратегия + ревью спринтов · 1 синк/неделя</div>
+              </div>
+              <div class="tier-row featured" style="padding:20px; border:2px solid var(--green); border-radius:16px; background:var(--green-tint);">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; gap:16px; margin-bottom:8px;">
+                  <b style="font-size:16px;">Standard</b>
+                  <span style="font-size:24px; font-weight:800; color:var(--green-deep);">350 000 ₽/мес</span>
+                </div>
+                <div style="font-size:13px; color:var(--ink-soft);">30 часов в неделю · hands-on продукт · 2 синка + рабочие сессии</div>
+              </div>
+              <div class="tier-row" style="padding:20px; border:1px solid var(--border); border-radius:16px;">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; gap:16px; margin-bottom:8px;">
+                  <b style="font-size:16px;">Deep</b>
+                  <span style="font-size:24px; font-weight:800; color:var(--green-deep);">600 000 ₽/мес</span>
+                </div>
+                <div style="font-size:13px; color:var(--ink-mute);">40 часов в неделю · полный Head of Product · ежедневная коммуникация</div>
+              </div>
+            </div>
+
+            <div class="guarantee-box">
+              <b>Минимальный срок</b>
+              Контракт от 3 месяцев. После — продление помесячно. На первый месяц — испытательный период: не подошли друг другу — расходимся без неустоек.
+            </div>
+
+            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;">Обсудить Fractional <span class="arrow">→</span></a>
+
+            <div class="scarcity">
+              <b>1 из 2 слотов</b> доступен сейчас
             </div>
           </div>
         </div>
@@ -1400,7 +1466,7 @@
               В международной компании внедрила нейрокопирайтер → ФОТ отдела сократился в 2 раза. Чат-бот в поддержке 24/7 → онбординг сотрудников −30%. GPTs-продажник используется отделом продаж для закрытия сделок и возврата клиентов.
             </div>
 
-            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;">Обсудить внедрение в компанию <span class="arrow">→</span></a>
+            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;" data-ym-goal="cta_consulting">Обсудить внедрение в компанию <span class="arrow">→</span></a>
           </div>
         </div>
       </div>
@@ -1429,7 +1495,7 @@
               Беру 2 партнёра в год. Критерии: аудитория 50k+, активная вовлечённость в нише health/wellness/longevity, желание масштабироваться в продукт.
             </div>
 
-            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;">Подать заявку на партнёрство <span class="arrow">→</span></a>
+            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;" data-ym-goal="cta_revshare">Подать заявку на партнёрство <span class="arrow">→</span></a>
 
             <div class="scarcity">
               <b>0 из 2 партнёров</b> отобрано в 2026 году
@@ -1527,7 +1593,12 @@
       <span>Python + FFmpeg</span>
       <span>Playwright</span>
       <span>Figma</span>
+      <span>Figma MCP</span>
       <span>Яндекс Метрика</span>
+      <span>Google Analytics 4</span>
+      <span>PostHog</span>
+      <span>Amplitude</span>
+      <span>Mixpanel</span>
     </div>
   </div>
 </section>
@@ -1726,7 +1797,57 @@
       window.scrollTo({ top, behavior: 'smooth' });
     });
   });
+
+  // Yandex Metrika goals
+  const YM_ID = 109180333;
+  function reachGoal(name, params) {
+    if (typeof ym === 'function') {
+      try { ym(YM_ID, 'reachGoal', name, params || {}); } catch (e) {}
+    }
+  }
+
+  // Click tracking — by data-ym-goal + by link type
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a, button[type="submit"]');
+    if (!link) return;
+    const href = link.getAttribute('href') || '';
+    const goal = link.dataset.ymGoal;
+    if (goal) reachGoal(goal);
+    if (href.includes('t.me/')) reachGoal('telegram_click');
+    else if (href.startsWith('mailto:')) reachGoal('email_click');
+    else if (href.includes('resume.html')) reachGoal('resume_open');
+  });
+
+  // Form submission
+  const leadForm = document.querySelector('.lead-form');
+  if (leadForm) {
+    leadForm.addEventListener('submit', function() {
+      const type = leadForm.querySelector('[name="type"]')?.value || '';
+      reachGoal('lead_form_submit', { type: type });
+    });
+  }
+
+  // Scroll depth tracking
+  const scrollGoals = { 25: false, 50: false, 75: false, 90: false };
+  function onScroll() {
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight <= 0) return;
+    const pct = Math.round((window.scrollY / docHeight) * 100);
+    Object.keys(scrollGoals).forEach(threshold => {
+      if (!scrollGoals[threshold] && pct >= threshold) {
+        scrollGoals[threshold] = true;
+        reachGoal('scroll_' + threshold);
+      }
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Time-on-page milestones (engaged session marker)
+  setTimeout(() => reachGoal('engaged_30s'), 30000);
+  setTimeout(() => reachGoal('engaged_60s'), 60000);
+  setTimeout(() => reachGoal('engaged_180s'), 180000);
 </script>
 
 </body>
 </html>
+
