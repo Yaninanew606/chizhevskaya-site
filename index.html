@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Янина Чижевская — AI Product Manager. Строю подписочные AI-приложения для health, wellness и longevity-компаний. Концепт + unit-экономика за 5 дней — бесплатно.">
+<meta name="keywords" content="AI Product Manager, Vibe Coding, AI-приложения, health AI, wellness AI, longevity, Telegram Mini App, Claude Code, Чижевская">
+<meta name="author" content="Янина Чижевская">
+<title>Янина Чижевская — AI-приложения для health и longevity-компаний</title>
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://chizhevskaya.pro/">
+<meta property="og:title" content="Янина Чижевская — AI-приложения для health и longevity">
+<meta property="og:description" content="Строю подписочные AI-приложения для health, wellness и longevity-компаний за 4–6 недель. Концепт + unit-экономика бесплатно за 5 дней.">
+<meta property="og:locale" content="ru_RU">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Янина Чижевская — AI-приложения для health и longevity">
+<meta name="twitter:description" content="Строю подписочные AI-приложения для health-компаний за 4–6 недель. Концепт + unit-экономика бесплатно за 5 дней.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232D5A3D'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='62' font-weight='600' fill='%23FAFAF8' text-anchor='middle'%3EЯ%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #FAFAF8;
+    --bg-soft: #F3F5F1;
+    --bg-card: #FFFFFF;
+    --ink: #1A2820;
+    --ink-soft: #4A5A50;
+    --ink-mute: #8A968F;
+    --green: #2D5A3D;
+    --green-deep: #1A3D2A;
+    --green-soft: #4A7C5F;
+    --green-tint: #E8F0EA;
+    --green-line: #D8E4DA;
+    --gold: #B8975A;
+    --border: #E8EBE7;
+    --shadow: 0 2px 20px rgba(26, 40, 32, 0.04);
+    --shadow-hover: 0 8px 40px rgba(26, 40, 32, 0.08);
+    --radius: 14px;
+    --radius-lg: 22px;
+    --max: 1180px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; }
+  h1 { font-size: clamp(42px, 6vw, 78px); }
+  h2 { font-size: clamp(32px, 4.5vw, 52px); }
+  h3 { font-size: clamp(22px, 2.5vw, 30px); }
+  h4 { font-size: 20px; }
+
+  p { color: var(--ink-soft); }
+
+  a { color: inherit; text-decoration: none; transition: opacity 0.2s; }
+  a:hover { opacity: 0.7; }
+
+  .container { max-width: var(--max); margin: 0 auto; padding: 0 32px; }
+
+  .section { padding: 120px 0; }
+  .section-tight { padding: 80px 0; }
+
+  .eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 24px;
+    padding: 6px 14px;
+    border: 1px solid var(--green-line);
+    border-radius: 100px;
+    background: var(--green-tint);
+  }
+
+  .section-title { margin-bottom: 24px; max-width: 820px; }
+  .section-lead { font-size: 18px; color: var(--ink-soft); max-width: 720px; margin-bottom: 64px; }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250, 250, 248, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--green-deep);
+    letter-spacing: 0.02em;
+  }
+  .logo span { color: var(--green); font-weight: 400; }
+  .nav-links { display: flex; gap: 36px; align-items: center; }
+  .nav-links a { font-size: 14px; color: var(--ink-soft); font-weight: 500; }
+  .nav-links a:hover { color: var(--green); opacity: 1; }
+  .btn-nav {
+    background: var(--green);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  .btn-nav:hover { background: var(--green-deep); opacity: 1 !important; }
+
+  @media (max-width: 768px) {
+    .nav-links a:not(.btn-nav) { display: none; }
+  }
+
+  /* HERO */
+  .hero {
+    padding: 120px 0 140px;
+    background: linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+  }
+  .hero-content { max-width: 920px; }
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 18px;
+    border: 1px solid var(--green-line);
+    border-radius: 100px;
+    background: var(--green-tint);
+    color: var(--green-deep);
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 32px;
+  }
+  .hero-tag::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  .hero h1 { color: var(--ink); margin-bottom: 28px; }
+  .hero h1 .accent { color: var(--green); font-style: italic; font-weight: 400; }
+
+  .hero-sub {
+    font-size: 20px;
+    color: var(--ink-soft);
+    max-width: 680px;
+    margin-bottom: 40px;
+    line-height: 1.55;
+  }
+
+  .hero-bullets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 32px;
+    margin-bottom: 56px;
+    color: var(--ink-soft);
+    font-size: 14px;
+  }
+  .hero-bullets div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .hero-bullets div::before {
+    content: '—';
+    color: var(--green);
+    font-weight: 600;
+  }
+
+  .cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 17px 32px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.25s;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+  }
+  .btn-primary {
+    background: var(--green);
+    color: white;
+  }
+  .btn-primary:hover {
+    background: var(--green-deep);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(45, 90, 61, 0.25);
+    opacity: 1;
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--ink);
+  }
+  .btn-ghost:hover {
+    background: var(--ink);
+    color: white;
+    opacity: 1;
+  }
+  .btn .arrow { display: inline-block; transition: transform 0.25s; }
+  .btn:hover .arrow { transform: translateX(4px); }
+
+  /* POSITIONING / ABOUT */
+  .position-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .position-grid p { font-size: 18px; line-height: 1.7; }
+  .position-grid p + p { margin-top: 20px; }
+  @media (max-width: 900px) { .position-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+  .pull-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    line-height: 1.4;
+    color: var(--green-deep);
+    padding-left: 32px;
+    border-left: 2px solid var(--green);
+    font-style: italic;
+  }
+
+  /* CASES */
+  .cases-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  @media (max-width: 768px) { .cases-grid { grid-template-columns: 1fr; } }
+
+  .case {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .case::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent 60%, var(--green-tint) 140%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .case:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--green-line);
+  }
+  .case:hover::before { opacity: 1; }
+  .case > * { position: relative; z-index: 1; }
+
+  .case-status {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+  .case-status.beta { color: var(--gold); }
+  .case-status.dev { color: var(--ink-mute); }
+
+  .case h3 { margin-bottom: 14px; color: var(--ink); }
+  .case-meta { font-size: 13px; color: var(--ink-mute); margin-bottom: 18px; }
+  .case p { font-size: 15px; line-height: 1.65; margin-bottom: 18px; }
+  .case-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 18px;
+  }
+  .case-stack span {
+    font-size: 11px;
+    padding: 4px 10px;
+    background: var(--green-tint);
+    color: var(--green-deep);
+    border-radius: 100px;
+    font-weight: 500;
+  }
+  .case-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .case-link:hover .arrow { transform: translateX(4px); }
+
+  .other-projects {
+    margin-top: 48px;
+    padding: 32px 40px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  .other-projects b { color: var(--ink); }
+
+  /* OFFERS */
+  .offers {
+    background: var(--bg-soft);
+  }
+
+  .offers-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .offer {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  @media (max-width: 700px) { .offer { padding: 32px 24px; } }
+
+  .offer.featured {
+    background: var(--ink);
+    color: var(--bg);
+    border: none;
+  }
+  .offer.featured h3,
+  .offer.featured .offer-name { color: var(--bg); }
+  .offer.featured p,
+  .offer.featured li { color: rgba(250, 250, 248, 0.75); }
+  .offer.featured .offer-tag { background: var(--green); color: white; border: none; }
+  .offer.featured .offer-price-old { color: var(--ink-mute); }
+  .offer.featured .stack-list li::before { color: var(--green-soft); }
+  .offer.featured .btn-primary { background: var(--green); }
+  .offer.featured .value-row { border-color: rgba(255,255,255,0.1); }
+  .offer.featured .total-value { color: var(--green-soft); }
+
+  .offer-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    background: var(--green-tint);
+    color: var(--green-deep);
+    border: 1px solid var(--green-line);
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .offer.lead-magnet .offer-tag {
+    background: var(--gold);
+    color: white;
+    border-color: var(--gold);
+  }
+
+  .offer-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .offer-promise {
+    font-size: 17px;
+    line-height: 1.55;
+    margin-bottom: 32px;
+    max-width: 720px;
+  }
+
+  .offer-grid-2 {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  @media (max-width: 800px) { .offer-grid-2 { grid-template-columns: 1fr; gap: 32px; } }
+
+  .stack-list {
+    list-style: none;
+    margin-bottom: 24px;
+  }
+  .stack-list li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  .stack-list li::before {
+    content: '+';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--green);
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .stack-list .bonus {
+    color: var(--green);
+    font-weight: 500;
+  }
+  .stack-list .bonus::before { content: '★'; font-size: 13px; }
+
+  .value-box {
+    background: var(--bg-soft);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin-bottom: 24px;
+  }
+  .offer.featured .value-box { background: rgba(255,255,255,0.04); }
+
+  .value-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+  }
+  .value-row:last-child { border-bottom: none; }
+  .value-row.total {
+    border-top: 2px solid var(--ink);
+    margin-top: 8px;
+    padding-top: 12px;
+    font-weight: 600;
+    color: var(--ink);
+    font-size: 16px;
+  }
+  .offer.featured .value-row.total { border-top-color: rgba(255,255,255,0.3); color: var(--bg); }
+  .total-value { font-family: 'Cormorant Garamond', serif; font-size: 22px; }
+
+  .price-box {
+    text-align: center;
+    padding: 24px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin: 24px 0;
+  }
+  .offer.featured .price-box { border-color: rgba(255,255,255,0.15); }
+  .offer-price-old {
+    font-size: 16px;
+    color: var(--ink-mute);
+    text-decoration: line-through;
+    margin-bottom: 4px;
+  }
+  .offer-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    line-height: 1;
+    color: var(--green-deep);
+    font-weight: 600;
+  }
+  .offer.featured .offer-price { color: var(--bg); }
+  .offer-price-meta { font-size: 14px; color: var(--ink-mute); margin-top: 8px; }
+
+  .guarantee-box {
+    background: var(--green-tint);
+    border: 1px solid var(--green-line);
+    border-radius: var(--radius);
+    padding: 18px 22px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    color: var(--green-deep);
+  }
+  .offer.featured .guarantee-box { background: rgba(74, 124, 95, 0.15); border-color: rgba(74, 124, 95, 0.3); color: var(--bg); }
+  .guarantee-box b { display: block; margin-bottom: 4px; font-family: 'Cormorant Garamond', serif; font-size: 17px; font-weight: 600; }
+
+  .scarcity {
+    font-size: 13px;
+    color: var(--ink-mute);
+    text-align: center;
+    margin-top: 12px;
+  }
+  .offer.featured .scarcity { color: rgba(250, 250, 248, 0.6); }
+  .scarcity b { color: var(--green); }
+  .offer.featured .scarcity b { color: var(--green-soft); }
+
+  /* PROOF / NUMBERS */
+  .proof-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  @media (max-width: 800px) { .proof-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) { .proof-grid { grid-template-columns: 1fr; } }
+
+  .proof-cell {
+    background: var(--bg-card);
+    padding: 48px 32px;
+    text-align: center;
+  }
+  .proof-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 58px;
+    line-height: 1;
+    color: var(--green);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .proof-label {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  /* LEAD MAGNET FORM */
+  .lead {
+    background: var(--ink);
+    color: var(--bg);
+  }
+  .lead h2 { color: var(--bg); }
+  .lead p { color: rgba(250, 250, 248, 0.7); }
+  .lead .eyebrow {
+    background: rgba(74, 124, 95, 0.2);
+    color: var(--green-soft);
+    border-color: rgba(74, 124, 95, 0.3);
+  }
+
+  .lead-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+  @media (max-width: 900px) { .lead-grid { grid-template-columns: 1fr; gap: 48px; } }
+
+  .lead-form {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+  }
+  .form-row { margin-bottom: 22px; }
+  .form-row label {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--green-soft);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .form-row input,
+  .form-row textarea,
+  .form-row select {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 12px 0;
+    color: var(--bg);
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .form-row textarea { resize: vertical; min-height: 80px; }
+  .form-row input:focus,
+  .form-row textarea:focus,
+  .form-row select:focus {
+    border-bottom-color: var(--green-soft);
+  }
+  .form-row input::placeholder,
+  .form-row textarea::placeholder { color: rgba(255,255,255,0.3); }
+  .form-row select option { background: var(--ink); color: var(--bg); }
+
+  .btn-submit {
+    width: 100%;
+    background: var(--green);
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.2s;
+    margin-top: 8px;
+  }
+  .btn-submit:hover { background: var(--green-soft); }
+
+  .form-note {
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    margin-top: 16px;
+  }
+  .form-note a { color: var(--green-soft); text-decoration: underline; }
+
+  .lead-info ul { list-style: none; margin: 24px 0; }
+  .lead-info li {
+    padding: 12px 0;
+    padding-left: 32px;
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-size: 15px;
+    color: rgba(250, 250, 248, 0.8);
+  }
+  .lead-info li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    color: var(--green-soft);
+    font-weight: 700;
+  }
+
+  /* STACK */
+  .stack-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 40px;
+  }
+  .stack-row span {
+    padding: 12px 22px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    transition: all 0.2s;
+  }
+  .stack-row span:hover { border-color: var(--green); color: var(--green-deep); background: var(--green-tint); }
+
+  /* SERVICES STAIRCASE */
+  .staircase-intro {
+    max-width: 680px;
+    margin-bottom: 56px;
+  }
+
+  /* PROCESS */
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  @media (max-width: 900px) { .process-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 540px) { .process-grid { grid-template-columns: 1fr; } }
+
+  .process-step {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 36px 28px;
+    position: relative;
+    transition: all 0.3s;
+  }
+  .process-step:hover {
+    border-color: var(--green-line);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+  }
+  .step-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    color: var(--green);
+    font-weight: 600;
+    margin-bottom: 12px;
+    line-height: 1;
+    opacity: 0.4;
+  }
+  .process-step h3 {
+    color: var(--ink);
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+  .step-meta {
+    font-size: 12px;
+    color: var(--green);
+    margin-bottom: 16px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .process-step p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* FAQ */
+  .faq-grid {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 28px 0;
+  }
+  .faq-item:first-child { padding-top: 0; }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-q {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 24px;
+    list-style: none;
+  }
+  .faq-q::-webkit-details-marker { display: none; }
+  .faq-q::after {
+    content: '+';
+    color: var(--green);
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 400;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  details[open] .faq-q::after { transform: rotate(45deg); }
+  .faq-a {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    padding-right: 50px;
+  }
+
+  /* WORKED WITH */
+  .worked-with {
+    padding: 48px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+  }
+  .worked-with-label {
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 28px;
+    font-weight: 500;
+  }
+  .worked-with-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px 48px;
+  }
+  .worked-with-row span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    letter-spacing: 0.01em;
+    opacity: 0.65;
+    transition: opacity 0.2s;
+  }
+  .worked-with-row span:hover { opacity: 1; color: var(--green-deep); }
+
+  /* FOOTER */
+  footer {
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    padding: 80px 0 40px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 64px;
+  }
+  @media (max-width: 800px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
+  @media (max-width: 500px) { .footer-grid { grid-template-columns: 1fr; } }
+
+  .footer-brand .logo { font-size: 26px; margin-bottom: 16px; display: inline-block; }
+  .footer-brand p { font-size: 14px; max-width: 320px; line-height: 1.6; }
+
+  .footer-col h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 10px; font-size: 14px; }
+  .footer-col a { color: var(--ink-soft); }
+  .footer-col a:hover { color: var(--green); opacity: 1; }
+
+  .footer-bottom {
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: var(--ink-mute);
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  /* Decorative */
+  .deco-line {
+    width: 60px;
+    height: 1px;
+    background: var(--green);
+    margin: 32px 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">Чижевская<span>.pro</span></a>
+    <div class="nav-links">
+      <a href="#cases">Кейсы</a>
+      <a href="#offers">Услуги</a>
+      <a href="#stack">Стек</a>
+      <a href="#lead" class="btn-nav">Бесплатный AI-аудит</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-tag">Беру 3 проекта в этом месяце</div>
+    <h1>
+      Строю подписочные <span class="accent">AI-приложения</span> для health, wellness и longevity-компаний
+    </h1>
+    <p class="hero-sub">
+      Превращаю аудиторию экспертов и брендов в работающий AI-продукт с подпиской за 4–6 недель. Без найма команды разработчиков. С прогнозом юнит-экономики на старте.
+    </p>
+    <div class="hero-bullets">
+      <div>10 лет в продукте</div>
+      <div>4+ AI-продукта в продакшене</div>
+      <div>3 международных рынка: RF · UK · US</div>
+      <div>Vibe coding · Claude Code · Cursor · Lovable</div>
+    </div>
+    <div class="cta-row">
+      <a href="#lead" class="btn btn-primary">Получить AI-аудит за 5 дней <span class="arrow">→</span></a>
+      <a href="#cases" class="btn btn-ghost">Посмотреть кейсы</a>
+    </div>
+  </div>
+</section>
+
+<!-- WORKED WITH -->
+<section class="worked-with">
+  <div class="container">
+    <div class="worked-with-label">Опыт работы в компаниях</div>
+    <div class="worked-with-row">
+      <span>MindBodyFace (US/UK/EU)</span>
+      <span>Edpro</span>
+      <span>Biogenom</span>
+      <span>Beauty Education</span>
+      <span>Rentra AI</span>
+    </div>
+  </div>
+</section>
+
+<!-- POSITIONING -->
+<section class="section">
+  <div class="container">
+    <div class="position-grid">
+      <div>
+        <div class="eyebrow">Кто я</div>
+        <h2>Янина Чижевская — продакт и vibe coder для health-продуктов</h2>
+      </div>
+      <div>
+        <p>
+          Запускаю AI-приложения и SaaS в одиночку с помощью Claude Code, Cursor и Lovable — это в 5–10 раз быстрее найма команды и в 10 раз дешевле классической разработки.
+        </p>
+        <p>
+          Специализируюсь на нише <b style="color: var(--ink)">здоровье, велнес, женское здоровье 35+, фитнес, нутрициология, долголетие</b>. Запустила wellness Mini App для женщин 35+ «Своя» с цикло-адаптивной логикой; год работала продактом в международной face fitness платформе MindBodyFace (US/UK/EU); делала MVP для нутрициологического стартапа Biogenom; 6 лет вела техдирекцию онлайн-школ нутрициологии.
+        </p>
+        <div class="deco-line"></div>
+        <div class="pull-quote">
+          Большинство экспертов теряют ⅔ аудитории, потому что не превращают её в продукт. Я делаю это превращение за 4–6 недель.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section class="section section-tight" id="cases" style="background: var(--bg-soft);">
+  <div class="container">
+    <div class="eyebrow">Кейсы</div>
+    <h2 class="section-title">Запущенные AI-продукты</h2>
+    <p class="section-lead">
+      Все продукты собраны самостоятельно с помощью AI-ассистентов. От продуктовой постановки и дизайн-системы до деплоя и аналитики.
+    </p>
+
+    <div class="cases-grid">
+
+      <article class="case">
+        <span class="case-status">В продакшене · 2026</span>
+        <h3>Своя</h3>
+        <div class="case-meta">Wellness Telegram Mini App для женщин 35+ · @SvoyaApp_bot</div>
+        <p>
+          Персональный план питания и тренировок с учётом цикла, перименопаузы, ИГ, ограничений по здоровью. Цикло-адаптивная логика (4 фазы), дневник питания с AI-оценкой калорий по фото, тазовое дно, чек-ин, аналитика. Backend на VPS под systemd с auto-restart, Claude API с fallback на расчёт по Миффлину-Сан Жеору.
+        </p>
+        <div class="case-stack">
+          <span>React 19</span><span>TypeScript</span><span>Tailwind v4</span>
+          <span>Node + Prisma + Postgres</span><span>Claude API</span><span>Telegram WebApp</span>
+        </div>
+      </article>
+
+      <article class="case">
+        <span class="case-status">2024 — 2025 · Международная компания</span>
+        <h3>MindBodyFace</h3>
+        <div class="case-meta">Face fitness · facial massage · natural facial rejuvenation · US/UK/EU</div>
+        <p>
+          Год работала продактом портала и мобильного приложения международной wellness-платформы. Сквозной UX портала и мобильного, англоязычная команда на двух континентах, контент-roadmap, юнит-экономика, анализ конкурентов западного рынка natural beauty.
+        </p>
+        <div class="case-stack">
+          <span>Product Management</span><span>Mobile + Web</span><span>Wellness</span><span>International</span>
+        </div>
+      </article>
+
+      <article class="case">
+        <span class="case-status">В продакшене · 2026</span>
+        <h3>BreathFlow</h3>
+        <div class="case-meta">Telegram Mini App для дыхательных практик · @BreathFlowAI_bot</div>
+        <p>
+          4 техники дыхания (Вим Хоф, 4-4-4-4, 4-7-8, Бутейко). Web Audio API: шёпот-шум, фоновые частоты 432/528 Hz, бинауральные ритмы Alpha/Theta/Schumann 7.83 Hz. Telegram CloudStorage для настроек и истории, HapticFeedback. Один HTML-файл, ноль зависимостей.
+        </p>
+        <div class="case-stack">
+          <span>Vanilla JS</span><span>Web Audio API</span><span>Telegram CloudStorage</span><span>Яндекс Метрика</span>
+        </div>
+      </article>
+
+      <article class="case">
+        <span class="case-status">Стартап · 2022 — 2023</span>
+        <h3>Biogenom</h3>
+        <div class="case-meta">MVP мобильного приложения по нутрициологии · B2C / B2B2C</div>
+        <p>
+          Полная разработка MVP с нуля: CustDev-интервью, анализ рынка и конкурентов, управление дизайном и разработкой, юнит-экономика, работа с подрядчиками по продвижению, взаимодействие с партнёрами и стейкхолдерами.
+        </p>
+        <div class="case-stack">
+          <span>Mobile MVP</span><span>CustDev</span><span>B2C/B2B2C</span><span>Нутрициология</span>
+        </div>
+      </article>
+
+      <article class="case">
+        <span class="case-status beta">В тестировании перед запуском · 2026</span>
+        <h3>Lookbook AI</h3>
+        <div class="case-meta">AI-стилист и виртуальная примерочная · look-ai.ru / room.look-ai.ru</div>
+        <p>
+          AI try-on на двух LLM-провайдерах (Claude + Gemini) с feature-flag переключением и автоматическим fallback. Три тарифа (50/150/300 AI-генераций), AI-телеметрия с учётом billable-операций, единый SEO-слой с SSR prerender, JSON-LD, llms.txt.
+        </p>
+        <div class="case-stack">
+          <span>React</span><span>TypeScript</span><span>Supabase</span><span>Claude + Gemini</span><span>SSR prerender</span>
+        </div>
+      </article>
+
+      <article class="case">
+        <span class="case-status">Корпоративный AI · 2023 — 2024</span>
+        <h3>AI-агенты для бизнеса</h3>
+        <div class="case-meta">Нейрокопирайтер · GPTs-продажник · Чат-боты поддержки</div>
+        <p>
+          Запустила в продакшен LLM-агентов в международной компании: продажник (закрытие сделок, возврат недовольных клиентов), саппорт (адаптация сотрудников за 2 дня вместо 2–4 недель), нейрокопирайтер на корпоративной базе. Сокращение ФОТ отдела в 2 раза. Чат-бот в поддержке 24/7 — сокращение онбординга на 30%.
+        </p>
+        <div class="case-stack">
+          <span>GPT-3/4</span><span>Дообучение на данных компании</span><span>Multi-agent</span><span>N8N</span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="other-projects">
+      <b>Другие проекты:</b> Rentra AI — AI-платформа для управляющих компаний краткосрочной аренды, упакованная на 2 рынка (RF + UK). Interior AI Content Automation — мультиагентная система автоматизации SMM и блога. EdTech — 6 лет техдирекции онлайн-школ нутрициологии (Beauty Education).
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section">
+  <div class="container">
+    <div class="eyebrow">Процесс</div>
+    <h2 class="section-title">Как мы работаем</h2>
+    <p class="section-lead">
+      Четыре шага от первого звонка до запущенного AI-приложения в продакшене. Каждый шаг — конкретный артефакт у вас на руках. Если на любом этапе передумаете идти дальше — отдаю всё, что сделано, и расходимся.
+    </p>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <h3>Диагностика</h3>
+        <div class="step-meta">5 рабочих дней · 0 ₽</div>
+        <p>60-минутный звонок-разбор вашего бизнеса и аудитории. На выходе — AI-Бриф: концепт продукта, unit-экономика, roadmap первых 90 дней. Без обязательств работать дальше.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <h3>Концепт + прототип</h3>
+        <div class="step-meta">14 рабочих дней · 79 000 ₽</div>
+        <p>Кликабельный прототип в Lovable + полное ТЗ + презентация для инвесторов и команды. 5 CustDev-интервью с вашей аудиторией. Брендинг-направление.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <h3>Сборка MVP</h3>
+        <div class="step-meta">6 недель · от 500 000 ₽</div>
+        <p>Полная сборка в Claude Code и Cursor: дизайн-система, frontend + backend, AI-интеграция с fallback, биллинг, аналитика, деплой на Vercel + VPS. Telegram Mini App или Web App.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <h3>Запуск + поддержка</h3>
+        <div class="step-meta">30 дней после запуска · включено</div>
+        <p>Запуск в продакшен, retention-логика, A/B-тесты paywall, готовый маркетинг-пакет. 30 дней техподдержки и итераций по обратной связи первых пользователей.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section class="section offers" id="offers">
+  <div class="container">
+    <div class="eyebrow">Услуги</div>
+    <h2 class="section-title">Лестница работы со мной</h2>
+    <p class="section-lead staircase-intro">
+      От бесплатного диагностического AI-аудита до полного запуска AI-приложения в продакшен. На каждом шаге вы получаете конкретный артефакт — концепт, прототип, MVP или внедрённого AI-агента в команду. Без размытых «консультаций».
+    </p>
+
+    <div class="offers-grid">
+
+      <!-- LEAD MAGNET -->
+      <div class="offer lead-magnet">
+        <div class="offer-grid-2">
+          <div>
+            <div class="offer-tag">Бесплатно · Лид-магнит</div>
+            <h3 class="offer-name">AI-Аудит для health-эксперта за 5 дней</h3>
+            <p class="offer-promise">
+              За 5 рабочих дней даю вам ясную картину: какое AI-приложение запустить под вашу аудиторию, сколько оно может приносить через 90 дней, и что для этого нужно. Без обязательств работать со мной дальше.
+            </p>
+            <ul class="stack-list">
+              <li>60-минутная стратегическая сессия 1-на-1 — разбираем вашу аудиторию, контент, текущую монетизацию</li>
+              <li>Концепт AI-приложения под вашу нишу — что делает, какие проблемы решает, чем отличается от существующих</li>
+              <li>Unit-экономика на 12 месяцев — прогноз LTV, CAC, MRR с тремя сценариями (консервативный, базовый, оптимистичный)</li>
+              <li>Roadmap первых 90 дней — что делать неделя за неделей до первых платящих пользователей</li>
+              <li>Сравнение с 3 успешными аналогами на рынке — что у них работает, что вы можете обойти</li>
+              <li>AI-стек под ваш кейс — какие инструменты, во что вкладывать, что не покупать</li>
+              <li class="bonus">Бонус: чек-лист «10 ошибок при запуске AI-приложения в health-нише» (PDF на 12 страниц)</li>
+              <li class="bonus">Бонус: follow-up сессия 30 минут через 14 дней — чтобы свериться по прогрессу</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="value-box">
+              <div class="value-row"><span>Стратегическая сессия 60 мин</span><span>25 000 ₽</span></div>
+              <div class="value-row"><span>AI-концепт + 3 аналога</span><span>80 000 ₽</span></div>
+              <div class="value-row"><span>Unit-экономика 12 мес</span><span>50 000 ₽</span></div>
+              <div class="value-row"><span>90-дневный roadmap</span><span>35 000 ₽</span></div>
+              <div class="value-row"><span>AI-стек + бюджет запуска</span><span>15 000 ₽</span></div>
+              <div class="value-row"><span>Бонус: PDF «10 ошибок»</span><span>10 000 ₽</span></div>
+              <div class="value-row"><span>Бонус: follow-up через 14 дн.</span><span>25 000 ₽</span></div>
+              <div class="value-row total"><span>Итого ценность</span><span class="total-value">240 000 ₽</span></div>
+            </div>
+
+            <div class="price-box">
+              <div class="offer-price-old">обычно 50 000 ₽</div>
+              <div class="offer-price">0 ₽</div>
+              <div class="offer-price-meta">для первых 3 проектов этого месяца</div>
+            </div>
+
+            <div class="guarantee-box">
+              <b>Гарантия времени</b>
+              Если за 5 дней не получите ясной картины своего AI-продукта — я работала час впустую и ничего вам не должна. Это бесплатно. Вы рискуете только 60 минутами разговора.
+            </div>
+
+            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;">Записаться на AI-аудит <span class="arrow">→</span></a>
+
+            <div class="scarcity">
+              <b>2 из 3 слотов</b> уже заняты в этом месяце
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIER 1: Concept Sprint -->
+      <div class="offer">
+        <div class="offer-grid-2">
+          <div>
+            <div class="offer-tag">Тариф 1 · Концепт</div>
+            <h3 class="offer-name">AI Concept Sprint за 14 дней</h3>
+            <p class="offer-promise">
+              Готовый концепт + кликабельный прототип AI-приложения, который можно показать инвестору, партнёру, команде или своей аудитории. С подтверждённой unit-экономикой и продуктовым ТЗ под разработку.
+            </p>
+            <ul class="stack-list">
+              <li>Глубокий продуктовый аудит вашего бизнеса (8 часов работы)</li>
+              <li>Полный UX-флоу основных экранов с описанием логики</li>
+              <li>Кликабельный прототип в Lovable — можно открыть и пройти весь путь пользователя</li>
+              <li>5 CustDev-интервью с представителями вашей ЦА — что им реально нужно</li>
+              <li>Unit-экономика с 3 сценариями: цена, конверсии, LTV, CAC, MRR на 12 месяцев</li>
+              <li>Презентация концепта для инвесторов / партнёров (Figma, 12 слайдов)</li>
+              <li>Видео-демо концепта (3 минуты) для рассылки в сетях</li>
+              <li>Полное ТЗ для разработки на случай если хотите делать с другой командой</li>
+              <li>Брендинг-направление: палитра, шрифты, тон голоса, мудборд</li>
+              <li class="bonus">Бонус: 30-мин коучинг по презентации концепта инвесторам — 50 000 ₽</li>
+              <li class="bonus">Бонус: шаблоны брендинга и дизайн-системы — 40 000 ₽</li>
+              <li class="bonus">Бонус: список 50 health-инвесторов и фондов — 60 000 ₽</li>
+              <li class="bonus">Бонус: разбор рынка через 30 дней (1 час) — 30 000 ₽</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="value-box">
+              <div class="value-row"><span>Продуктовый аудит</span><span>50 000 ₽</span></div>
+              <div class="value-row"><span>UX-флоу</span><span>40 000 ₽</span></div>
+              <div class="value-row"><span>Кликабельный прототип</span><span>80 000 ₽</span></div>
+              <div class="value-row"><span>5 CustDev-интервью</span><span>40 000 ₽</span></div>
+              <div class="value-row"><span>Unit-экономика 12 мес</span><span>35 000 ₽</span></div>
+              <div class="value-row"><span>Презентация инвесторам</span><span>50 000 ₽</span></div>
+              <div class="value-row"><span>Видео-демо</span><span>25 000 ₽</span></div>
+              <div class="value-row"><span>ТЗ для разработки</span><span>40 000 ₽</span></div>
+              <div class="value-row"><span>Брендинг-направление</span><span>30 000 ₽</span></div>
+              <div class="value-row"><span>Бонусы (4 шт.)</span><span>180 000 ₽</span></div>
+              <div class="value-row total"><span>Итого ценность</span><span class="total-value">570 000 ₽</span></div>
+            </div>
+
+            <div class="price-box">
+              <div class="offer-price-old">обычно 250 000 ₽</div>
+              <div class="offer-price">79 000 ₽</div>
+              <div class="offer-price-meta">срок: 14 рабочих дней</div>
+            </div>
+
+            <div class="guarantee-box">
+              <b>Возврат 100% денег</b>
+              Если в течение 14 дней после доставки концепт не даст вам ясного понимания продукта и его юнит-экономики — возвращаю всю сумму без вопросов. Концепт остаётся вам.
+            </div>
+
+            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;">Записаться на Concept Sprint <span class="arrow">→</span></a>
+
+            <div class="scarcity">
+              <b>2 слота в месяц</b> · следующая партия — через 2 недели
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIER 2: FULL BUILD - FEATURED -->
+      <div class="offer featured">
+        <div class="offer-grid-2">
+          <div>
+            <div class="offer-tag">Тариф 2 · Главное · Запуск</div>
+            <h3 class="offer-name">AI Product Launch — ваше приложение в продакшен за 6 недель</h3>
+            <p class="offer-promise">
+              Полный запуск AI-приложения от концепта до первых платящих пользователей. Telegram Mini App или Web App с приёмом оплат, AI-интеграцией, аналитикой и поддержкой после запуска. Без найма команды.
+            </p>
+            <ul class="stack-list">
+              <li>Полная дизайн-система продукта — палитра, типографика, компоненты, иконки</li>
+              <li>Frontend: React + TypeScript + Tailwind, адаптив, тёмная тема</li>
+              <li>Backend: Node + Prisma + PostgreSQL, аутентификация, безопасные API</li>
+              <li>AI-интеграция: Claude / GPT / Gemini с fallback-логикой и feature-flag переключением</li>
+              <li>Биллинг: Telegram Stars и/или YooKassa, подписочная модель</li>
+              <li>Аналитика: Яндекс Метрика с кастомными событиями + собственная AI-телеметрия</li>
+              <li>Деплой: Vercel (frontend) + Timeweb VPS под systemd (backend) с auto-restart</li>
+              <li>Telegram-бот с уведомлениями и retention-логикой</li>
+              <li>30 дней технической поддержки после запуска</li>
+              <li class="bonus">Бонус: маркетинговый пакет — лендинг + 30 постов + email-серия — 150 000 ₽</li>
+              <li class="bonus">Бонус: welcome-серия и скрипты onboarding — 80 000 ₽</li>
+              <li class="bonus">Бонус: 5 экспертных постов под ваш блог — 40 000 ₽</li>
+              <li class="bonus">Бонус: видео-туториалы для пользователей — 50 000 ₽</li>
+              <li class="bonus">Бонус: сессия по A/B-тестам и retention на 14-й день после запуска — 50 000 ₽</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="value-box">
+              <div class="value-row"><span>Дизайн-система</span><span>80 000 ₽</span></div>
+              <div class="value-row"><span>Frontend + backend</span><span>350 000 ₽</span></div>
+              <div class="value-row"><span>AI-интеграция</span><span>80 000 ₽</span></div>
+              <div class="value-row"><span>Биллинг и подписка</span><span>60 000 ₽</span></div>
+              <div class="value-row"><span>Аналитика + AI-телеметрия</span><span>40 000 ₽</span></div>
+              <div class="value-row"><span>Деплой + DevOps</span><span>40 000 ₽</span></div>
+              <div class="value-row"><span>Telegram-бот + retention</span><span>50 000 ₽</span></div>
+              <div class="value-row"><span>30 дней поддержки</span><span>60 000 ₽</span></div>
+              <div class="value-row"><span>Бонусы (5 шт.)</span><span>370 000 ₽</span></div>
+              <div class="value-row total"><span>Итого ценность</span><span class="total-value">1 130 000 ₽</span></div>
+            </div>
+
+            <div class="price-box">
+              <div class="offer-price-old">обычно 800 000 ₽+</div>
+              <div class="offer-price">от 500 000 ₽</div>
+              <div class="offer-price-meta">срок: 6 недель в продакшен</div>
+            </div>
+
+            <div class="guarantee-box">
+              <b>Гарантия срока</b>
+              Запускаю в прод за 6 недель или каждая следующая неделя задержки — минус 10% от итоговой суммы. До полного возврата, если задержка дойдёт до 10 недель. Риск срока на мне, не на вас.
+            </div>
+
+            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;">Обсудить ваш проект <span class="arrow">→</span></a>
+
+            <div class="scarcity">
+              <b>1 проект в работе</b> · следующий слот через 6 недель
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIER 3: Consulting + Revenue Share -->
+      <div class="offer">
+        <div class="offer-grid-2">
+          <div>
+            <div class="offer-tag">Тариф 3 · B2B</div>
+            <h3 class="offer-name">Внедрение AI в компанию + Vibe Coding внутренних инструментов</h3>
+            <p class="offer-promise">
+              Для health-, медтех- и фитнес-компаний, которые хотят внедрить AI в команду или построить внутренние инструменты автоматизации и принятия решений. Опыт: 10+ внутрикорпоративных AI-проектов, сокращение ФОТ отдела в 2 раза, обучение команды 250 человек.
+            </p>
+            <ul class="stack-list">
+              <li>AI-аудит компании — где AI даст быстрый ROI, что не трогать</li>
+              <li>Дорожная карта внедрения на 6 месяцев — приоритеты, бюджеты, риски</li>
+              <li>Внедрение конкретных AI-агентов: нейрокопирайтер, GPTs-продажник, чат-бот поддержки, аналитический агент</li>
+              <li>Vibe coding внутренних инструментов: дашборды, ассистенты, автоматизация рутины</li>
+              <li>Обучение команды работе с AI — воркшопы, рассылки, регламенты</li>
+              <li>Сопровождение 2–3 месяца до устойчивых результатов</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="value-box">
+              <div class="value-row"><span>AI-аудит компании (2 недели)</span><span>80 000 ₽</span></div>
+              <div class="value-row"><span>Roadmap + 2 мес сопровождения</span><span>300 000 ₽</span></div>
+              <div class="value-row"><span>Внедрение AI-агентов в отделы</span><span>от 500 000 ₽</span></div>
+              <div class="value-row"><span>Vibe coding внутренних инструментов</span><span>от 300 000 ₽</span></div>
+              <div class="value-row"><span>Voorкшопы для топ-менеджмента</span><span>от 50 000 ₽/сессия</span></div>
+            </div>
+
+            <div class="guarantee-box">
+              <b>Кейс</b>
+              В международной компании внедрила нейрокопирайтер → ФОТ отдела сократился в 2 раза. Чат-бот в поддержке 24/7 → онбординг сотрудников −30%. GPTs-продажник используется отделом продаж для закрытия сделок и возврата клиентов.
+            </div>
+
+            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;">Обсудить внедрение в компанию <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIER 4: Revenue Share -->
+      <div class="offer">
+        <div class="offer-grid-2">
+          <div>
+            <div class="offer-tag">Партнёрство · Revenue Share</div>
+            <h3 class="offer-name">Партнёрство с долей в продукте</h3>
+            <p class="offer-promise">
+              Для блогеров, экспертов и онлайн-школ в health/wellness/longevity с аудиторией от 50 000 подписчиков. Я делаю вам AI-приложение под вашу аудиторию полностью за свой счёт, вы получаете готовый продукт и подписочную выручку, я — долю в первый год.
+            </p>
+            <ul class="stack-list">
+              <li>0 ₽ инвестиций с вашей стороны — все расходы по разработке, дизайну и инфраструктуре на мне</li>
+              <li>Запуск через 6–8 недель в продакшен</li>
+              <li>20–30% от MRR в течение первого года работы продукта</li>
+              <li>После первого года продукт полностью ваш, без обязательств</li>
+              <li>Я отвечаю за продукт, вы — за маркетинг через свою аудиторию</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="guarantee-box" style="margin-bottom: 24px;">
+              <b>Отбор по критериям</b>
+              Беру 2 партнёра в год. Критерии: аудитория 50k+, активная вовлечённость в нише health/wellness/longevity, желание масштабироваться в продукт.
+            </div>
+
+            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;">Подать заявку на партнёрство <span class="arrow">→</span></a>
+
+            <div class="scarcity">
+              <b>0 из 2 партнёров</b> отобрано в 2026 году
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="section">
+  <div class="container">
+    <div class="eyebrow">Цифры</div>
+    <h2 class="section-title">Что подтверждает экспертизу</h2>
+    <p class="section-lead">
+      Не «опыт работы». Конкретные результаты, которые вы можете проверить.
+    </p>
+
+    <div class="proof-grid">
+      <div class="proof-cell">
+        <div class="proof-num">10</div>
+        <div class="proof-label">лет в продуктовом и проектном управлении</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">4+</div>
+        <div class="proof-label">AI-продукта в продакшене сейчас</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">3</div>
+        <div class="proof-label">международных рынка: Россия · UK · US</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">−50%</div>
+        <div class="proof-label">ФОТ отдела после внедрения нейрокопирайтера</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">−30%</div>
+        <div class="proof-label">время онбординга сотрудников через GPTs-агент</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">250</div>
+        <div class="proof-label">человек обучила работе с AI в одной компании</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">10</div>
+        <div class="proof-label">параллельных AI-проектов вела как продакт</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">2 дня</div>
+        <div class="proof-label">адаптация нового сотрудника саппорта с GPTs (вместо 2–4 недель)</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-num">30</div>
+        <div class="proof-label">сотрудников — масштаб команд, которые координировала</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section class="section section-tight" id="stack" style="background: var(--bg-soft);">
+  <div class="container">
+    <div class="eyebrow">Стек</div>
+    <h2 class="section-title">Чем работаю</h2>
+    <p class="section-lead">
+      Стек выбираю под задачу — от одного HTML-файла до продакшена с Postgres и фоновой обработкой. Везде где можно — vibe coding с AI-ассистентом.
+    </p>
+
+    <div class="stack-row">
+      <span>Claude Code</span>
+      <span>Cursor</span>
+      <span>Lovable</span>
+      <span>Google AI Studio</span>
+      <span>Gemini API</span>
+      <span>Claude API</span>
+      <span>OpenAI GPTs</span>
+      <span>NotebookLM</span>
+      <span>MCP-серверы</span>
+      <span>N8N</span>
+      <span>React + TypeScript</span>
+      <span>Next.js</span>
+      <span>Tailwind</span>
+      <span>shadcn/ui</span>
+      <span>Node + Express</span>
+      <span>Prisma + PostgreSQL</span>
+      <span>Supabase</span>
+      <span>Vercel</span>
+      <span>Timeweb VPS</span>
+      <span>Telegram Mini Apps</span>
+      <span>YooKassa</span>
+      <span>Telegram Stars</span>
+      <span>Python + FFmpeg</span>
+      <span>Playwright</span>
+      <span>Figma</span>
+      <span>Яндекс Метрика</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="eyebrow">Частые вопросы</div>
+    <h2 class="section-title">Что обычно спрашивают</h2>
+    <p class="section-lead">
+      Ответы на типичные сомнения health-экспертов и брендов перед началом работы.
+    </p>
+
+    <div class="faq-grid">
+      <details class="faq-item">
+        <summary class="faq-q">Я не разбираюсь в технологиях. Смогу ли я понять, что вы делаете?</summary>
+        <p class="faq-a">
+          Да. Я работаю с health-экспертами, нутрициологами, тренерами и блогерами без технического бэкграунда уже много лет. На каждом этапе вы получаете артефакт, который можно проверить руками: кликабельный прототип, видео-демо, презентацию. Технические решения объясняю простыми словами — без жаргона. Если что-то непонятно, не оставлю висеть в воздухе.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Чем vibe coding отличается от обычной разработки и почему это быстрее?</summary>
+        <p class="faq-a">
+          Vibe coding — это разработка с AI-ассистентами (Claude Code, Cursor, Lovable), которые пишут код по моим инструкциям. Я работаю как продакт-инженер: формулирую задачу, проверяю результат, итерирую. Скорость в 5–10 раз выше классической разработки, потому что мне не нужно ждать команду, синхронизироваться с фронтендером и бэкендером, объяснять кому-то контекст. Качество — на уровне продакшена, что подтверждают мои живые продукты в Telegram и на Vercel.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Сколько реально стоит запуск AI-приложения и как формируется цена?</summary>
+        <p class="faq-a">
+          Полный MVP в продакшене с биллингом, AI-интеграцией и аналитикой — от 500 000 ₽. В эту сумму входит всё: дизайн, разработка, AI-стек, деплой, маркетинг-пакет на запуск и 30 дней поддержки. Дополнительные расходы только на инфраструктуру (Vercel — бесплатно, VPS — 1000–3000 ₽/мес, AI-API — зависит от объёма генераций). У небольших проектов это $50–200 в месяц. Для крупных аудиторий могу работать через Revenue Share — 0 ₽ на старте + доля в подписочной выручке.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Что если я хочу попробовать ваш подход с минимальным риском?</summary>
+        <p class="faq-a">
+          Для этого есть бесплатный AI-Аудит за 5 дней. Я провожу 60-минутную сессию, делаю концепт под вашу аудиторию и просчитываю юнит-экономику на 12 месяцев. Вы получаете полный документ и можете идти с ним к любому другому разработчику или команде, если решите не работать со мной. Я не беру за это денег и не привязываю к дальнейшим обязательствам — это моя пробная гипотеза перед платными этапами.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Какие AI-провайдеры используете и почему именно их?</summary>
+        <p class="faq-a">
+          Под продукт выбираю стек, который даёт лучшее соотношение качество × стоимость для задачи. Claude (Anthropic) — для контентной генерации, диалогов, экспертных рекомендаций. GPT (OpenAI) — для интеграций с GPTs-агентами и широкой экосистемы. Gemini (Google) — для multimodal задач и фото-распознавания (например, оценка калорий по фото в Своя). На уровне архитектуры всегда делаю fallback между двумя провайдерами и feature-flag переключение, чтобы продукт работал даже если один из API падает.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Что происходит с продуктом после запуска? Не «бросаете» ли вы клиента?</summary>
+        <p class="faq-a">
+          В стандартный пакет входит 30 дней поддержки после запуска: правки по обратной связи первых пользователей, A/B-тесты paywall, retention-логика. После — переход на месячное сопровождение по фиксированной ставке (от 80 000 ₽/мес за продуктовый рост + техподдержка) или передача проекта вашей команде с полной документацией и обучением. Все исходные коды и аккаунты — ваши, без vendor lock-in.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Я готова отдать долю вместо предоплаты. Какие условия?</summary>
+        <p class="faq-a">
+          Revenue Share партнёрство — это для брендов и экспертов с активной аудиторией от 50 000 подписчиков в нише health / wellness / longevity. Условия: 0 ₽ с вашей стороны, я делаю продукт за свой счёт, получаю 20–30% от MRR в течение первого года. После первого года продукт полностью ваш без обязательств. Беру в работу 2 партнёра в год, отбор по критериям аудитории и потенциала продукта.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">У меня нет аудитории, есть только идея. Стоит ли начинать?</summary>
+        <p class="faq-a">
+          Честно — нет, не с моей помощью. Я работаю с теми, у кого уже есть либо аудитория (от 5 000 человек), либо бизнес с клиентами, либо тёплые контакты в нише. Если у вас только идея без аудитории — сначала нужно собрать первых 100–500 потенциальных пользователей через контент или партнёрства, и только потом строить продукт. Я могу помочь со стратегией контента и партнёрств на бесплатной диагностической сессии, но не готова брать в платную работу без подтверждённого спроса.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- LEAD MAGNET FORM -->
+<section class="section lead" id="lead">
+  <div class="container">
+    <div class="lead-grid">
+      <div class="lead-info">
+        <div class="eyebrow">Бесплатный AI-аудит</div>
+        <h2>Получите концепт AI-приложения + unit-экономику для вашей health-аудитории за 5 дней</h2>
+        <p style="font-size: 18px; line-height: 1.65; margin-top: 24px;">
+          Подайте заявку — обычно отвечаю в течение рабочего дня. Если ваш профиль попадает в нишу health / wellness / longevity и есть аудитория или бизнес для запуска AI-продукта — назначаем стратегическую сессию.
+        </p>
+
+        <ul>
+          <li>60-минутная стратегическая сессия 1-на-1</li>
+          <li>Концепт AI-приложения под вашу нишу</li>
+          <li>Unit-экономика на 12 месяцев с 3 сценариями</li>
+          <li>90-дневный roadmap до первых платящих</li>
+          <li>Чек-лист «10 ошибок при запуске AI-приложения»</li>
+          <li>Follow-up через 14 дней — свериться по прогрессу</li>
+        </ul>
+
+        <div style="margin-top: 32px; padding: 20px 24px; background: rgba(74,124,95,0.12); border-radius: 14px; border: 1px solid rgba(74,124,95,0.2);">
+          <p style="color: var(--green-soft); font-size: 14px; margin: 0;">
+            <b style="color: var(--bg); display: block; margin-bottom: 4px; font-family: 'Cormorant Garamond', serif; font-size: 18px;">Гарантия времени</b>
+            Если за 5 дней не получите ясной картины своего AI-продукта — я работала час впустую и ничего вам не должна. Это бесплатно. Вы рискуете только 60 минутами разговора.
+          </p>
+        </div>
+      </div>
+
+      <form class="lead-form" action="mailto:chizhevskaya86@gmail.com" method="post" enctype="text/plain">
+        <div class="form-row">
+          <label>Как вас зовут</label>
+          <input type="text" name="name" placeholder="Имя" required>
+        </div>
+        <div class="form-row">
+          <label>Email или Telegram</label>
+          <input type="text" name="contact" placeholder="вы@example.com или @username" required>
+        </div>
+        <div class="form-row">
+          <label>Что у вас</label>
+          <select name="type" required>
+            <option value="">Выберите...</option>
+            <option>Блог / эксперт с аудиторией</option>
+            <option>Онлайн-школа</option>
+            <option>Health-бренд / стартап</option>
+            <option>Клиника / медицинский бизнес</option>
+            <option>FemTech / wellness app</option>
+            <option>Корпоративное внедрение AI</option>
+            <option>Другое</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>Размер аудитории / месячная выручка</label>
+          <input type="text" name="audience" placeholder="напр. 80k подписчиков Telegram / 1.5M ₽ в мес">
+        </div>
+        <div class="form-row">
+          <label>Что хотите получить от AI-аудита</label>
+          <textarea name="goal" placeholder="Опишите вашу ситуацию и цель в 3–5 предложениях" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Отправить заявку →</button>
+        <p class="form-note">
+          Или напишите напрямую в Telegram: <a href="https://t.me/yanina_ai" target="_blank">@yanina_ai</a><br>
+          Email: <a href="mailto:chizhevskaya86@gmail.com">chizhevskaya86@gmail.com</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">Чижевская<span>.pro</span></a>
+        <p>
+          AI-приложения и SaaS под ключ для health, wellness и longevity-компаний. Vibe coding · Claude Code · продуктовая стратегия.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h5>Сайт</h5>
+        <ul>
+          <li><a href="#cases">Кейсы</a></li>
+          <li><a href="#offers">Услуги</a></li>
+          <li><a href="#stack">Стек</a></li>
+          <li><a href="#lead">AI-аудит</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Документы</h5>
+        <ul>
+          <li><a href="./resume.html" target="_blank">Резюме (HTML)</a></li>
+          <li><a href="./resume.html" target="_blank" onclick="window.print">Скачать как PDF</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Контакты</h5>
+        <ul>
+          <li><a href="https://t.me/yanina_ai" target="_blank">Telegram</a></li>
+          <li><a href="mailto:chizhevskaya86@gmail.com">Email</a></li>
+          <li>+7 (950) 324-84-06</li>
+          <li>Казань · Россия</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Янина Чижевская. Все права защищены.</div>
+      <div>Сайт собран в Claude Code · vibe coding · 1 день</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      const target = document.querySelector(targetId);
+      if (!target) return;
+      e.preventDefault();
+      const offset = 80;
+      const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    });
+  });
+</script>
+
+</body>
+</html>
