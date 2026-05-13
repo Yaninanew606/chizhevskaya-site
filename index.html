@@ -182,13 +182,13 @@
   }
   .hero-grid {
     display: grid;
-    grid-template-columns: 1fr 1.25fr;
+    grid-template-columns: 1.4fr 1fr;
     gap: 64px;
     align-items: center;
   }
   @media (max-width: 900px) {
-    .hero-grid { grid-template-columns: 1fr; gap: 28px; }
-    .hero-visual { order: -1; max-width: 320px; margin: 0 auto; }
+    .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+    .hero-visual { max-width: 320px; margin: 0 auto; }
   }
   .hero-content { max-width: 640px; }
   .hero-tag {
@@ -495,11 +495,14 @@
     background: var(--gold);
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   }
-  .offer.featured .offer-price-old { color: var(--ink-mute); }
-  .offer.featured .stack-list li::before { color: var(--green-soft); }
+  .offer.featured .offer-price-old { color: rgba(250,250,248,0.45); }
+  .offer.featured .stack-list li::before { color: var(--gold); font-weight: 700; }
+  .offer.featured .stack-list .bonus { color: var(--gold); }
+  .offer.featured .stack-list .bonus::before { color: var(--gold); }
   .offer.featured .btn-primary { background: var(--green); }
-  .offer.featured .value-row { border-color: rgba(255,255,255,0.1); }
-  .offer.featured .total-value { color: var(--green-soft); }
+  .offer.featured .value-row { border-color: rgba(255,255,255,0.1); color: rgba(250,250,248,0.78); }
+  .offer.featured .value-row.total { color: var(--bg); }
+  .offer.featured .total-value { color: var(--gold); font-weight: 800; font-size: 24px; }
 
   .offer-tag {
     display: inline-block;
@@ -991,7 +994,7 @@
       <a href="#cases">Кейсы</a>
       <a href="#offers">Услуги</a>
       <a href="#stack">Стек</a>
-      <a href="#lead" class="btn-nav">Бесплатный AI-аудит</a>
+      <a href="https://t.me/yanina_ai?text=Бесплатный%20AI-аудит" class="btn-nav">Бесплатный AI-аудит</a>
     </div>
   </div>
 </nav>
@@ -1015,7 +1018,7 @@
           <div>Vibe coding · Claude Code</div>
         </div>
         <div class="cta-row">
-          <a href="#lead" class="btn btn-primary" data-ym-goal="cta_hero_audit">AI-аудит за 5 дней <span class="arrow">→</span></a>
+          <a href="https://t.me/yanina_ai?text=Здравствуйте%2C%20пришёл%20с%20сайта%20chizhevskaya.pro" class="btn btn-primary" data-ym-goal="cta_hero_audit">AI-аудит за 5 дней <span class="arrow">→</span></a>
           <a href="#cases" class="btn btn-ghost" data-ym-goal="cta_hero_cases">Кейсы</a>
         </div>
       </div>
@@ -1262,7 +1265,7 @@
               Если за 5 дней не получите ясной картины своего AI-продукта — я работала час впустую и ничего вам не должна. Это бесплатно. Вы рискуете только 60 минутами разговора.
             </div>
 
-            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;" data-ym-goal="cta_lead_magnet">Записаться на AI-аудит <span class="arrow">→</span></a>
+            <a href="https://t.me/yanina_ai?text=Здравствуйте%2C%20хочу%20на%20бесплатный%20AI-аудит%20за%205%20дней" class="btn btn-primary" style="width: 100%; justify-content: center;" data-ym-goal="cta_lead_magnet">Записаться на AI-аудит <span class="arrow">→</span></a>
 
             <div class="scarcity">
               <b>2 из 3 слотов</b> уже заняты в этом месяце
@@ -1314,7 +1317,7 @@
               Если в отчёте не будет минимум 5 actionable изменений с конкретными цифрами ROI — возвращаю 100% денег. Отчёт остаётся вам.
             </div>
 
-            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;">Записаться на Аудит <span class="arrow">→</span></a>
+            <a href="https://t.me/yanina_ai?text=Хочу%20Audit%20существующего%20продукта%20за%2014%20дней" class="btn btn-primary" style="width: 100%; justify-content: center;">Записаться на Аудит <span class="arrow">→</span></a>
 
             <div class="scarcity">
               <b>3 слота в месяц</b>
@@ -1374,7 +1377,7 @@
               Если в течение 14 дней после доставки концепт не даст вам ясного понимания продукта и его юнит-экономики — возвращаю всю сумму без вопросов. Концепт остаётся вам.
             </div>
 
-            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;" data-ym-goal="cta_concept_sprint">Записаться на Concept Sprint <span class="arrow">→</span></a>
+            <a href="https://t.me/yanina_ai?text=Интересует%20Concept%20Sprint%20за%2014%20дней" class="btn btn-primary" style="width: 100%; justify-content: center;" data-ym-goal="cta_concept_sprint">Записаться на Concept Sprint <span class="arrow">→</span></a>
 
             <div class="scarcity">
               <b>2 слота в месяц</b> · следующая партия — через 2 недели
@@ -1435,7 +1438,7 @@
               Запускаю в прод за 6 недель или каждая следующая неделя задержки — минус 10% от итоговой суммы. До полного возврата, если задержка дойдёт до 10 недель. Риск срока на мне, не на вас.
             </div>
 
-            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;" data-ym-goal="cta_product_launch">Обсудить ваш проект <span class="arrow">→</span></a>
+            <a href="https://t.me/yanina_ai?text=Хочу%20запустить%20AI-приложение%20под%20ключ%20за%206%20недель" class="btn btn-primary" style="width: 100%; justify-content: center;" data-ym-goal="cta_product_launch">Обсудить ваш проект <span class="arrow">→</span></a>
 
             <div class="scarcity">
               <b>1 проект в работе</b> · следующий слот через 6 недель
@@ -1496,7 +1499,7 @@
               Контракт от 3 месяцев. После — продление помесячно. На первый месяц — испытательный период: не подошли друг другу — расходимся без неустоек.
             </div>
 
-            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;">Обсудить Fractional <span class="arrow">→</span></a>
+            <a href="https://t.me/yanina_ai?text=Хочу%20обсудить%20Fractional%20Head%20of%20Product" class="btn btn-primary" style="width: 100%; justify-content: center;">Обсудить Fractional <span class="arrow">→</span></a>
 
             <div class="scarcity">
               <b>1 из 2 слотов</b> доступен сейчас
@@ -1538,7 +1541,7 @@
               В международной компании внедрила нейрокопирайтер → ФОТ отдела сократился в 2 раза. Чат-бот в поддержке 24/7 → онбординг сотрудников −30%. GPTs-продажник используется отделом продаж для закрытия сделок и возврата клиентов.
             </div>
 
-            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;" data-ym-goal="cta_consulting">Обсудить внедрение в компанию <span class="arrow">→</span></a>
+            <a href="https://t.me/yanina_ai?text=Хочу%20обсудить%20внедрение%20AI%20в%20компанию" class="btn btn-primary" style="width: 100%; justify-content: center;" data-ym-goal="cta_consulting">Обсудить внедрение <span class="arrow">→</span></a>
           </div>
         </div>
       </div>
@@ -1567,7 +1570,7 @@
               Беру 2 партнёра в год. Критерии: аудитория 50k+, активная вовлечённость в нише health/wellness/longevity, желание масштабироваться в продукт.
             </div>
 
-            <a href="#lead" class="btn btn-primary" style="width: 100%; justify-content: center;" data-ym-goal="cta_revshare">Подать заявку на партнёрство <span class="arrow">→</span></a>
+            <a href="https://t.me/yanina_ai?text=Подаю%20заявку%20на%20Revenue%20Share%20партнёрство" class="btn btn-primary" style="width: 100%; justify-content: center;" data-ym-goal="cta_revshare">Подать заявку на партнёрство <span class="arrow">→</span></a>
 
             <div class="scarcity">
               <b>0 из 2 партнёров</b> отобрано в 2026 году
@@ -1764,9 +1767,9 @@
           <li>Follow-up через 14 дней — свериться по прогрессу</li>
         </ul>
 
-        <div style="margin-top: 32px; padding: 20px 24px; background: rgba(74,124,95,0.12); border-radius: 14px; border: 1px solid rgba(74,124,95,0.2);">
-          <p style="color: var(--green-soft); font-size: 14px; margin: 0;">
-            <b style="color: var(--bg); display: block; margin-bottom: 4px; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 18px;">Гарантия времени</b>
+        <div style="margin-top: 32px; padding: 22px 26px; background: rgba(251,201,8,0.10); border-radius: 14px; border: 1px solid rgba(251,201,8,0.35);">
+          <p style="color: rgba(250,250,248,0.88); font-size: 15px; line-height: 1.6; margin: 0;">
+            <b style="color: var(--gold); display: block; margin-bottom: 6px; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 17px; font-weight: 700;">Гарантия времени</b>
             Если за 5 дней не получите ясной картины своего AI-продукта — я работала час впустую и ничего вам не должна. Это бесплатно. Вы рискуете только 60 минутами разговора.
           </p>
         </div>
@@ -1828,7 +1831,7 @@
           <li><a href="#cases">Кейсы</a></li>
           <li><a href="#offers">Услуги</a></li>
           <li><a href="#stack">Стек</a></li>
-          <li><a href="#lead">AI-аудит</a></li>
+          <li><a href="https://t.me/yanina_ai?text=Бесплатный%20AI-аудит">AI-аудит</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -1922,6 +1925,8 @@
 
 </body>
 </html>
+
+
 
 
 
