@@ -1,0 +1,86 @@
+# Yanina Chizhevskaya — AI Product Manager
+
+> Personal portfolio and services page of Yanina Chizhevskaya — AI Product Manager and Vibe Coder building subscription AI applications for health, wellness, and longevity companies. Based in Kazan, Russia. Working with clients in Russia, UK, and US.
+
+## Who
+
+Янина Чижевская (Yanina Chizhevskaya) — AI Product Manager with 10 years of product and project management experience. Specializes in launching AI products from concept to production using vibe coding tools (Claude Code, Cursor, Lovable). Has 4+ AI products live in production and 1 year of experience at the international MindBodyFace platform (US/UK/EU face fitness).
+
+Education: Tomsk State University (Product Manager in IT), Kuzbass State Technical University (engineer).
+
+## Services
+
+The site offers a "ladder" of services from free to premium:
+
+1. **Free AI Audit (5 days)** — strategic 60-min call + AI app concept for client's audience + 12-month unit economics + 90-day roadmap + check-list "10 mistakes when launching an AI app". Total value: 240,000 RUB. Price: 0 RUB. For first 3 projects per month.
+
+2. **AI Concept Sprint (14 days)** — full product audit + UX flow + clickable prototype in Lovable + 5 CustDev interviews + unit economics + investor presentation + video demo + technical specification + brand direction. Total value: 570,000 RUB. Price: 79,000 RUB. Guarantee: 100% money back if not clear.
+
+3. **AI Product Launch (6 weeks)** — full design system + frontend + backend + AI integration (Claude/GPT/Gemini with fallback) + billing (Telegram Stars / YooKassa) + analytics + deploy + 30 days support + marketing package. Total value: 1,130,000 RUB. Price: from 500,000 RUB. Guarantee: launch in 6 weeks or 10% discount per delay week.
+
+4. **AI Implementation in Companies** — AI audit, roadmap, internal vibe coding tools, training team. From 80,000 RUB for audit, 300,000 RUB for roadmap + 2 months support.
+
+5. **Revenue Share Partnership** — 0 RUB upfront + 20-30% MRR for year 1. For brands with 50,000+ audience in health/wellness/longevity niche. Takes 2 partners per year.
+
+## Cases (live AI products)
+
+- **Periya / Перия (@PeriyaApp_bot, periya.pro)** — wellness Telegram Mini App for women 35+: personalized nutrition and training plans with cycle-adaptive logic, AI photo calorie estimation. React 19 + Node + Prisma + PostgreSQL + Claude API. In production.
+
+- **MindBodyFace (mindbodyface.com)** — international face fitness, facial massage, natural facial rejuvenation platform and mobile app. US/UK/EU market. 2024-2025.
+
+- **BreathFlow (@BreathFlowAI_bot)** — Telegram Mini App for breathing practices: 4 techniques (Wim Hof, 4-4-4-4, 4-7-8, Buteyko), Web Audio API with binaural beats, Telegram CloudStorage. In production.
+
+- **Biogenom** — MVP of nutrition mobile app, B2C/B2B2C, 2022-2023.
+
+- **Lookbook AI (look-ai.ru / room.look-ai.ru)** — AI stylist and virtual try-on, dual-provider AI architecture (Claude + Gemini). In testing.
+
+- **Corporate AI agents** — neurocopywriter, GPTs sales bot, support chat bot in international company. Reduced department FOT by 50%, reduced onboarding time by 30%.
+
+## Stack
+
+- AI: Claude Code, Cursor, Lovable, Google AI Studio, Gemini API, Claude API, OpenAI GPTs, NotebookLM, MCP servers, N8N
+- Frontend: React + TypeScript, Next.js, Tailwind, shadcn/ui
+- Backend: Node + Express, Prisma + PostgreSQL, Supabase
+- Deploy: Vercel, Timeweb VPS
+- Apps: Telegram Mini Apps, Telegram Stars, YooKassa
+- Analytics: Yandex Metrika, Google Analytics 4, PostHog, Amplitude, Mixpanel
+- Design: Figma, Figma MCP
+- Other: Python + FFmpeg, Playwright
+
+## Target audience
+
+- Health, wellness, longevity bloggers and experts (audience 50,000+)
+- Online schools in nutrition, fitness, psychology
+- FemTech and women's health startups
+- Clinics and medical businesses
+- Companies wanting to implement AI internally
+
+## Contact
+
+- Website: https://chizhevskaya.pro
+- Telegram: https://t.me/yanina_ai
+- Email: chizhevskaya86@gmail.com
+- Phone: +7 (950) 324-84-06
+- Location: Kazan, Russia
+
+## Languages
+
+Russian (native), English (working, 1 year at MindBodyFace international team).
+
+## Key positioning phrases
+
+- "Subscription AI apps for health and longevity"
+- "AI Product Manager"
+- "Vibe Coding Product Manager"
+- "AI Product Engineer"
+- "Telegram Mini App development"
+- "AI implementation in business"
+- "AI strategy and audit for health companies"
+- "Подписочные AI-приложения для health-аудитории"
+- "Концепт AI-приложения с unit-экономикой за 5 дней"
+- "Запуск AI MVP за 6 недель без найма команды"
+
+## Pages
+
+- [Home](https://chizhevskaya.pro/) — main portfolio, services, cases, lead magnet form
+- [Resume](https://chizhevskaya.pro/resume.html) — detailed work history (HTML/PDF)
