@@ -91,4 +91,6 @@ Russian (native), English (working, 1 year at MindBodyFace international team).
 - [Blog](https://chizhevskaya.pro/blog) — practical articles about AI products, Mini Apps, subscription economics and HealthTech product analytics
 - [About](https://chizhevskaya.pro/about) — Yanina Chizhevskaya's experience, specialization and product-development approach
 - [Contact](https://chizhevskaya.pro/contact) — Telegram, VK, MAX and email contact options
+- [B2B contract template (DOCX)](https://chizhevskaya.pro/documents/white-label-ai-development-agreement-template.docx) — editable agreement template covering development scope, acceptance, IP, AI APIs, client-paid infrastructure, personal data, support and handover
+- [B2B contract template (PDF)](https://chizhevskaya.pro/documents/white-label-ai-development-agreement-template.pdf) — read-only preview of the agreement template
 - [Resume](https://chizhevskaya.pro/resume.html) — detailed work history (HTML/PDF)

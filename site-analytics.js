@@ -39,7 +39,7 @@
     footer.className = 'site-footer';
     footer.innerHTML = '<div class="site-footer-inner"><div class="site-footer-grid">' +
       '<div><a class="site-logo" href="/">Chizhevskaya</a><p class="site-footer-about">White Label AI-приложения и цифровые продукты под брендом эксперта или компании — от идеи до запуска и сопровождения.</p></div>' +
-      '<div><h2>Работа со мной</h2><div class="site-footer-links"><a href="/services/mini-apps-for-bloggers">White Label</a><a href="/services">Стоимость</a><a href="/partnerships">Партнёрство</a><a href="/cases">Кейсы</a></div></div>' +
+      '<div><h2>Работа со мной</h2><div class="site-footer-links"><a href="/services/mini-apps-for-bloggers">White Label</a><a href="/services">Стоимость</a><a href="/partnerships">Партнёрство</a><a href="/cases">Кейсы</a><a href="/documents/white-label-ai-development-agreement-template.docx" download data-ym-goal="contract_docx_download">Шаблон договора (.docx)</a><a href="/documents/white-label-ai-development-agreement-template.pdf" download data-ym-goal="contract_pdf_download">Договор в PDF</a></div></div>' +
       '<div><h2>Экосистема</h2><div class="site-footer-links"><a href="/products">Продукты</a><a href="/about">Обо мне</a><a href="/blog">Блог</a><a href="/resume.html">Резюме</a></div></div>' +
       '<div><h2>Связаться</h2><div class="site-footer-links"><a href="/contact">Все контакты</a><a href="https://t.me/yanina_ai" target="_blank" rel="noopener">Telegram</a><a href="https://vk.ru/yanina_new666" target="_blank" rel="noopener">ВКонтакте</a><a href="mailto:chizhevskaya86@gmail.com">Email</a></div></div>' +
       '</div><div class="site-footer-meta"><span>© 2026 Янина Чижевская</span><span>Product Owner и разработчик AI-продуктов</span></div></div>';
@@ -47,6 +47,7 @@
       footer.innerHTML = footer.innerHTML
         .replace('White Label AI-приложения и цифровые продукты под брендом эксперта или компании — от идеи до запуска и сопровождения.', 'White Label AI applications and digital products under your brand — from idea to launch and support.')
         .replace('Работа со мной', 'Work with me').replace('Стоимость', 'Pricing').replace('Партнёрство', 'Partnerships').replace('Кейсы', 'Cases')
+        .replace('Шаблон договора (.docx)', 'Contract template (.docx)').replace('Договор в PDF', 'Contract PDF')
         .replace('Экосистема', 'Explore').replace('Продукты', 'Products').replace('Обо мне', 'About').replace('Блог', 'Blog').replace('Резюме', 'Resume')
         .replace('Связаться', 'Contact').replace('Все контакты', 'All contacts').replace('ВКонтакте', 'VK')
         .replace('Янина Чижевская', 'Yanina Chizhevskaya').replace('Product Owner и разработчик AI-продуктов', 'Product Owner and AI product engineer');
