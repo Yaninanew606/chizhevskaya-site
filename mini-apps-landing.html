@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Mini Apps для блогеров под ключ | Chizhevskaya</title>
-  <meta name="description" content="White-label AI Mini Apps для блогеров, врачей и экспертов в здоровье: Telegram, MAX, VK, подписка, аналитика, unit-экономика и сопровождение под ключ.">
+  <title>White-label Mini Apps для экспертов и врачей | Chizhevskaya</title>
+  <meta name="description" content="Mini App под брендом эксперта, врача или школы: питание, фитнес, здоровье, психология и обучение. Один продукт, оплата, аналитика и безопасный AI.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <link rel="canonical" href="https://chizhevskaya.pro/services/mini-apps-for-bloggers">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:url" content="https://chizhevskaya.pro/services/mini-apps-for-bloggers">
-  <meta property="og:title" content="AI Mini Apps для блогеров — подписочный продукт под вашим брендом">
-  <meta property="og:description" content="Превращаю аудиторию в собственный AI-продукт с подпиской: от концепции и unit-экономики до запуска и сопровождения.">
-  <meta property="og:image" content="https://chizhevskaya.pro/og-image.png">
+  <meta property="og:title" content="Каталог AI Mini Apps под брендом эксперта">
+  <meta property="og:description" content="Выберите конкретное приложение для своей аудитории: питание, фитнес, медицина, женское здоровье, психология, коучинг или обучение.">
+  <meta property="og:image" content="https://chizhevskaya.pro/og-image-2026.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AI Mini Apps для блогеров под ключ">
-  <meta name="twitter:description" content="Telegram, MAX, VK и PWA: white-label продукт, AI под капотом, подписка и аналитика.">
-  <meta name="twitter:image" content="https://chizhevskaya.pro/og-image.png">
+  <meta name="twitter:title" content="Каталог AI Mini Apps под вашим брендом">
+  <meta name="twitter:description" content="Наглядные идеи приложений для экспертов — без найма команды разработки.">
+  <meta name="twitter:image" content="https://chizhevskaya.pro/og-image-2026.png">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232D5A3D'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='62' font-weight='600' fill='%23FAFAF8' text-anchor='middle'%3EЯ%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -123,6 +123,89 @@
     .idea-card.featured ul { color: rgba(255,255,255,.78); }
     .idea-card li { margin-bottom: 7px; }
 
+    .persona-picker { margin-top: 38px; padding: 30px; border: 1px solid var(--line); border-radius: 26px; background: var(--paper); box-shadow: 0 18px 50px rgba(36,56,45,.06); }
+    .persona-picker h3 { font-size: clamp(28px, 3.5vw, 40px); }
+    .persona-picker p { max-width: 720px; margin-top: 8px; color: var(--soft); }
+    .persona-select-wrap { display: none; margin-top: 20px; }
+    .persona-select-wrap label { display: block; margin-bottom: 8px; color: var(--green); font-size: 12px; font-weight: 700; }
+    .persona-select { width: 100%; min-height: 52px; padding: 0 14px; border: 1px solid var(--line); border-radius: 14px; background: #fff; color: var(--ink); font: 600 15px/1.3 'Inter', sans-serif; }
+    .persona-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 22px; }
+    .persona-button { min-height: 86px; padding: 15px 12px; border: 1px solid var(--line); border-radius: 16px; background: #fff; color: var(--ink); text-align: left; font: 700 13px/1.3 'Inter', sans-serif; cursor: pointer; transition: .2s ease; }
+    .persona-button span { display: block; margin-bottom: 8px; color: var(--terra); font-size: 19px; }
+    .persona-button:hover, .persona-button[aria-pressed="true"] { border-color: var(--green); background: var(--green); color: #fff; transform: translateY(-2px); }
+    .catalog-status { margin-top: 18px; color: var(--green); font-size: 13px; font-weight: 700; }
+    .catalog-enhanced .catalog-group[data-professions] { display: none; }
+    .catalog-enhanced .catalog-group[data-professions].is-relevant { display: block; }
+    .catalog-group { padding: 62px 0; border-top: 1px solid var(--line); scroll-margin-top: 88px; }
+    .catalog-group:first-of-type { margin-top: 30px; }
+    .catalog-heading { display: grid; grid-template-columns: .7fr 1.3fr; gap: 54px; align-items: end; margin-bottom: 30px; }
+    .catalog-heading h2 { font-size: clamp(34px, 4vw, 50px); }
+    .catalog-heading p { color: var(--soft); }
+    .catalog-layout { display: grid; grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr); gap: 28px; align-items: stretch; }
+    .catalog-mockup { position: relative; min-height: 500px; overflow: hidden; padding: 24px; border-radius: 26px; background: var(--green-dark); color: #fff; }
+    .catalog-mockup::after { content: ''; position: absolute; width: 220px; height: 220px; right: -80px; bottom: -90px; border-radius: 50%; background: rgba(215,181,109,.22); }
+    .mockup-kicker { color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .catalog-mockup h4 { max-width: 280px; margin-top: 12px; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 34px; line-height: 1.05; }
+    .mock-screen-stack { position: relative; z-index: 1; display: grid; gap: 10px; margin-top: 22px; }
+    .mock-screen { position: relative; padding: 15px; border-radius: 17px; background: var(--paper); color: var(--ink); box-shadow: 0 16px 38px rgba(0,0,0,.14); }
+    .mock-screen:nth-child(2) { margin-left: 20px; background: #fff; }
+    .mock-screen:nth-child(3) { margin-left: 7px; }
+    .mock-screen small { color: var(--mute); }
+    .mock-screen strong { display: block; margin-top: 6px; line-height: 1.35; }
+    .mock-progress { height: 7px; margin-top: 15px; overflow: hidden; border-radius: 99px; background: var(--sage); }
+    .mock-progress span { display: block; width: 68%; height: 100%; border-radius: inherit; background: var(--terra); }
+    .mock-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+    .mock-tile { padding: 11px; border-radius: 12px; background: var(--sage); color: var(--green); font-size: 11px; font-weight: 700; }
+    .catalog-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .catalog-card { padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--paper); cursor: pointer; transition: .2s ease; }
+    .catalog-card::before { content: 'Концепция интерфейса'; display: inline-block; margin-bottom: 10px; padding: 5px 8px; border-radius: 999px; background: var(--sage); color: var(--green); font-size: 9px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+    .catalog-card:hover, .catalog-card:focus-visible, .catalog-card[aria-selected="true"] { border-color: var(--terra); box-shadow: 0 14px 34px rgba(36,56,45,.09); transform: translateY(-2px); outline: none; }
+    .catalog-card h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 25px; line-height: 1.1; }
+    .catalog-card p { margin-top: 9px; color: var(--soft); font-size: 13px; }
+    .catalog-card .features { margin-top: 13px; color: var(--green); font-size: 11px; font-weight: 700; line-height: 1.55; }
+    .solution-detail[hidden] { display: none; }
+    .solution-detail { margin-top: 32px; padding: 34px; border-radius: 26px; background: #fff; border: 1px solid var(--line); box-shadow: 0 22px 54px rgba(36,56,45,.09); scroll-margin-top: 92px; }
+    .solution-detail-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 34px; align-items: start; }
+    .solution-detail h3 { font-size: clamp(34px, 4vw, 52px); }
+    .solution-detail-lead { margin-top: 12px; color: var(--soft); font-size: 16px; }
+    .solution-facts { display: grid; gap: 12px; margin-top: 24px; }
+    .solution-fact { padding-top: 12px; border-top: 1px solid var(--line); }
+    .solution-fact b { display: block; margin-bottom: 5px; color: var(--green); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+    .solution-fact span { color: var(--soft); font-size: 14px; }
+    .solution-detail .catalog-mockup { min-height: 0; }
+    .solution-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .catalog-empty { padding: 46px 0 10px; color: var(--soft); text-align: center; }
+    .ai-options { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 32px; }
+    .ai-option { padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--paper); }
+    .ai-option b { display: block; color: var(--green); }
+    .ai-option span { display: block; margin-top: 6px; color: var(--soft); font-size: 12px; }
+    .product-sequence { display: grid; grid-template-columns: 1fr 64px 1fr 64px 1fr; align-items: center; gap: 10px; margin-top: 42px; }
+    .sequence-card { min-height: 180px; padding: 24px; border: 1px solid var(--line); border-radius: 20px; background: var(--paper); }
+    .sequence-card.primary { background: var(--green); color: #fff; }
+    .sequence-card .sequence-num { color: var(--terra); font-size: 11px; font-weight: 700; text-transform: uppercase; }
+    .sequence-card.primary .sequence-num { color: var(--gold); }
+    .sequence-card h3 { margin-top: 12px; font-size: 27px; }
+    .sequence-card p { margin-top: 9px; color: var(--soft); font-size: 13px; }
+    .sequence-card.primary p { color: rgba(255,255,255,.75); }
+    .sequence-arrow { color: var(--terra); text-align: center; font-size: 28px; }
+
+    .contact-modal[hidden] { display: none; }
+    .contact-modal { position: fixed; inset: 0; z-index: 2000; display: grid; place-items: center; padding: 24px; }
+    .contact-modal-backdrop { position: absolute; inset: 0; background: rgba(20,32,26,.28); }
+    .contact-modal-dialog { position: relative; z-index: 1; width: min(100%, 560px); max-height: calc(100dvh - 32px); overflow-y: auto; padding: 38px; border: 1px solid var(--line); border-radius: 24px; background: #fff; box-shadow: 0 24px 64px rgba(20,32,26,.2); }
+    .contact-modal-close { position: absolute; top: 14px; right: 14px; width: 40px; height: 40px; border: 1px solid var(--line); border-radius: 50%; background: #fff; color: var(--ink); font-size: 24px; cursor: pointer; }
+    .contact-modal-title { margin-top: 8px; font-size: clamp(32px, 5vw, 46px); }
+    .contact-modal-lead { margin: 10px 0 20px; color: var(--soft); }
+    .contact-message-label { display: block; margin-bottom: 7px; color: var(--green); font-size: 12px; font-weight: 700; }
+    .contact-message { width: 100%; min-height: 94px; padding: 14px; resize: vertical; border: 1px solid var(--line); border-radius: 13px; background: var(--cream); color: var(--ink); font: 14px/1.5 'Inter', sans-serif; }
+    .contact-copy { margin: 9px 0 18px; padding: 0; border: 0; background: transparent; color: var(--green); font: 700 12px/1.4 'Inter', sans-serif; cursor: pointer; }
+    .contact-channels { display: grid; gap: 9px; }
+    .contact-channel { display: flex; justify-content: space-between; align-items: center; min-height: 54px; padding: 13px 16px; border: 1px solid var(--line); border-radius: 13px; background: #fff; color: var(--ink); font-weight: 700; }
+    .contact-channel.telegram { border-color: var(--green); background: var(--green); color: #fff; }
+    .contact-channel-hint { color: var(--soft); font-size: 11px; font-weight: 500; }
+    .contact-channel.telegram .contact-channel-hint { color: rgba(255,255,255,.75); }
+    .contact-modal-note { margin-top: 13px; color: var(--mute); font-size: 11px; line-height: 1.5; }
+
     .money-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: start; margin-top: 50px; }
     .revenue-list { display: grid; gap: 12px; }
     .revenue-item { display: grid; grid-template-columns: 44px 1fr; gap: 15px; padding: 18px; border-bottom: 1px solid var(--line); }
@@ -205,6 +288,12 @@
       .phone { max-width: 330px; }
       .platform-grid, .steps { grid-template-columns: repeat(2, 1fr); }
       .idea-grid, .price-grid, .why-grid { grid-template-columns: 1fr 1fr; }
+      .catalog-heading, .catalog-layout { grid-template-columns: 1fr; }
+      .persona-grid { grid-template-columns: repeat(3, 1fr); }
+      .solution-detail-grid { grid-template-columns: 1fr; }
+      .ai-options { grid-template-columns: 1fr 1fr; }
+      .product-sequence { grid-template-columns: 1fr; }
+      .sequence-arrow { transform: rotate(90deg); }
       .price-card.recommended { transform: none; }
     }
     @media (max-width: 720px) {
@@ -212,7 +301,13 @@
       .section { padding: 78px 0; }
       .nav-links a:not(.nav-cta) { display: none; }
       .hero { padding-top: 68px; }
-      .trust-list, .platform-grid, .idea-grid, .steps, .price-grid, .why-grid, .fit-grid { grid-template-columns: 1fr; }
+      .trust-list, .platform-grid, .idea-grid, .steps, .price-grid, .why-grid, .fit-grid, .catalog-cards, .ai-options { grid-template-columns: 1fr; }
+      .catalog-group { padding: 48px 0; }
+      .catalog-mockup { min-height: 390px; }
+      .persona-picker { padding: 22px 18px; }
+      .persona-grid { display: none; }
+      .persona-select-wrap { display: block; }
+      .solution-detail { padding: 24px 18px; }
       .trust-list { gap: 15px; }
       .calculator { padding: 24px 18px; }
       .results { grid-template-columns: 1fr 1fr; }
@@ -224,17 +319,23 @@
       .results { grid-template-columns: 1fr; }
       .phone-screen { min-height: 560px; }
     }
+    @media (max-width: 540px) {
+      .contact-modal { align-items: end; padding: 0; }
+      .contact-modal-dialog { width: 100%; max-height: 100dvh; padding: 34px 18px calc(18px + env(safe-area-inset-bottom)); border-radius: 24px 24px 0 0; }
+      .contact-channel { min-height: 52px; }
+      .mock-screen:nth-child(2), .mock-screen:nth-child(3) { margin-left: 0; }
+    }
   </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Разработка white-label AI Mini Apps для блогеров",
+    "name": "White-label Mini Apps под брендом эксперта",
     "provider": {"@type": "Person", "name": "Янина Чижевская", "url": "https://chizhevskaya.pro"},
     "areaServed": "RU",
-    "audience": {"@type": "Audience", "audienceType": "Блогеры, врачи и эксперты в здоровье с аудиторией женщин 35+"},
-    "description": "Создание подписочных AI Mini Apps под брендом блогера для Telegram, MAX, VK и Web/PWA: стратегия, unit-экономика, разработка, аналитика и сопровождение.",
-    "offers": {"@type": "AggregateOffer", "priceCurrency": "RUB", "lowPrice": "350000", "highPrice": "850000", "offerCount": "3"}
+    "audience": {"@type": "Audience", "audienceType": "Нутрициологи, фитнес-тренеры, врачи, психологи, коучи и обучающие эксперты"},
+    "description": "Создание одного white-label Mini App под конкретную задачу и бренд эксперта: Telegram, MAX или VK, оплата, аналитика и AI-функции внутри приложения.",
+    "offers": {"@type": "AggregateOffer", "priceCurrency": "RUB", "lowPrice": "350000", "highPrice": "550000", "offerCount": "2"}
   }
   </script>
   <script type="application/ld+json">
@@ -242,12 +343,24 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"Нужно ли разбираться в разработке?","acceptedAnswer":{"@type":"Answer","text":"Нет. Я беру на себя продуктовую концепцию, прототип, разработку, AI API, оплату, аналитику, запуск и сопровождение."}},
-      {"@type":"Question","name":"Можно ли запустить одно приложение в Telegram, MAX и VK?","acceptedAnswer":{"@type":"Answer","text":"Да, продукт строится на общем веб-ядре, но для каждой платформы нужны отдельные адаптеры авторизации, интерфейса, бота и платежей. Состав каналов фиксируется после технического аудита."}},
-      {"@type":"Question","name":"Когда mini-app окупится?","acceptedAnswer":{"@type":"Answer","text":"Срок зависит от размера и активности аудитории, цены подписки, конверсии и удержания. На странице есть калькулятор сценария; расчёт не является гарантией дохода."}},
-      {"@type":"Question","name":"Можно ли работать по revenue share?","acceptedAnswer":{"@type":"Answer","text":"Для блогеров с активной подтверждённой аудиторией от 50 000 подписчиков возможна индивидуальная модель с долей в подписочной выручке после аудита."}}
+      {"@type":"Question","name":"Нужно ли мне разбираться в разработке?","acceptedAnswer":{"@type":"Answer","text":"Нет. От вас нужны экспертиза, контент, понимание аудитории и участие в ключевых продуктовых решениях. Архитектуру, разработку, AI API, платежи, аналитику и деплой беру на себя."}},
+      {"@type":"Question","name":"Что входит в первый запуск?","acceptedAnswer":{"@type":"Answer","text":"Одно Mini App под ваш бренд, одну основную задачу аудитории и один приоритетный канал: Telegram, MAX или VK. Состав экранов, оплата, аналитика и нужные AI-функции фиксируются в смете."}},
+      {"@type":"Question","name":"Можно ли позже сделать второе или третье приложение?","acceptedAnswer":{"@type":"Answer","text":"Да. Когда первое приложение подтвердило спрос, можно запустить следующий продукт для другой задачи аудитории. Это отдельная допродажа: новый объём, смета, сроки и запуск."}},
+      {"@type":"Question","name":"Можно ли сделать SaaS на собственном домене?","acceptedAnswer":{"@type":"Answer","text":"Да, если нужен независимый веб-сервис, SEO-вход или более сложные кабинеты. SaaS оценивается отдельно и обычно дороже Mini App в социальной сети; это не основной стартовый формат."}},
+      {"@type":"Question","name":"AI не будет давать опасные медицинские советы?","acceptedAnswer":{"@type":"Answer","text":"В проектах о здоровье я закладываю ограничения: AI работает по согласованной базе, не ставит диагноз, не заменяет врача, показывает дисклеймеры и направляет к специалисту при красных флагах. Медицинская логика требует валидации профильным экспертом."}},
+      {"@type":"Question","name":"Откуда берётся контент приложения?","acceptedAnswer":{"@type":"Answer","text":"Из ваших материалов: эфиров, курсов, постов, гайдов, протоколов и рекомендаций. Я структурирую базу, проектирую сценарии и подключаю AI-поиск и персонализацию. При необходимости составляем план недостающего контента."}},
+      {"@type":"Question","name":"Когда продукт окупится?","acceptedAnswer":{"@type":"Answer","text":"Это зависит от размера активной аудитории, цены, конверсии, churn и расходов. Перед разработкой я собираю три сценария — осторожный, базовый и сильный. Если экономика не сходится, начинаем с прототипа или предзаказа."}},
+      {"@type":"Question","name":"Кому принадлежат код, данные и бренд?","acceptedAnswer":{"@type":"Answer","text":"Условия фиксируются в договоре. В стандартной заказной разработке бренд и клиентские данные принадлежат заказчику, доступы передаются, а состав прав на код и white-label ядро явно прописывается до старта."}},
+      {"@type":"Question","name":"Можно ли работать без большой предоплаты?","acceptedAnswer":{"@type":"Answer","text":"Проект делится на этапы: диагностика, концепт, разработка и запуск. Для блогеров с подтверждённой активной аудиторией от 50 000 возможна индивидуальная revenue-share модель после проверки потенциала."}}
     ]
   }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Главная","item":"https://chizhevskaya.pro/"},
+    {"@type":"ListItem","position":2,"name":"Услуги","item":"https://chizhevskaya.pro/services"},
+    {"@type":"ListItem","position":3,"name":"Каталог Mini Apps","item":"https://chizhevskaya.pro/services/mini-apps-for-bloggers"}
+  ]}
   </script>
 </head>
 <body>
@@ -266,15 +379,15 @@
   </nav>
 
   <main>
-    <div class="container breadcrumb"><a href="/">Главная</a> → <a href="/services">Услуги</a> → Mini Apps для блогеров</div>
+    <div class="container breadcrumb"><a href="/">Главная</a> → <a href="/services">Услуги</a> → Каталог Mini Apps</div>
     <section class="hero">
       <div class="container hero-grid">
         <div>
           <div class="hero-tag">White-label продукт под вашим брендом</div>
-          <h1>Ваша аудитория уже доверяет вам. Дайте ей <span class="accent">собственный AI-продукт</span> по подписке</h1>
-          <p class="hero-copy">Создаю для блогеров, врачей и экспертов в здоровье Mini App внутри Telegram, MAX или ВКонтакте. Под вашим именем, с вашим контентом и AI под капотом — без найма продуктовой и технической команды.</p>
+          <h1>Mini App под вашим брендом — <span class="accent">без команды разработки</span></h1>
+          <p class="hero-copy">Выберите конкретное приложение для своей аудитории: дневник питания, фитнес-тренер, сопровождение пациентов, трекер симптомов, психологический дневник или кабинет ученика. Я адаптирую его под ваш бренд, методику и основной канал.</p>
           <div class="hero-proof">
-            <span>Telegram · MAX · VK · PWA</span>
+            <span>Сначала одно Mini App</span>
             <span>Подписка и платежи</span>
             <span>Аналитика и retention</span>
           </div>
@@ -333,33 +446,220 @@
 
     <section class="section" id="platforms">
       <div class="container">
-        <div class="eyebrow">Один продукт — несколько точек входа</div>
+        <div class="eyebrow">Сначала один канал</div>
         <h2>Запускаем там, где уже живёт ваша аудитория</h2>
-        <p class="lead">Сначала выбираем канал с самым коротким путём до оплаты. Затем переносим проверенное продуктовое ядро на другие платформы.</p>
+        <p class="lead">Для первого запуска выбираем одну соцсеть с самым коротким путём до вашей аудитории и оплаты. Каждый следующий канал или новое приложение оценивается и оплачивается отдельно.</p>
         <div class="platform-grid">
           <article class="platform-card"><div class="num">01</div><h3>Telegram</h3><p>Mini App внутри бота: быстрый вход, уведомления, персональные сценарии и подписка. Хороший первый канал для аудитории Telegram.</p><a href="https://core.telegram.org/bots/webapps" target="_blank" rel="noopener">Официальная документация ↗</a></article>
           <article class="platform-card"><div class="num">02</div><h3>MAX</h3><p>Мини-приложение запускается через чат-бота. Подходит для расширения охвата и российских коммуникационных сценариев.</p><a href="https://dev.max.ru/help/miniapps" target="_blank" rel="noopener">Официальная документация ↗</a></article>
           <article class="platform-card"><div class="num">03</div><h3>ВКонтакте</h3><p>VK Mini App для сообществ и блогеров с активной аудиторией во ВКонтакте: авторизация, контент и продуктовые сценарии внутри VK.</p><a href="https://github.com/VKCOM/vk-bridge" target="_blank" rel="noopener">VK Bridge ↗</a></article>
-          <article class="platform-card"><div class="num">04</div><h3>Web / PWA</h3><p>Независимая веб-версия с ярлыком на телефоне. Нужна, если важны SEO, собственный домен или доступ вне соцсетей.</p><a href="#pricing">Посмотреть варианты запуска ↓</a></article>
+          <article class="platform-card"><div class="num">04 · дороже</div><h3>Web SaaS</h3><p>Независимый сервис на вашем домене. Это отдельный, более дорогой формат, если возможностей Mini App уже недостаточно.</p><a href="#pricing">Сравнить форматы ↓</a></article>
         </div>
-        <div class="architecture-note"><b>Честно о мультиплатформенности:</b> общий контент, база, AI-логика и аналитическая модель переиспользуются. Авторизация, платежи, интерфейс и бот адаптируются отдельно под правила каждой платформы.</div>
+        <div class="architecture-note"><b>Без скрытой «платформы»:</b> в первый договор входит одно приложение под одну задачу и основной канал. Второе или третье приложение — отдельная допродажа за деньги. Web SaaS на собственном домене возможен позже и рассчитывается дороже.</div>
       </div>
     </section>
 
     <section class="section alt" id="ideas">
       <div class="container">
-        <div class="eyebrow">Библиотека white-label концептов</div>
-        <h2>Какой mini-app можно запустить под вашим именем</h2>
-        <p class="lead">Не копируем шаблон вслепую. Берём проверенное продуктовое ядро и настраиваем его под вашу методику, аудиторию и бизнес-модель.</p>
-        <div class="idea-grid">
-          <article class="idea-card featured"><span class="pill">Женщины 40+ · FemTech</span><h3>AI-компаньон в перименопаузе</h3><p>Дневник самочувствия, персональные рекомендации по образу жизни, динамика симптомов и подготовка вопросов врачу.</p><ul><li>Еженедельный AI-инсайт</li><li>Трекер сна, энергии и симптомов</li><li>Режим поддержки для партнёра — только с согласия женщины</li><li>Экспертный контент по подписке</li></ul></article>
-          <article class="idea-card"><span class="pill">Нутрициолог · врач · wellness</span><h3>Персональный AI-план питания</h3><p>Анкета, ограничения, цели и привычки превращаются в план, список покупок и ежедневное сопровождение.</p><ul><li>Фото и дневник питания</li><li>Рецепты из базы эксперта</li><li>Челленджи и серии привычек</li><li>Апгрейд на консультацию</li></ul></article>
-          <article class="idea-card"><span class="pill">Гинеколог · клиника</span><h3>Подготовка к приёму и сопровождение</h3><p>Помогает структурировать жалобы, собрать вопросы врачу и не потерять рекомендации после консультации.</p><ul><li>Анкета и таймлайн симптомов</li><li>Памятки и напоминания</li><li>Экспорт сводки для приёма</li><li>Без постановки диагноза</li></ul></article>
-          <article class="idea-card"><span class="pill">Фитнес · лицо · осанка</span><h3>AI-тренер по методике блогера</h3><p>Персональный план коротких практик, техника выполнения, прогресс и мотивация возвращаться каждый день.</p><ul><li>План по уровню и ограничениям</li><li>Видео-библиотека</li><li>Серии, баллы и достижения</li><li>Платные программы внутри</li></ul></article>
-          <article class="idea-card"><span class="pill">Экспертный контент</span><h3>AI-навигатор по знаниям</h3><p>Отвечает на вопросы только по проверенной базе блогера, рекомендует материалы и ведёт к следующему действию.</p><ul><li>RAG по видео, постам и гайдам</li><li>Персональная лента</li><li>Платный архив и уровни доступа</li><li>Лиды на продукты и консультации</li></ul></article>
-          <article class="idea-card"><span class="pill">Клуб · онлайн-школа</span><h3>Подписной клуб без хаоса в чатах</h3><p>Программа месяца, задания, эфиры, прогресс и персональные подсказки собраны в одном понятном интерфейсе.</p><ul><li>Онбординг по цели клиента</li><li>Контент-календарь</li><li>Paywall и продление</li><li>Retention D1 / D7 / D30</li></ul></article>
+        <div class="eyebrow">Каталог white-label приложений</div>
+        <h2>Что именно вы можете заказать под своим брендом</h2>
+        <p class="lead">Вы выбираете не абстрактную разработку, а понятный сценарий для своей аудитории. Каждое решение оформляется как отдельное Mini App с вашим дизайном, контентом и методикой.</p>
+        <div class="persona-picker" id="personaPicker">
+          <h3>Выберите, кто вы</h3>
+          <p>Покажу только те решения, которые подходят вашей практике, бизнесу и аудитории. Затем выберите конкретное приложение — откроются его функции, подписка и интерфейс.</p>
+          <div class="persona-select-wrap">
+            <label for="personaSelect">Моя профессия или тип бизнеса</label>
+            <select class="persona-select" id="personaSelect">
+              <option value="">Выберите вариант</option>
+              <option value="doctor">Я врач</option><option value="clinic">Я представляю клинику</option><option value="gynecologist">Я гинеколог</option><option value="nutritionist">Я нутрициолог</option><option value="fitness">Я фитнес-тренер</option><option value="rehab">Я реабилитолог</option><option value="psychologist">Я психолог</option><option value="coach">Я коуч</option><option value="school">Я представляю онлайн-школу</option><option value="health-blogger">Я эксперт или health-блогер</option>
+            </select>
+          </div>
+          <div class="persona-grid" role="group" aria-label="Выберите профессию">
+            <button class="persona-button" type="button" data-persona="doctor" aria-pressed="false"><span>✚</span>Врач</button>
+            <button class="persona-button" type="button" data-persona="clinic" aria-pressed="false"><span>⌂</span>Клиника</button>
+            <button class="persona-button" type="button" data-persona="gynecologist" aria-pressed="false"><span>○</span>Гинеколог</button>
+            <button class="persona-button" type="button" data-persona="nutritionist" aria-pressed="false"><span>◒</span>Нутрициолог</button>
+            <button class="persona-button" type="button" data-persona="fitness" aria-pressed="false"><span>↗</span>Фитнес-тренер</button>
+            <button class="persona-button" type="button" data-persona="rehab" aria-pressed="false"><span>↺</span>Реабилитолог</button>
+            <button class="persona-button" type="button" data-persona="psychologist" aria-pressed="false"><span>◇</span>Психолог</button>
+            <button class="persona-button" type="button" data-persona="coach" aria-pressed="false"><span>✓</span>Коуч</button>
+            <button class="persona-button" type="button" data-persona="school" aria-pressed="false"><span>□</span>Онлайн-школа</button>
+            <button class="persona-button" type="button" data-persona="health-blogger" aria-pressed="false"><span>✦</span>Эксперт / блогер</button>
+          </div>
+          <div class="catalog-status" id="catalogStatus" aria-live="polite">Выберите профессию, чтобы открыть подходящие решения.</div>
+          <div class="button-row"><button class="btn ghost" type="button" data-generic-contact>Не знаю, что выбрать</button></div>
         </div>
-        <div class="button-row"><a class="btn" href="https://t.me/yanina_ai?text=Хочу%20подобрать%20white-label%20концепт%20mini-app%20под%20мою%20нишу" target="_blank" rel="noopener">Подобрать концепт под мою нишу →</a></div>
+
+        <section class="solution-detail" id="solutionDetail" aria-live="polite" hidden>
+          <div class="solution-detail-grid">
+            <div>
+              <div class="eyebrow" id="solutionAudience">Решение под вашим брендом</div>
+              <h3 id="solutionTitle">Название приложения</h3>
+              <p class="solution-detail-lead" id="solutionProblem"></p>
+              <div class="solution-facts">
+                <div class="solution-fact"><b>Основные функции</b><span id="solutionFunctions"></span></div>
+                <div class="solution-fact"><b>Как работает подписка</b><span>Пользователь оплачивает доступ на месяц или период программы; приложение продлевает доступ и возвращает его к полезному действию.</span></div>
+                <div class="solution-fact"><b>AI внутри продукта</b><span id="solutionAi">Можно подключить AI по материалам эксперта, персональные подсказки или анализ данных — только там, где это помогает сценарию.</span></div>
+              </div>
+              <div class="solution-actions">
+                <button class="btn" type="button" id="solutionCta">Хочу такое приложение →</button>
+                <button class="btn ghost" type="button" data-generic-contact>Не знаю, что выбрать</button>
+              </div>
+            </div>
+            <div id="solutionMockup" aria-label="Примеры экранов приложения"></div>
+          </div>
+        </section>
+
+        <section class="catalog-group" id="fitness-apps" data-professions="fitness rehab health-blogger">
+          <div class="catalog-heading"><div><div class="eyebrow">Фитнес и восстановление</div><h2>Mini App для фитнес-тренера</h2></div><p>Цифровое сопровождение по методике тренера: от ежедневных тренировок до безопасного восстановления. Клиент видит план, видео, прогресс и напоминания в одном месте.</p></div>
+          <div class="catalog-layout">
+            <div class="catalog-mockup" data-mockup="fitness"><div class="mockup-kicker">Пример интерфейса · фитнес-бренд</div><h4>Тренировка на сегодня</h4><div class="mock-screen-stack"><div class="mock-screen"><small>План тренировки</small><strong>Мобилизация плеча, 18 минут</strong><div class="mock-progress"><span></span></div></div><div class="mock-screen"><small>Видео упражнения</small><strong>Техника: 3 контрольные точки</strong><div class="mock-row"><div class="mock-tile">Смотреть</div><div class="mock-tile">Выполнено ✓</div></div></div><div class="mock-screen"><small>Персональная рекомендация</small><strong>Сегодня снизим нагрузку на 10%</strong><div class="mock-row"><div class="mock-tile">Прогресс 68%</div><div class="mock-tile">AI-разбор</div></div></div></div></div>
+            <div><div class="catalog-cards">
+              <article class="catalog-card"><h3>Фитнес-тренер в Telegram</h3><p>Планы занятий, видео упражнений, календарь и отметки выполнения.</p><div class="features">ПЛАН · ВИДЕО · ПРОГРЕСС · НАПОМИНАНИЯ</div></article>
+              <article class="catalog-card"><h3>AI-конструктор тренировок</h3><p>Собирает план по анкете и правилам методики тренера, с экспертными ограничениями.</p><div class="features">АНКЕТА · ПЛАН · КОРРЕКТИРОВКА · ИСТОРИЯ</div></article>
+              <article class="catalog-card"><h3>Реабилитация колена, плеча или спины</h3><p>Поэтапная программа упражнений и контроль выполнения без обещаний диагностики.</p><div class="features">ЭТАПЫ · ВИДЕО · САМООЦЕНКА · ОТЧЁТ</div></article>
+              <article class="catalog-card"><h3>Восстановление после операции</h3><p>Назначенные специалистом упражнения, график и красные флаги для обращения к врачу.</p><div class="features">РАСПИСАНИЕ · ДНЕВНИК · ПАМЯТКИ · СВЯЗЬ</div></article>
+              <article class="catalog-card"><h3>Анализ техники по видео</h3><p>Загрузка короткого видео и AI-подсказки в рамках заданных тренером критериев.</p><div class="features">ВИДЕО · ЧЕК-ЛИСТ · AI-АНАЛИЗ · ПРОВЕРКА</div></article>
+              <article class="catalog-card"><h3>Сон, стресс и восстановление</h3><p>Ежедневный check-in, динамика нагрузки и рекомендации по восстановлению.</p><div class="features">СОН · СТРЕСС · НАГРУЗКА · ДИНАМИКА</div></article>
+              <article class="catalog-card"><h3>Марафон формы</h3><p>Программа похудения или набора формы с заданиями, сериями и прогрессом.</p><div class="features">21–30 ДНЕЙ · ЗАДАНИЯ · БАЛЛЫ · PAYWALL</div></article>
+            </div><a class="catalog-more" href="https://t.me/yanina_ai?text=Хочу%20обсудить%20приложение%20для%20фитнес-тренера%20под%20моим%20брендом" target="_blank" rel="noopener">Запустить приложение для фитнес-тренера →</a></div>
+          </div>
+        </section>
+
+        <section class="catalog-group" id="nutrition-apps" data-professions="nutritionist health-blogger">
+          <div class="catalog-heading"><div><div class="eyebrow">Питание и диеты</div><h2>Приложение для нутрициолога</h2></div><p>Помогает клиенту выполнять рекомендации между консультациями: фиксировать питание, получать меню и видеть динамику. Медицинские диеты — только с контролем профильного специалиста.</p></div>
+          <div class="catalog-layout">
+            <div class="catalog-mockup" data-mockup="nutrition"><div class="mockup-kicker">Пример интерфейса · бренд нутрициолога</div><h4>Дневник и меню</h4><div class="mock-screen-stack"><div class="mock-screen"><small>Дневник питания</small><strong>Добавьте фото завтрака</strong><div class="mock-row"><div class="mock-tile">Фото блюда</div><div class="mock-tile">Самочувствие</div></div></div><div class="mock-screen"><small>Анализ блюда по фото</small><strong>Черновик готов к проверке специалистом</strong><div class="mock-progress"><span></span></div></div><div class="mock-screen"><small>Меню на неделю</small><strong>Омлет с овощами и цельнозерновым тостом</strong><div class="mock-row"><div class="mock-tile">28 г белка</div><div class="mock-tile">Список покупок</div></div></div></div></div>
+            <div><div class="catalog-cards">
+              <article class="catalog-card"><h3>Дневник питания</h3><p>Приёмы пищи, фото, самочувствие и комментарии нутрициолога.</p><div class="features">ФОТО · ДНЕВНИК · ОТЧЁТ · ОБРАТНАЯ СВЯЗЬ</div></article>
+              <article class="catalog-card"><h3>Меню и список покупок</h3><p>Персональное меню на неделю с рецептами и готовым списком продуктов.</p><div class="features">МЕНЮ · РЕЦЕПТЫ · ЗАМЕНЫ · ПОКУПКИ</div></article>
+              <article class="catalog-card"><h3>Закрытый клуб рецептов</h3><p>Библиотека автора, подборки, избранное и доступ по подписке.</p><div class="features">КАТАЛОГ · ФИЛЬТРЫ · ИЗБРАННОЕ · ПОДПИСКА</div></article>
+              <article class="catalog-card"><h3>Марафон питания</h3><p>Программа на 21 или 30 дней с заданиями, напоминаниями и прогрессом.</p><div class="features">ЭТАПЫ · ПРИВЫЧКИ · CHECK-IN · НАГРАДЫ</div></article>
+              <article class="catalog-card"><h3>Трекер микроэлементов</h3><p>Белок, клетчатка, железо и другие выбранные показатели без самодиагностики.</p><div class="features">ЦЕЛИ · ДИНАМИКА · НАПОМИНАНИЯ · СВОДКА</div></article>
+              <article class="catalog-card"><h3>AI-разбор дневника</h3><p>AI готовит черновик разбора, а специалист проверяет и утверждает его клиенту.</p><div class="features">AI-ЧЕРНОВИК · ПРОВЕРКА · КОММЕНТАРИЙ · ИСТОРИЯ</div></article>
+              <article class="catalog-card"><h3>Семейное меню</h3><p>Общий план питания, предпочтения семьи и контроль запасов продуктов.</p><div class="features">ПРОФИЛИ · ЗАПАСЫ · МЕНЮ · ОБЩИЙ СПИСОК</div></article>
+            </div><a class="catalog-more" href="https://t.me/yanina_ai?text=Хочу%20обсудить%20приложение%20для%20нутрициолога%20под%20моим%20брендом" target="_blank" rel="noopener">Запустить приложение для нутрициолога →</a></div>
+          </div>
+        </section>
+
+        <section class="catalog-group" id="medical-apps" data-professions="doctor clinic">
+          <div class="catalog-heading"><div><div class="eyebrow">БАДы, лекарства и анализы</div><h2>White-label приложение для врача и клиники</h2></div><p>Организует данные и назначенное сопровождение, но не ставит диагноз. Для первых медицинских клиентов разворачивается отдельный экземпляр приложения и отдельная база данных; предусматриваются роли, журнал доступа и экспертная проверка клинической логики.</p></div>
+          <div class="catalog-layout">
+            <div class="catalog-mockup" data-mockup="medical"><div class="mockup-kicker">Пример интерфейса · кабинет пациента</div><h4>Сопровождение врача</h4><div class="mock-screen-stack"><div class="mock-screen"><small>Анкета до консультации</small><strong>Заполнено 7 из 9 вопросов</strong><div class="mock-progress"><span></span></div></div><div class="mock-screen"><small>План сопровождения</small><strong>Следующий приём через 12 дней</strong><div class="mock-row"><div class="mock-tile">2 напоминания</div><div class="mock-tile">Задать вопрос</div></div></div><div class="mock-screen"><small>Документы и анализы</small><strong>Новый результат добавлен в динамику</strong><div class="mock-row"><div class="mock-tile">История</div><div class="mock-tile">Доступ врачу</div></div></div></div></div>
+            <div><div class="catalog-cards">
+              <article class="catalog-card"><h3>Трекер курса БАДов и лекарств</h3><p>Расписание назначенного курса, отметки и история приёма.</p><div class="features">ГРАФИК · ДОЗИРОВКА · НАПОМИНАНИЯ · ИСТОРИЯ</div></article>
+              <article class="catalog-card"><h3>Остатки упаковок</h3><p>Расчёт остатка и своевременное напоминание о покупке.</p><div class="features">ОСТАТОК · ПРОГНОЗ · ПОКУПКА · УВЕДОМЛЕНИЕ</div></article>
+              <article class="catalog-card"><h3>Кабинет «Мои анализы»</h3><p>Документы, показатели и динамика по датам в одном защищённом кабинете.</p><div class="features">ФАЙЛЫ · ПОКАЗАТЕЛИ · ГРАФИКИ · ДОСТУП</div></article>
+              <article class="catalog-card"><h3>AI-объяснение анализов</h3><p>Понятный черновик объяснения после проверки врачом, без диагноза.</p><div class="features">ДОКУМЕНТ · AI-ЧЕРНОВИК · ПРОВЕРКА ВРАЧА</div></article>
+              <article class="catalog-card"><h3>План чекапов</h3><p>Календарь регулярных обследований по утверждённой специалистом схеме.</p><div class="features">КАЛЕНДАРЬ · ЧЕК-ЛИСТ · НАПОМИНАНИЯ</div></article>
+              <article class="catalog-card"><h3>Личная медицинская папка</h3><p>Анализы, заключения и документы с быстрым поиском и выгрузкой.</p><div class="features">ДОКУМЕНТЫ · ТЕГИ · ПОИСК · ЭКСПОРТ</div></article>
+              <article class="catalog-card"><h3>Вопросы к врачу</h3><p>Подготовка списка вопросов на основании анкеты и истории документов.</p><div class="features">АНКЕТА · ИСТОРИЯ · ВОПРОСЫ · СВОДКА</div></article>
+              <article class="catalog-card"><h3>Анкета до консультации</h3><p>Собирает жалобы, историю и документы до приёма, чтобы врач видел структурированную сводку.</p><div class="features">АНКЕТА · ДОКУМЕНТЫ · СВОДКА · СОГЛАСИЕ</div></article>
+              <article class="catalog-card"><h3>План после консультации</h3><p>Рекомендации врача, материалы, напоминания и вопросы между визитами.</p><div class="features">ПЛАН · МАТЕРИАЛЫ · НАПОМИНАНИЯ · ВОПРОСЫ</div></article>
+              <article class="catalog-card"><h3>Кабинет сопровождения клиники</h3><p>Отдельный экземпляр приложения с ролями пациента, врача и администратора.</p><div class="features">РОЛИ · ОТДЕЛЬНАЯ БД · ЖУРНАЛ ДОСТУПА · РЕЗЕРВНЫЕ КОПИИ</div></article>
+            </div><a class="catalog-more" href="https://t.me/yanina_ai?text=Хочу%20обсудить%20white-label%20приложение%20для%20врача" target="_blank" rel="noopener">Запустить приложение для врача →</a></div>
+          </div>
+        </section>
+
+        <section class="catalog-group" id="women-apps" data-professions="gynecologist clinic health-blogger">
+          <div class="catalog-heading"><div><div class="eyebrow">Женское здоровье и материнство</div><h2>Mini Apps для гинеколога и школы материнства</h2></div><p>Дневники и образовательное сопровождение под брендом гинеколога, педиатра или профильного эксперта. Чувствительные сценарии проектируются с медицинскими ограничениями.</p></div>
+          <div class="catalog-layout">
+            <div class="catalog-mockup" data-mockup="women"><div class="mockup-kicker">Пример интерфейса · бренд гинеколога</div><h4>Женское здоровье</h4><div class="mock-screen-stack"><div class="mock-screen"><small>Цикл · день 18</small><strong>Как вы себя чувствуете сегодня?</strong><div class="mock-row"><div class="mock-tile">Энергия</div><div class="mock-tile">Сон</div></div></div><div class="mock-screen"><small>Дневник симптомов</small><strong>Сводка за 30 дней готова</strong><div class="mock-progress"><span></span></div></div><div class="mock-screen"><small>Программа специалиста</small><strong>Перименопауза · неделя 3</strong><div class="mock-row"><div class="mock-tile">Материалы</div><div class="mock-tile">Сводка врачу</div></div></div></div></div>
+            <div><div class="catalog-cards">
+              <article class="catalog-card"><h3>Дневник цикла и симптомов</h3><p>Наблюдения, динамика и сводка к приёму под брендом гинеколога.</p><div class="features">ЦИКЛ · СИМПТОМЫ · ГРАФИКИ · СВОДКА</div></article>
+              <article class="catalog-card"><h3>PCOS или эндометриоз</h3><p>Дневник самочувствия и выполнение рекомендаций под контролем врача.</p><div class="features">CHECK-IN · ПЛАН · КОНТЕНТ · КОНТРОЛЬ</div></article>
+              <article class="catalog-card"><h3>Беременность по неделям</h3><p>Материалы врача, чек-листы, дневник и напоминания по сроку.</p><div class="features">НЕДЕЛИ · ПАМЯТКИ · ДНЕВНИК · КАЛЕНДАРЬ</div></article>
+              <article class="catalog-card"><h3>Послеродовое восстановление</h3><p>Поэтапные практики, самонаблюдение и образовательные материалы.</p><div class="features">ЭТАПЫ · УПРАЖНЕНИЯ · CHECK-IN · ПОДДЕРЖКА</div></article>
+              <article class="catalog-card"><h3>Дневник малыша</h3><p>Кормление, сон, самочувствие и заметки для обсуждения с педиатром.</p><div class="features">СОН · КОРМЛЕНИЕ · СОБЫТИЯ · ОТЧЁТ</div></article>
+              <article class="catalog-card"><h3>Голосовое заполнение</h3><p>Мама диктует событие, AI распознаёт и добавляет запись в дневник малыша.</p><div class="features">ГОЛОС · РАСПОЗНАВАНИЕ · ПОДТВЕРЖДЕНИЕ</div></article>
+              <article class="catalog-card"><h3>Восстановление тазового дна</h3><p>Программа упражнений с видео и контролем регулярности.</p><div class="features">ВИДЕО · ПЛАН · НАПОМИНАНИЯ · ПРОГРЕСС</div></article>
+              <article class="catalog-card"><h3>Школа материнства</h3><p>Уроки, тесты, дневники и напоминания в одном Mini App.</p><div class="features">УРОКИ · ТЕСТЫ · ДНЕВНИКИ · КАЛЕНДАРЬ</div></article>
+            </div></div>
+          </div>
+        </section>
+
+        <section class="catalog-group" id="psychology-apps" data-professions="psychologist health-blogger">
+          <div class="catalog-heading"><div><div class="eyebrow">Психология</div><h2>Приложение для психолога</h2></div><p>Поддерживает клиента между сессиями: помогает вести дневник, выполнять задания и возвращаться к материалам психолога. Не заменяет терапию и не используется для кризисной помощи.</p></div>
+          <div class="catalog-layout">
+            <div class="catalog-mockup" data-mockup="psychology"><div class="mockup-kicker">Пример интерфейса · практика психолога</div><h4>Поддержка между сессиями</h4><div class="mock-screen-stack"><div class="mock-screen"><small>Дневник настроения</small><strong>Назовите эмоцию и добавьте заметку</strong><div class="mock-row"><div class="mock-tile">Голосом</div><div class="mock-tile">Настроение 7/10</div></div></div><div class="mock-screen"><small>CBT-задание</small><strong>Запишите мысль и альтернативный взгляд</strong><div class="mock-progress"><span></span></div></div><div class="mock-screen"><small>AI по материалам психолога</small><strong>Нашла подходящую практику автора</strong><div class="mock-row"><div class="mock-tile">Открыть</div><div class="mock-tile">Медитация</div></div></div></div></div>
+            <div><div class="catalog-cards">
+              <article class="catalog-card"><h3>Дневник настроения</h3><p>Эмоции, триггеры, заметки и динамика между встречами.</p><div class="features">НАСТРОЕНИЕ · ТРИГГЕРЫ · ГРАФИКИ · ЭКСПОРТ</div></article>
+              <article class="catalog-card"><h3>CBT-задания</h3><p>Структурированные упражнения, назначенные специалистом, и отметки выполнения.</p><div class="features">ЗАДАНИЯ · НАПОМИНАНИЯ · ПРОГРЕСС · СВОДКА</div></article>
+              <article class="catalog-card"><h3>Медитации автора</h3><p>Аудиотека практик психолога, подборки и доступ по подписке.</p><div class="features">АУДИО · ПЛЕЙЛИСТЫ · ИЗБРАННОЕ · ПОДПИСКА</div></article>
+              <article class="catalog-card"><h3>Голосовой check-in</h3><p>Клиент наговаривает заметку, приложение структурирует её после подтверждения.</p><div class="features">ГОЛОС · ТЕКСТ · ТЕГИ · ПОДТВЕРЖДЕНИЕ</div></article>
+              <article class="catalog-card"><h3>AI по материалам психолога</h3><p>Отвечает в границах согласованной базы и направляет к специалисту при рисках.</p><div class="features">БАЗА ЗНАНИЙ · ОГРАНИЧЕНИЯ · ДИСКЛЕЙМЕРЫ</div></article>
+            </div><a class="catalog-more" href="https://t.me/yanina_ai?text=Хочу%20обсудить%20приложение%20для%20психолога%20под%20моим%20брендом" target="_blank" rel="noopener">Запустить приложение для психолога →</a></div>
+          </div>
+        </section>
+
+        <section class="catalog-group" id="coaching-apps" data-professions="coach health-blogger">
+          <div class="catalog-heading"><div><div class="eyebrow">Коучинг</div><h2>Mini App для коуча</h2></div><p>Переводит договорённости с сессий в ежедневные действия: цели, привычки, рефлексия и видимый прогресс клиента.</p></div>
+          <div class="catalog-layout">
+            <div class="catalog-mockup" data-mockup="coaching"><div class="mockup-kicker">Пример интерфейса · методика коуча</div><h4>Фокус и действия</h4><div class="mock-screen-stack"><div class="mock-screen"><small>Цель · неделя 3</small><strong>Один измеримый шаг до пятницы</strong><div class="mock-progress"><span></span></div></div><div class="mock-screen"><small>Трекер привычек</small><strong>Серия: 8 дней подряд</strong><div class="mock-row"><div class="mock-tile">3 привычки</div><div class="mock-tile">Отметить ✓</div></div></div><div class="mock-screen"><small>Еженедельный check-in</small><strong>Что помогло продвинуться?</strong><div class="mock-row"><div class="mock-tile">Голосом</div><div class="mock-tile">Рефлексия</div></div></div></div></div>
+            <div><div class="catalog-cards">
+              <article class="catalog-card"><h3>Коучинговый дневник</h3><p>Вопросы автора, регулярная рефлексия и история инсайтов.</p><div class="features">ВОПРОСЫ · ЗАМЕТКИ · ИНСАЙТЫ · ЭКСПОРТ</div></article>
+              <article class="catalog-card"><h3>Цели и план действий</h3><p>Декомпозиция цели, контрольные точки и обзор прогресса.</p><div class="features">ЦЕЛЬ · ЭТАПЫ · ДЕДЛАЙНЫ · ОБЗОР</div></article>
+              <article class="catalog-card"><h3>Трекер привычек</h3><p>Небольшие ежедневные действия, серии и мягкие напоминания.</p><div class="features">ПРИВЫЧКИ · СЕРИИ · НАПОМИНАНИЯ · ДИНАМИКА</div></article>
+              <article class="catalog-card"><h3>Сопровождение программы</h3><p>Задания, материалы и check-in между групповыми или личными встречами.</p><div class="features">ПРОГРАММА · ЗАДАНИЯ · CHECK-IN · КОНТЕНТ</div></article>
+            </div></div>
+          </div>
+        </section>
+
+        <section class="catalog-group" id="education-apps" data-professions="school health-blogger">
+          <div class="catalog-heading"><div><div class="eyebrow">Онлайн-школы и обучающие специалисты</div><h2>Приложение для онлайн-школы</h2></div><p>Кабинет ученика в привычной соцсети: уроки, задания, тесты и помощь по материалам автора без сложной отдельной LMS.</p></div>
+          <div class="catalog-layout">
+            <div class="catalog-mockup" data-mockup="education"><div class="mockup-kicker">Пример интерфейса · ваша школа</div><h4>Кабинет ученика</h4><div class="mock-screen-stack"><div class="mock-screen"><small>Модуль 2 · урок 4</small><strong>Практика займёт 12 минут</strong><div class="mock-progress"><span></span></div></div><div class="mock-screen"><small>Домашнее задание</small><strong>Ответ отправлен куратору</strong><div class="mock-row"><div class="mock-tile">Файл ✓</div><div class="mock-tile">Комментарий</div></div></div><div class="mock-screen"><small>AI-помощник по курсу</small><strong>Ответ найден в уроке 4</strong><div class="mock-row"><div class="mock-tile">Открыть урок</div><div class="mock-tile">Тест 8/10</div></div></div></div></div>
+            <div><div class="catalog-cards">
+              <article class="catalog-card"><h3>Кабинет ученика</h3><p>Уроки, видео, файлы и прогресс в одном Mini App.</p><div class="features">УРОКИ · ВИДЕО · ФАЙЛЫ · ПРОГРЕСС</div></article>
+              <article class="catalog-card"><h3>Домашние задания</h3><p>Выдача, загрузка ответа, проверка и комментарий куратора.</p><div class="features">ЗАДАНИЕ · ОТВЕТ · ПРОВЕРКА · ОБРАТНАЯ СВЯЗЬ</div></article>
+              <article class="catalog-card"><h3>Тесты и диагностики знаний</h3><p>Проверка усвоения, результат и рекомендации следующего урока.</p><div class="features">ТЕСТ · РЕЗУЛЬТАТ · РЕКОМЕНДАЦИЯ · ИСТОРИЯ</div></article>
+              <article class="catalog-card"><h3>AI-помощник по курсу</h3><p>Отвечает только по материалам эксперта и помогает найти нужный урок.</p><div class="features">БАЗА КУРСА · ПОИСК · ОТВЕТЫ · ССЫЛКИ НА УРОК</div></article>
+              <article class="catalog-card"><h3>Марафон или интенсив</h3><p>Доступ по дням, задания, напоминания и финальный результат.</p><div class="features">РАСПИСАНИЕ · ЗАДАНИЯ · PUSH · PAYWALL</div></article>
+              <article class="catalog-card"><h3>Закрытый клуб</h3><p>Ежемесячная программа, эфиры, архив и продление подписки.</p><div class="features">КАЛЕНДАРЬ · АРХИВ · ЭФИРЫ · ПОДПИСКА</div></article>
+            </div></div>
+          </div>
+        </section>
+
+        <section class="catalog-group" aria-labelledby="additional-features-title">
+          <div class="eyebrow">Дополнительные возможности</div>
+          <h2 id="additional-features-title">Что можно подключить к выбранному приложению</h2>
+          <p class="lead">Это не отдельные услуги и не готовая платформа. Каждая возможность добавляется только внутрь выбранного White Label Mini App, если она нужна его сценарию и вашей аудитории.</p>
+          <div class="ai-options">
+            <div class="ai-option"><b>AI-чат по вашим материалам</b><span>Ищет ответ в базе эксперта и показывает источник.</span></div>
+            <div class="ai-option"><b>Анализ фото</b><span>Еда, дневник или другой заранее определённый сценарий.</span></div>
+            <div class="ai-option"><b>Анализ видео</b><span>Техника упражнения или другой сценарий по критериям эксперта.</span></div>
+            <div class="ai-option"><b>Анализ документов</b><span>Извлечение данных и черновик объяснения с проверкой.</span></div>
+            <div class="ai-option"><b>Голосовой ввод</b><span>Заполняет дневник после подтверждения пользователя.</span></div>
+            <div class="ai-option"><b>Персональные рекомендации</b><span>Собираются по анкете, истории и правилам вашей методики.</span></div>
+            <div class="ai-option"><b>Подписки</b><span>Платный доступ на месяц, период или программу.</span></div>
+            <div class="ai-option"><b>Промокоды</b><span>Скидки для запусков, партнёров и отдельных сегментов аудитории.</span></div>
+            <div class="ai-option"><b>Push-уведомления</b><span>Напоминают о заданиях, дневнике и возвращают в приложение.</span></div>
+            <div class="ai-option"><b>Личный кабинет</b><span>Профиль, материалы, история действий и прогресс клиента.</span></div>
+            <div class="ai-option"><b>История и прогресс</b><span>Динамика пользователя, серии действий и достигнутые этапы.</span></div>
+            <div class="ai-option"><b>Календарь</b><span>Расписание практик, консультаций, занятий или приёма.</span></div>
+            <div class="ai-option"><b>Платежи</b><span>Оплата доступа, подписки или отдельной программы внутри продукта.</span></div>
+            <div class="ai-option"><b>Аналитика</b><span>Активация, оплаты, возвраты и ключевые действия пользователей.</span></div>
+            <div class="ai-option"><b>Курсы и тесты</b><span>Уроки, диагностика знаний и выдача следующего материала.</span></div>
+            <div class="ai-option"><b>Домашние задания</b><span>Ответ ученика, проверка и обратная связь куратора.</span></div>
+            <div class="ai-option"><b>Библиотека материалов</b><span>Видео, аудио, статьи и документы с удобным поиском.</span></div>
+          </div>
+          <div class="button-row"><a class="btn" href="https://t.me/yanina_ai?text=Хочу%20выбрать%20одно%20Mini%20App%20для%20моей%20ниши" target="_blank" rel="noopener">Выбрать моё первое Mini App →</a></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section" id="one-app-first">
+      <div class="container">
+        <div class="eyebrow">Как растёт продуктовая линейка</div>
+        <h2>Сначала одно приложение. Следующее — когда первое доказало спрос</h2>
+        <p class="lead">Я не предлагаю сразу строить платформу или экосистему. Вы запускаете один понятный продукт, смотрите на оплату и возвращаемость клиентов, а затем отдельно решаете, нужна ли следующая допродажа.</p>
+        <div class="product-sequence">
+          <article class="sequence-card primary"><div class="sequence-num">Первый договор</div><h3>Одно Mini App</h3><p>Один бренд, одна основная задача аудитории и один приоритетный канал.</p></article>
+          <div class="sequence-arrow" aria-hidden="true">→</div>
+          <article class="sequence-card"><div class="sequence-num">Отдельная допродажа</div><h3>Второе / третье приложение</h3><p>Новая задача или продукт для той же аудитории. Отдельная смета, сроки и запуск.</p></article>
+          <div class="sequence-arrow" aria-hidden="true">→</div>
+          <article class="sequence-card"><div class="sequence-num">Дорогой формат</div><h3>Web SaaS на домене</h3><p>Возможен позже как самостоятельный сервис, если бизнесу уже нужен web-формат.</p></article>
+        </div>
       </div>
     </section>
 
@@ -446,15 +746,15 @@
 
     <section class="section alt" id="pricing">
       <div class="container">
-        <div class="eyebrow">Пакеты запуска</div>
-        <h2>Дешевле, чем собирать отдельную продуктовую команду</h2>
-        <p class="lead">Финальная смета зависит от сценариев, AI-нагрузки, платежей и количества платформ. Ниже — ориентиры для решения.</p>
+        <div class="eyebrow">Форматы запуска</div>
+        <h2>Одно приложение под задачу — без найма команды</h2>
+        <p class="lead">Финальная смета зависит от сценариев, AI-нагрузки и платежей. Первый запуск — одно Mini App в одном основном канале. Дополнительные приложения и Web SaaS оцениваются отдельно.</p>
         <div class="price-grid">
-          <article class="price-card"><span class="price-badge">Проверить спрос</span><h3>White-label Start</h3><div class="price">от 350 000 ₽</div><p>Один главный сценарий и одна платформа.</p><ul><li>Аудит и unit-экономика</li><li>Ваш бренд и контент</li><li>Онбординг и личный кабинет</li><li>Подписка / оплата</li><li>Базовая аналитика</li><li>Запуск за 4–6 недель</li></ul><a class="btn ghost" href="https://t.me/yanina_ai?text=Хочу%20обсудить%20White-label%20Start" target="_blank" rel="noopener">Обсудить Start</a></article>
-          <article class="price-card recommended"><span class="price-badge">Оптимальный</span><h3>AI Subscription Product</h3><div class="price">от 550 000 ₽</div><p>Персональный AI-продукт с retention-механиками.</p><ul><li>Всё из Start</li><li>AI-персонализация и RAG</li><li>Трекеры, планы, инсайты</li><li>Админ-панель и контент</li><li>Уведомления D1 / D7 / D30</li><li>1–2 платформы</li><li>30 дней поддержки</li></ul><a class="btn" href="https://t.me/yanina_ai?text=Хочу%20обсудить%20AI%20Subscription%20Product" target="_blank" rel="noopener">Получить план запуска →</a></article>
-          <article class="price-card"><span class="price-badge">Собственная экосистема</span><h3>Custom Product+</h3><div class="price">от 850 000 ₽</div><p>Новая продуктовая линия под вашу методику.</p><ul><li>Кастомные AI-агенты</li><li>Telegram + MAX + VK / PWA</li><li>Интеграции с CRM и сервисами</li><li>Несколько тарифов и ролей</li><li>Расширенная аналитика</li><li>Масштабируемая архитектура</li></ul><a class="btn ghost" href="https://t.me/yanina_ai?text=Хочу%20обсудить%20Custom%20AI%20Product" target="_blank" rel="noopener">Обсудить Custom</a></article>
+          <article class="price-card"><span class="price-badge">Первый запуск</span><h3>White-label Mini App</h3><div class="price">от 350 000 ₽</div><p>Одно приложение, один главный сценарий и один канал.</p><ul><li>Аудит и unit-экономика</li><li>Ваш бренд и контент</li><li>Онбординг и личный кабинет</li><li>Подписка / оплата</li><li>Базовая аналитика</li><li>Запуск за 4–6 недель</li></ul><a class="btn ghost" href="https://t.me/yanina_ai?text=Хочу%20обсудить%20одно%20white-label%20Mini%20App" target="_blank" rel="noopener">Обсудить приложение</a></article>
+          <article class="price-card recommended"><span class="price-badge">Mini App с AI</span><h3>AI-функции внутри</h3><div class="price">от 550 000 ₽</div><p>Одно Mini App с нужными AI-сценариями и механиками возврата.</p><ul><li>Всё из базового запуска</li><li>Чат по материалам или AI-анализ</li><li>Трекеры, планы и сводки</li><li>Админ-панель для контента</li><li>Уведомления D1 / D7 / D30</li><li>Один основной канал</li><li>30 дней поддержки</li></ul><a class="btn" href="https://t.me/yanina_ai?text=Хочу%20Mini%20App%20с%20AI-функциями%20внутри" target="_blank" rel="noopener">Получить план запуска →</a></article>
+          <article class="price-card"><span class="price-badge">Отдельный дорогой формат</span><h3>Web SaaS на домене</h3><div class="price">индивидуально</div><p>Самостоятельный веб-сервис, когда Mini App уже недостаточно.</p><ul><li>Собственный домен</li><li>Веб-авторизация и биллинг</li><li>Расширенные роли и кабинеты</li><li>Интеграции с нужными сервисами</li><li>Отдельная оценка архитектуры</li><li>Не входит в базовый Mini App</li></ul><a class="btn ghost" href="https://t.me/yanina_ai?text=Хочу%20оценить%20Web%20SaaS%20на%20своём%20домене" target="_blank" rel="noopener">Оценить SaaS</a></article>
         </div>
-        <p class="support-note">Сопровождение после включённого периода — от 60 000 ₽/мес. Для подтверждённой активной аудитории от 50 000 возможен индивидуальный revenue share после аудита.</p>
+        <p class="support-note">Второе или третье Mini App — отдельный оплачиваемый проект. Сопровождение после включённого периода — от 60 000 ₽/мес. Для подтверждённой активной аудитории от 50 000 возможен индивидуальный revenue share после аудита.</p>
       </div>
     </section>
 
@@ -491,7 +791,9 @@
         <h2>Что обычно спрашивают до старта</h2>
         <div class="faq">
           <details><summary>Нужно ли мне разбираться в разработке?</summary><p>Нет. От вас нужны экспертиза, контент, понимание аудитории и участие в ключевых продуктовых решениях. Архитектуру, разработку, AI API, платежи, аналитику и деплой беру на себя.</p></details>
-          <details><summary>Можно ли запустить одно приложение сразу в Telegram, MAX и VK?</summary><p>Можно использовать единое веб-ядро, но у каждой платформы свои механики авторизации, ботов, интерфейса, модерации и платежей. Обычно выгоднее проверить продукт на основном канале, затем переносить работающую модель.</p></details>
+          <details><summary>Что входит в первый запуск?</summary><p>Одно Mini App под ваш бренд, одну основную задачу аудитории и один приоритетный канал: Telegram, MAX или VK. Состав экранов, оплата, аналитика и нужные AI-функции фиксируются в смете.</p></details>
+          <details><summary>Можно ли позже сделать второе или третье приложение?</summary><p>Да. Когда первое приложение подтвердило спрос, можно запустить следующий продукт для другой задачи аудитории. Это отдельная допродажа: новый объём, смета, сроки и запуск.</p></details>
+          <details><summary>Можно ли сделать SaaS на собственном домене?</summary><p>Да, если нужен независимый веб-сервис, SEO-вход или более сложные кабинеты. SaaS оценивается отдельно и обычно дороже Mini App в социальной сети; это не основной стартовый формат.</p></details>
           <details><summary>AI не будет давать опасные медицинские советы?</summary><p>В проектах о здоровье я закладываю ограничения: AI работает по согласованной базе, не ставит диагноз, не заменяет врача, показывает дисклеймеры и направляет к специалисту при красных флагах. Медицинская логика требует валидации профильным экспертом.</p></details>
           <details><summary>Откуда берётся контент приложения?</summary><p>Из ваших материалов: эфиров, курсов, постов, гайдов, протоколов и рекомендаций. Я структурирую базу, проектирую сценарии и подключаю AI-поиск и персонализацию. При необходимости составляем план недостающего контента.</p></details>
           <details><summary>Когда продукт окупится?</summary><p>Это зависит от размера активной аудитории, цены, конверсии, churn и расходов. Перед разработкой я собираю три сценария — осторожный, базовый и сильный. Если экономика не сходится, начинаем с прототипа или предзаказа.</p></details>
@@ -522,7 +824,167 @@
     </div>
   </footer>
 
+  <div class="contact-modal" id="contactModal" hidden>
+    <div class="contact-modal-backdrop" data-contact-close></div>
+    <section class="contact-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+      <button type="button" class="contact-modal-close" data-contact-close aria-label="Закрыть окно">×</button>
+      <div class="eyebrow">Связаться со мной</div>
+      <h2 class="contact-modal-title" id="contactModalTitle">Где вам удобнее написать?</h2>
+      <p class="contact-modal-lead">Профессия и выбранное приложение уже добавлены в сообщение. Его можно изменить перед отправкой.</p>
+      <label class="contact-message-label" for="contactMessage">Ваше сообщение</label>
+      <textarea class="contact-message" id="contactMessage"></textarea>
+      <button type="button" class="contact-copy" id="contactCopy">Скопировать сообщение</button>
+      <div class="contact-channels">
+        <a class="contact-channel telegram" id="contactTelegram" href="https://t.me/yanina_ai" target="_blank" rel="noopener"><span>Написать в Telegram</span><span class="contact-channel-hint">откроется диалог →</span></a>
+        <a class="contact-channel" id="contactMax" href="https://web.max.ru/" target="_blank" rel="noopener"><span>Написать в MAX</span><span class="contact-channel-hint">сообщение скопируется →</span></a>
+        <a class="contact-channel" id="contactVk" href="https://vk.me/yanina_new666" target="_blank" rel="noopener"><span>Написать ВКонтакте</span><span class="contact-channel-hint">сообщение скопируется →</span></a>
+      </div>
+      <p class="contact-modal-note">VK откроет диалог с @yanina_new666. В MAX найдите профиль по номеру +7 950 324-84-06; прямую ссылку можно будет заменить после получения публичной ссылки MAX.</p>
+    </section>
+  </div>
+
   <script>
+    (function () {
+      const ideas = document.getElementById('ideas');
+      const picker = document.getElementById('personaPicker');
+      const select = document.getElementById('personaSelect');
+      const status = document.getElementById('catalogStatus');
+      const groups = Array.from(document.querySelectorAll('.catalog-group[data-professions]'));
+      const detail = document.getElementById('solutionDetail');
+      const detailTitle = document.getElementById('solutionTitle');
+      const detailAudience = document.getElementById('solutionAudience');
+      const detailProblem = document.getElementById('solutionProblem');
+      const detailFunctions = document.getElementById('solutionFunctions');
+      const detailAi = document.getElementById('solutionAi');
+      const detailMockup = document.getElementById('solutionMockup');
+      const detailCta = document.getElementById('solutionCta');
+      const modal = document.getElementById('contactModal');
+      const message = document.getElementById('contactMessage');
+      const telegram = document.getElementById('contactTelegram');
+      const maxLink = document.getElementById('contactMax');
+      const vkLink = document.getElementById('contactVk');
+      const copyButton = document.getElementById('contactCopy');
+      if (!ideas || !picker || !select || !detail || !modal) return;
+
+      const personaNames = {
+        doctor: 'врач', clinic: 'представитель клиники', gynecologist: 'гинеколог',
+        nutritionist: 'нутрициолог', fitness: 'фитнес-тренер', rehab: 'реабилитолог',
+        psychologist: 'психолог', coach: 'коуч', school: 'представитель онлайн-школы',
+        'health-blogger': 'эксперт или блогер в нише здоровья'
+      };
+      let currentPersona = '';
+      let currentApp = '';
+      let modalOpener = null;
+
+      ideas.classList.add('catalog-enhanced');
+      groups.forEach(group => {
+        group.querySelectorAll('.catalog-card').forEach(card => {
+          card.setAttribute('role', 'button');
+          card.setAttribute('tabindex', '0');
+          card.setAttribute('aria-selected', 'false');
+          card.addEventListener('click', () => openSolution(card, group));
+          card.addEventListener('keydown', event => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault();
+              openSolution(card, group);
+            }
+          });
+        });
+      });
+
+      function setPersona(persona, shouldScroll) {
+        currentPersona = persona;
+        currentApp = '';
+        select.value = persona;
+        picker.querySelectorAll('[data-persona]').forEach(button => {
+          button.setAttribute('aria-pressed', button.dataset.persona === persona ? 'true' : 'false');
+        });
+        let count = 0;
+        groups.forEach(group => {
+          const relevant = group.dataset.professions.split(' ').includes(persona);
+          group.classList.toggle('is-relevant', relevant);
+          if (relevant) count += group.querySelectorAll('.catalog-card').length;
+        });
+        detail.hidden = true;
+        if (persona) {
+          status.textContent = 'Для вас найдено ' + count + ' вариантов. Выберите один, чтобы посмотреть интерфейс и модель подписки.';
+          window.reachGoal && window.reachGoal('catalog_persona_select', { persona: persona });
+          if (shouldScroll) groups.find(group => group.classList.contains('is-relevant'))?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          status.textContent = 'Выберите профессию, чтобы открыть подходящие решения.';
+        }
+      }
+
+      function openSolution(card, group) {
+        currentApp = card.querySelector('h3')?.textContent.trim() || 'Mini App';
+        const problem = card.querySelector('p')?.textContent.trim() || '';
+        const functions = card.querySelector('.features')?.textContent.trim().replaceAll(' · ', ', ') || '';
+        const persona = personaNames[currentPersona] || 'эксперт';
+        detailAudience.textContent = 'Для кого: ' + persona + ' · концепция интерфейса';
+        detailTitle.textContent = currentApp;
+        detailProblem.textContent = problem;
+        detailFunctions.textContent = functions + '. Состав уточняется после продуктовой диагностики.';
+        detailAi.textContent = currentApp.toLowerCase().includes('ai')
+          ? 'AI-функция проектируется по проверенной базе и правилам специалиста; для чувствительных сценариев предусмотрено утверждение человеком.'
+          : 'AI можно добавить внутрь приложения, если он сокращает ручную работу или делает сопровождение персональнее. Это опция, а не отдельный продукт.';
+        detailMockup.replaceChildren(group.querySelector('.catalog-mockup').cloneNode(true));
+        detail.hidden = false;
+        groups.forEach(item => item.querySelectorAll('.catalog-card').forEach(node => node.setAttribute('aria-selected', node === card ? 'true' : 'false')));
+        window.reachGoal && window.reachGoal('catalog_solution_open', { persona: currentPersona, app: currentApp });
+        detail.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      function starterMessage(app) {
+        const persona = personaNames[currentPersona] || 'эксперт';
+        return app
+          ? 'Здравствуйте! Я ' + persona + '. Хочу обсудить приложение «' + app + '» под своим брендом.'
+          : 'Здравствуйте! Я ' + persona + '. Пока не знаю, какое Mini App выбрать. Помогите подобрать решение под мою аудиторию.';
+      }
+
+      function openContact(text, opener) {
+        modalOpener = opener || document.activeElement;
+        message.value = text;
+        modal.hidden = false;
+        document.body.style.overflow = 'hidden';
+        requestAnimationFrame(() => message.focus());
+        window.reachGoal && window.reachGoal('catalog_contact_open', { persona: currentPersona, app: currentApp || 'not_selected' });
+      }
+
+      function closeContact() {
+        modal.hidden = true;
+        document.body.style.overflow = '';
+        modalOpener?.focus();
+      }
+
+      async function copyMessage() {
+        const value = message.value.trim() || starterMessage(currentApp);
+        try { await navigator.clipboard.writeText(value); }
+        catch (error) { message.select(); document.execCommand('copy'); }
+        copyButton.textContent = 'Сообщение скопировано ✓';
+        setTimeout(() => { copyButton.textContent = 'Скопировать сообщение'; }, 1800);
+      }
+
+      picker.querySelectorAll('[data-persona]').forEach(button => button.addEventListener('click', () => setPersona(button.dataset.persona, true)));
+      select.addEventListener('change', () => setPersona(select.value, true));
+      detailCta.addEventListener('click', () => openContact(starterMessage(currentApp), detailCta));
+      document.querySelectorAll('[data-generic-contact]').forEach(button => button.addEventListener('click', () => openContact(starterMessage(''), button)));
+      document.querySelectorAll('a[href*="t.me/yanina_ai"]').forEach(link => link.addEventListener('click', event => {
+        event.preventDefault();
+        let text = '';
+        try { text = new URL(link.href).searchParams.get('text') || ''; } catch (error) {}
+        openContact(text || starterMessage(currentApp), link);
+      }));
+      modal.querySelectorAll('[data-contact-close]').forEach(control => control.addEventListener('click', closeContact));
+      copyButton.addEventListener('click', copyMessage);
+      telegram.addEventListener('click', () => {
+        telegram.href = 'https://t.me/yanina_ai?text=' + encodeURIComponent(message.value.trim() || starterMessage(currentApp));
+        window.reachGoal && window.reachGoal('catalog_contact_telegram', { persona: currentPersona, app: currentApp });
+      });
+      maxLink.addEventListener('click', () => { copyMessage(); window.reachGoal && window.reachGoal('catalog_contact_max', { persona: currentPersona, app: currentApp }); });
+      vkLink.addEventListener('click', () => { copyMessage(); window.reachGoal && window.reachGoal('catalog_contact_vk', { persona: currentPersona, app: currentApp }); });
+      document.addEventListener('keydown', event => { if (event.key === 'Escape' && !modal.hidden) closeContact(); });
+    })();
+
     (function () {
       const ids = ['audience', 'activation', 'conversion', 'price', 'investment', 'churn'];
       const inputs = Object.fromEntries(ids.map(id => [id, document.getElementById(id)]));

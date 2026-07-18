@@ -84,7 +84,7 @@ Russian (native), English (working, 1 year at MindBodyFace international team).
 
 - [Home](https://chizhevskaya.pro/) — main portfolio, services, cases, lead magnet form
 - [Services](https://chizhevskaya.pro/services) — AI product development, white-label Mini Apps, product audits and business automation
-- [AI Mini Apps for bloggers](https://chizhevskaya.pro/services/mini-apps-for-bloggers) — white-label subscription products for health, wellness, FemTech and women 35+/40+ audiences in Telegram, MAX, VK and PWA; includes product concepts and a unit-economics calculator
+- [Каталог Mini Apps под брендом эксперта](https://chizhevskaya.pro/services/mini-apps-for-bloggers) — интерактивный каталог из 47 концепций white-label приложений для экспертов, врачей, клиник, нутрициологов, фитнес-тренеров, реабилитологов, гинекологов, психологов, коучей и онлайн-школ. Первый запуск — одно приложение под одну задачу и основной канал; второе или третье приложение оплачивается отдельно. AI-функции встраиваются внутрь выбранного приложения, а Web SaaS на собственном домене является более дорогим дополнительным форматом. Визуалы на странице обозначены как примеры интерфейса, а не как готовые продукты.
 - [Products](https://chizhevskaya.pro/products) — own Mini Apps and AI products including Periya and BreathFlow
 - [Partnerships](https://chizhevskaya.pro/partnerships) — white-label and revenue-share launch models for bloggers and experts
 - [Cases](https://chizhevskaya.pro/cases) — client and product-management cases in SaaS, wellness, HealthTech and corporate AI
