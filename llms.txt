@@ -1,26 +1,26 @@
-# Yanina Chizhevskaya — AI Product Manager
+# Yanina Chizhevskaya — White Label AI Product Owner
 
-> Personal portfolio and services page of Yanina Chizhevskaya — AI Product Manager and Vibe Coder building subscription AI applications for health, wellness, and longevity companies. Based in Kazan, Russia. Working with clients in Russia, UK, and US.
+> Personal website of Yanina Chizhevskaya — Product Owner, technical leader and developer building White Label subscription applications and AI products for health, wellness and FemTech audiences. Working with clients in Russia, UK and US.
 
 ## Who
 
-Янина Чижевская (Yanina Chizhevskaya) — AI Product Manager with 10 years of product and project management experience. Specializes in launching AI products from concept to production using vibe coding tools (Claude Code, Cursor, Lovable). Has 4+ AI products live in production and 1 year of experience at the international MindBodyFace platform (US/UK/EU face fitness).
+Янина Чижевская (Yanina Chizhevskaya) — Product Owner and AI Product Engineer with 10 years in product and digital, including 6 years as technical director of four health education businesses. Specializes in taking White Label and AI products from market research and unit economics to code, launch, analytics and support. Worked with teams and contractors up to 30 people and with products in Russia, UK and US.
 
 Education: Tomsk State University (Product Manager in IT), Kuzbass State Technical University (engineer).
 
 ## Services
 
-The site offers a "ladder" of services from free to premium:
+The primary service is a White Label subscription application under the client's brand. Current formats:
 
 1. **Free AI Audit (5 days)** — strategic 60-min call + AI app concept for client's audience + 12-month unit economics + 90-day roadmap + check-list "10 mistakes when launching an AI app". Total value: 240,000 RUB. Price: 0 RUB. For first 3 projects per month.
 
-2. **AI Concept Sprint (14 days)** — full product audit + UX flow + clickable prototype in Lovable + 5 CustDev interviews + unit economics + investor presentation + video demo + technical specification + brand direction. Total value: 570,000 RUB. Price: 79,000 RUB. Guarantee: 100% money back if not clear.
+2. **Concept Sprint (14 working days)** — market and audience research + value proposition + CJM + clickable prototype + unit economics + Lite PRD + roadmap. Price: 150,000 RUB.
 
-3. **AI Product Launch (6 weeks)** — full design system + frontend + backend + AI integration (Claude/GPT/Gemini with fallback) + billing (Telegram Stars / YooKassa) + analytics + deploy + 30 days support + marketing package. Total value: 1,130,000 RUB. Price: from 500,000 RUB. Guarantee: launch in 6 weeks or 10% discount per delay week.
+3. **White Label application (4–6 weeks)** — one application, one primary scenario and one launch channel, with branding, onboarding, billing and analytics. Price: from 350,000 RUB.
 
-4. **AI Implementation in Companies** — AI audit, roadmap, internal vibe coding tools, training team. From 80,000 RUB for audit, 300,000 RUB for roadmap + 2 months support.
+4. **White Label + AI (6–10 weeks)** — the White Label scope plus an AI assistant, personalization or recommendations, knowledge base, guardrails and cost controls. Price: from 550,000 RUB.
 
-5. **Revenue Share Partnership** — 0 RUB upfront + 20-30% MRR for year 1. For brands with 50,000+ audience in health/wellness/longevity niche. Takes 2 partners per year.
+5. **Product support** — analytics, stability and growth iterations after release. From 60,000 RUB per month. Revenue-share partnerships are considered separately for selected experts with an active audience.
 
 ## Cases (live AI products)
 
@@ -83,8 +83,8 @@ Russian (native), English (working, 1 year at MindBodyFace international team).
 ## Pages
 
 - [Home](https://chizhevskaya.pro/) — main portfolio, services, cases, lead magnet form
-- [Services](https://chizhevskaya.pro/services) — AI product development, white-label Mini Apps, product audits and business automation
-- [Каталог Mini Apps под брендом эксперта](https://chizhevskaya.pro/services/mini-apps-for-bloggers) — интерактивный каталог из 47 концепций white-label приложений для экспертов, врачей, клиник, нутрициологов, фитнес-тренеров, реабилитологов, гинекологов, психологов, коучей и онлайн-школ. Первый запуск — одно приложение под одну задачу и основной канал; второе или третье приложение оплачивается отдельно. AI-функции встраиваются внутрь выбранного приложения, а Web SaaS на собственном домене является более дорогим дополнительным форматом. Визуалы на странице обозначены как примеры интерфейса, а не как готовые продукты.
+- [Стоимость](https://chizhevskaya.pro/services) — цены и состав диагностики, Concept Sprint, White Label, White Label + AI и сопровождения
+- [Каталог White Label решений](https://chizhevskaya.pro/services/mini-apps-for-bloggers) — интерактивный каталог из 44 концепций приложений для экспертов, врачей, клиник, нутрициологов, фитнес-тренеров, реабилитологов, гинекологов, психологов, коучей и онлайн-школ. Первый запуск — одно приложение под одну задачу и основной канал; второе или третье приложение оплачивается отдельно. AI-функции встраиваются внутрь выбранного приложения, а Web SaaS на собственном домене является более дорогим дополнительным форматом. Визуалы обозначены как примеры интерфейса, а не как готовые продукты.
 - [Products](https://chizhevskaya.pro/products) — own Mini Apps and AI products including Periya and BreathFlow
 - [Partnerships](https://chizhevskaya.pro/partnerships) — white-label and revenue-share launch models for bloggers and experts
 - [Cases](https://chizhevskaya.pro/cases) — client and product-management cases in SaaS, wellness, HealthTech and corporate AI
