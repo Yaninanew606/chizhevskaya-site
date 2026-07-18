@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Mini Apps для блогеров под ключ | Chizhevskaya</title>
+  <meta name="description" content="White-label AI Mini Apps для блогеров, врачей и экспертов в здоровье: Telegram, MAX, VK, подписка, аналитика, unit-экономика и сопровождение под ключ.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://chizhevskaya.pro/services/mini-apps-for-bloggers">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://chizhevskaya.pro/services/mini-apps-for-bloggers">
+  <meta property="og:title" content="AI Mini Apps для блогеров — подписочный продукт под вашим брендом">
+  <meta property="og:description" content="Превращаю аудиторию в собственный AI-продукт с подпиской: от концепции и unit-экономики до запуска и сопровождения.">
+  <meta property="og:image" content="https://chizhevskaya.pro/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Mini Apps для блогеров под ключ">
+  <meta name="twitter:description" content="Telegram, MAX, VK и PWA: white-label продукт, AI под капотом, подписка и аналитика.">
+  <meta name="twitter:image" content="https://chizhevskaya.pro/og-image.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232D5A3D'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='62' font-weight='600' fill='%23FAFAF8' text-anchor='middle'%3EЯ%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="/site-analytics.js" defer></script>
+  <style>
+    :root {
+      --cream: #f5f1e8;
+      --paper: #fffdf8;
+      --ink: #1a1a1a;
+      --soft: #5e5b55;
+      --mute: #858078;
+      --green: #2d5a3d;
+      --green-dark: #1f402b;
+      --sage: #dfe8dc;
+      --terra: #b85c3b;
+      --gold: #d7b56d;
+      --line: rgba(26, 26, 26, 0.13);
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--cream); color: var(--ink); font-family: 'Inter', sans-serif; line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    button, input { font: inherit; }
+    .container { width: min(var(--max), calc(100% - 48px)); margin: 0 auto; }
+    .section { padding: 104px 0; }
+    .section.alt { background: var(--paper); }
+    .eyebrow { margin-bottom: 16px; color: var(--terra); font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    h1, h2, h3 { font-family: 'Cormorant Garamond', Georgia, serif; line-height: 1.02; }
+    h1 { max-width: 900px; font-size: clamp(48px, 7.2vw, 92px); font-weight: 600; letter-spacing: -.035em; }
+    h2 { max-width: 850px; font-size: clamp(38px, 5vw, 66px); font-weight: 600; letter-spacing: -.025em; }
+    h3 { font-size: 30px; font-weight: 600; }
+    .lead { max-width: 760px; margin-top: 24px; color: var(--soft); font-size: clamp(17px, 2vw, 21px); line-height: 1.7; }
+    .accent { color: var(--terra); font-style: italic; }
+    .btn { display: inline-flex; min-height: 54px; align-items: center; justify-content: center; gap: 10px; padding: 14px 24px; border: 1px solid var(--green); border-radius: 999px; background: var(--green); color: #fff; font-weight: 700; transition: .2s ease; }
+    .btn:hover { background: var(--green-dark); transform: translateY(-2px); }
+    .btn.ghost { background: transparent; color: var(--green); }
+    .btn.ghost:hover { background: var(--sage); }
+    .button-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+    .microcopy { margin-top: 14px; color: var(--mute); font-size: 13px; }
+
+    nav { position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--line); background: rgba(245, 241, 232, .92); backdrop-filter: blur(16px); }
+    .nav-inner { width: min(var(--max), calc(100% - 48px)); min-height: 72px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .logo { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 27px; font-weight: 700; }
+    .nav-links { display: flex; align-items: center; gap: 24px; font-size: 14px; }
+    .nav-links a:hover { color: var(--terra); }
+    .nav-cta { padding: 10px 16px; border-radius: 999px; background: var(--green); color: #fff !important; font-weight: 700; }
+    .breadcrumb { padding-top: 26px; color: var(--mute); font-size: 13px; }
+    .breadcrumb a { color: var(--green); }
+
+    .hero { position: relative; overflow: hidden; padding: 94px 0 80px; }
+    .hero::before { content: ''; position: absolute; width: 620px; height: 620px; top: -260px; right: -180px; border-radius: 50%; background: radial-gradient(circle, rgba(215,181,109,.28), transparent 68%); pointer-events: none; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(330px, .75fr); align-items: center; gap: 72px; }
+    .hero-tag { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 24px; padding: 8px 13px; border: 1px solid rgba(45,90,61,.25); border-radius: 999px; background: rgba(223,232,220,.55); color: var(--green); font-size: 13px; font-weight: 700; }
+    .hero-tag::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--terra); }
+    .hero-copy { margin-top: 28px; max-width: 730px; color: var(--soft); font-size: 19px; line-height: 1.72; }
+    .hero-proof { display: flex; flex-wrap: wrap; gap: 18px 28px; margin-top: 28px; color: var(--green); font-size: 14px; font-weight: 700; }
+    .phone { position: relative; max-width: 360px; margin: 0 auto; padding: 16px; border: 1px solid rgba(255,255,255,.16); border-radius: 36px; background: var(--green-dark); box-shadow: 0 30px 80px rgba(31,64,43,.27); transform: rotate(2deg); }
+    .phone-screen { min-height: 610px; padding: 24px 20px; border-radius: 24px; background: var(--paper); }
+    .phone-top { display: flex; justify-content: space-between; color: var(--mute); font-size: 11px; }
+    .app-brand { margin-top: 42px; color: var(--green); font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .phone h3 { margin-top: 12px; font-size: 38px; }
+    .phone p { margin-top: 12px; color: var(--soft); font-size: 14px; }
+    .insight { margin-top: 24px; padding: 18px; border-radius: 18px; background: var(--sage); }
+    .insight small { color: var(--green); font-weight: 700; }
+    .insight b { display: block; margin-top: 6px; line-height: 1.35; }
+    .mini-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
+    .mini-stat { padding: 14px; border: 1px solid var(--line); border-radius: 14px; }
+    .mini-stat b { display: block; color: var(--terra); font-size: 20px; }
+    .phone-button { margin-top: 18px; padding: 13px; border-radius: 12px; background: var(--green); color: #fff; text-align: center; font-size: 13px; font-weight: 700; }
+
+    .trust-strip { padding: 26px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .trust-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; color: var(--soft); font-size: 14px; }
+    .trust-list b { display: block; color: var(--ink); font-size: 16px; }
+
+    .problem-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 80px; align-items: start; }
+    .problem-cards { display: grid; gap: 14px; }
+    .problem-card { padding: 24px; border: 1px solid var(--line); border-radius: 18px; background: var(--paper); }
+    .problem-card strong { display: block; margin-bottom: 8px; font-size: 17px; }
+    .problem-card p { color: var(--soft); font-size: 14px; }
+    .bridge { margin-top: 18px; padding: 24px; border-radius: 18px; background: var(--green); color: #fff; }
+    .bridge strong { display: block; margin-bottom: 8px; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 28px; }
+
+    .platform-grid, .idea-grid, .why-grid, .steps, .price-grid { display: grid; gap: 18px; margin-top: 48px; }
+    .platform-grid { grid-template-columns: repeat(4, 1fr); }
+    .platform-card { padding: 26px; border: 1px solid var(--line); border-radius: 20px; background: var(--paper); }
+    .platform-card .num { color: var(--terra); font-size: 12px; font-weight: 700; }
+    .platform-card h3 { margin-top: 16px; }
+    .platform-card p { margin-top: 12px; color: var(--soft); font-size: 14px; }
+    .platform-card a { display: inline-block; margin-top: 16px; color: var(--green); font-size: 12px; font-weight: 700; text-decoration: underline; }
+    .architecture-note { margin-top: 26px; padding: 22px 24px; border-left: 4px solid var(--terra); background: rgba(184,92,59,.07); color: var(--soft); }
+    .architecture-note b { color: var(--ink); }
+
+    .idea-grid { grid-template-columns: repeat(3, 1fr); }
+    .idea-card { min-height: 300px; padding: 28px; border: 1px solid var(--line); border-radius: 22px; background: var(--paper); }
+    .idea-card.featured { background: var(--green); color: #fff; }
+    .idea-card .pill { display: inline-flex; padding: 6px 10px; border-radius: 999px; background: var(--sage); color: var(--green); font-size: 11px; font-weight: 700; }
+    .idea-card.featured .pill { background: rgba(255,255,255,.14); color: #fff; }
+    .idea-card h3 { margin-top: 18px; }
+    .idea-card p { margin-top: 12px; color: var(--soft); font-size: 14px; }
+    .idea-card.featured p { color: rgba(255,255,255,.78); }
+    .idea-card ul { margin: 18px 0 0 18px; color: var(--soft); font-size: 13px; }
+    .idea-card.featured ul { color: rgba(255,255,255,.78); }
+    .idea-card li { margin-bottom: 7px; }
+
+    .money-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: start; margin-top: 50px; }
+    .revenue-list { display: grid; gap: 12px; }
+    .revenue-item { display: grid; grid-template-columns: 44px 1fr; gap: 15px; padding: 18px; border-bottom: 1px solid var(--line); }
+    .revenue-item span { display: grid; width: 38px; height: 38px; place-items: center; border-radius: 50%; background: var(--sage); color: var(--green); font-weight: 700; }
+    .revenue-item p { color: var(--soft); font-size: 14px; }
+    .formula-card { padding: 30px; border-radius: 24px; background: var(--green-dark); color: #fff; }
+    .formula-card h3 { font-size: 36px; }
+    .formula { margin-top: 20px; padding: 16px; border: 1px solid rgba(255,255,255,.14); border-radius: 14px; color: rgba(255,255,255,.78); font-size: 13px; }
+    .formula b { display: block; margin-bottom: 5px; color: var(--gold); font-size: 15px; }
+
+    .calculator { margin-top: 48px; padding: 38px; border: 1px solid var(--line); border-radius: 26px; background: var(--paper); box-shadow: 0 22px 60px rgba(31,64,43,.08); }
+    .calc-layout { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; }
+    .controls { display: grid; gap: 22px; }
+    .control-head { display: flex; justify-content: space-between; gap: 20px; margin-bottom: 8px; font-size: 13px; }
+    .control-head b { color: var(--green); }
+    input[type="range"] { width: 100%; accent-color: var(--terra); }
+    .results { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-content: start; }
+    .result { padding: 18px; border-radius: 16px; background: var(--sage); }
+    .result.highlight { background: var(--green); color: #fff; }
+    .result small { display: block; color: var(--soft); font-size: 11px; }
+    .result.highlight small { color: rgba(255,255,255,.7); }
+    .result b { display: block; margin-top: 4px; font-size: 24px; }
+    .calc-note { margin-top: 18px; color: var(--mute); font-size: 12px; line-height: 1.55; }
+    .scenario-wrap { margin-top: 36px; overflow-x: auto; }
+    table { width: 100%; min-width: 760px; border-collapse: collapse; background: var(--paper); }
+    th, td { padding: 16px; border-bottom: 1px solid var(--line); text-align: left; font-size: 13px; }
+    th { color: var(--green); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
+    .negative { color: #a33c2f; font-weight: 700; }
+    .positive { color: var(--green); font-weight: 700; }
+
+    .steps { grid-template-columns: repeat(4, 1fr); counter-reset: step; }
+    .step { padding: 26px; border-top: 2px solid var(--green); }
+    .step .step-num { color: var(--terra); font-size: 12px; font-weight: 700; }
+    .step h3 { margin-top: 14px; font-size: 28px; }
+    .step p { margin-top: 10px; color: var(--soft); font-size: 14px; }
+
+    .price-grid { grid-template-columns: repeat(3, 1fr); align-items: stretch; }
+    .price-card { display: flex; flex-direction: column; padding: 30px; border: 1px solid var(--line); border-radius: 22px; background: var(--paper); }
+    .price-card.recommended { border: 2px solid var(--green); transform: translateY(-8px); }
+    .price-badge { align-self: flex-start; padding: 6px 10px; border-radius: 999px; background: var(--sage); color: var(--green); font-size: 11px; font-weight: 700; }
+    .price-card h3 { margin-top: 18px; }
+    .price { margin-top: 18px; font-size: 31px; font-weight: 700; }
+    .price-card > p { margin-top: 8px; color: var(--soft); font-size: 14px; }
+    .price-card ul { flex: 1; margin: 20px 0 24px 18px; color: var(--soft); font-size: 13px; }
+    .price-card li { margin-bottom: 9px; }
+    .support-note { margin-top: 24px; text-align: center; color: var(--soft); font-size: 14px; }
+
+    .why-grid { grid-template-columns: repeat(3, 1fr); }
+    .why-card { padding: 28px; border: 1px solid var(--line); border-radius: 20px; background: var(--cream); }
+    .why-card b { color: var(--terra); font-size: 12px; }
+    .why-card h3 { margin-top: 12px; font-size: 27px; }
+    .why-card p { margin-top: 10px; color: var(--soft); font-size: 14px; }
+
+    .fit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 42px; }
+    .fit-card { padding: 28px; border-radius: 20px; background: var(--paper); }
+    .fit-card.no { border: 1px solid rgba(163,60,47,.22); }
+    .fit-card.yes { border: 1px solid rgba(45,90,61,.28); }
+    .fit-card ul { margin: 16px 0 0 20px; color: var(--soft); font-size: 14px; }
+    .fit-card li { margin-bottom: 8px; }
+
+    .faq { max-width: 850px; margin-top: 42px; }
+    details { border-bottom: 1px solid var(--line); }
+    summary { padding: 22px 0; cursor: pointer; font-size: 17px; font-weight: 700; }
+    details p { max-width: 760px; padding: 0 0 24px; color: var(--soft); }
+
+    .final-cta { padding: 90px 0; background: var(--green-dark); color: #fff; }
+    .final-cta .eyebrow { color: var(--gold); }
+    .final-cta p { max-width: 720px; margin-top: 22px; color: rgba(255,255,255,.72); font-size: 18px; }
+    .final-cta .btn { background: var(--gold); border-color: var(--gold); color: var(--ink); }
+    .final-cta .btn:hover { background: #e4c984; }
+    .final-cta .btn.ghost { background: transparent; border-color: rgba(255,255,255,.35); color: #fff; }
+    footer { padding: 44px 0; border-top: 1px solid var(--line); }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; color: var(--mute); font-size: 13px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
+    .footer-links a:hover { color: var(--terra); }
+
+    @media (max-width: 980px) {
+      .hero-grid, .problem-grid, .money-grid, .calc-layout { grid-template-columns: 1fr; }
+      .hero-grid { gap: 52px; }
+      .phone { max-width: 330px; }
+      .platform-grid, .steps { grid-template-columns: repeat(2, 1fr); }
+      .idea-grid, .price-grid, .why-grid { grid-template-columns: 1fr 1fr; }
+      .price-card.recommended { transform: none; }
+    }
+    @media (max-width: 720px) {
+      .container, .nav-inner { width: min(100% - 32px, var(--max)); }
+      .section { padding: 78px 0; }
+      .nav-links a:not(.nav-cta) { display: none; }
+      .hero { padding-top: 68px; }
+      .trust-list, .platform-grid, .idea-grid, .steps, .price-grid, .why-grid, .fit-grid { grid-template-columns: 1fr; }
+      .trust-list { gap: 15px; }
+      .calculator { padding: 24px 18px; }
+      .results { grid-template-columns: 1fr 1fr; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 420px) {
+      .button-row { align-items: stretch; flex-direction: column; }
+      .btn { width: 100%; }
+      .results { grid-template-columns: 1fr; }
+      .phone-screen { min-height: 560px; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Разработка white-label AI Mini Apps для блогеров",
+    "provider": {"@type": "Person", "name": "Янина Чижевская", "url": "https://chizhevskaya.pro"},
+    "areaServed": "RU",
+    "audience": {"@type": "Audience", "audienceType": "Блогеры, врачи и эксперты в здоровье с аудиторией женщин 35+"},
+    "description": "Создание подписочных AI Mini Apps под брендом блогера для Telegram, MAX, VK и Web/PWA: стратегия, unit-экономика, разработка, аналитика и сопровождение.",
+    "offers": {"@type": "AggregateOffer", "priceCurrency": "RUB", "lowPrice": "350000", "highPrice": "850000", "offerCount": "3"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"Нужно ли разбираться в разработке?","acceptedAnswer":{"@type":"Answer","text":"Нет. Я беру на себя продуктовую концепцию, прототип, разработку, AI API, оплату, аналитику, запуск и сопровождение."}},
+      {"@type":"Question","name":"Можно ли запустить одно приложение в Telegram, MAX и VK?","acceptedAnswer":{"@type":"Answer","text":"Да, продукт строится на общем веб-ядре, но для каждой платформы нужны отдельные адаптеры авторизации, интерфейса, бота и платежей. Состав каналов фиксируется после технического аудита."}},
+      {"@type":"Question","name":"Когда mini-app окупится?","acceptedAnswer":{"@type":"Answer","text":"Срок зависит от размера и активности аудитории, цены подписки, конверсии и удержания. На странице есть калькулятор сценария; расчёт не является гарантией дохода."}},
+      {"@type":"Question","name":"Можно ли работать по revenue share?","acceptedAnswer":{"@type":"Answer","text":"Для блогеров с активной подтверждённой аудиторией от 50 000 подписчиков возможна индивидуальная модель с долей в подписочной выручке после аудита."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <nav aria-label="Основная навигация">
+    <div class="nav-inner">
+      <a href="/" class="logo">Chizhevskaya</a>
+      <div class="nav-links">
+        <a href="/services" aria-current="page">Услуги</a>
+        <a href="/products">Продукты</a>
+        <a href="/partnerships">Партнёрство</a>
+        <a href="/cases">Кейсы</a>
+        <a href="/blog">Блог</a>
+        <a class="nav-cta" href="https://t.me/yanina_ai?text=Здравствуйте%2C%20хочу%20обсудить%20white-label%20AI%20mini-app%20для%20моей%20аудитории" target="_blank" rel="noopener">Обсудить идею</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container breadcrumb"><a href="/">Главная</a> → <a href="/services">Услуги</a> → Mini Apps для блогеров</div>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-tag">White-label продукт под вашим брендом</div>
+          <h1>Ваша аудитория уже доверяет вам. Дайте ей <span class="accent">собственный AI-продукт</span> по подписке</h1>
+          <p class="hero-copy">Создаю для блогеров, врачей и экспертов в здоровье Mini App внутри Telegram, MAX или ВКонтакте. Под вашим именем, с вашим контентом и AI под капотом — без найма продуктовой и технической команды.</p>
+          <div class="hero-proof">
+            <span>Telegram · MAX · VK · PWA</span>
+            <span>Подписка и платежи</span>
+            <span>Аналитика и retention</span>
+          </div>
+          <div class="button-row">
+            <a class="btn" href="https://t.me/yanina_ai?text=Здравствуйте%2C%20хочу%20получить%20концепт%20AI%20mini-app%20под%20мою%20аудиторию" target="_blank" rel="noopener">Получить концепт под аудиторию →</a>
+            <a class="btn ghost" href="#economics">Посчитать окупаемость</a>
+          </div>
+          <p class="microcopy">На первой встрече: идея продукта, способ монетизации и реалистичный сценарий запуска. Без обязательств строить приложение.</p>
+        </div>
+        <div class="phone" aria-label="Пример интерфейса AI Mini App">
+          <div class="phone-screen">
+            <div class="phone-top"><span>9:41</span><span>AI Mini App</span></div>
+            <div class="app-brand">Ваш бренд</div>
+            <h3>Доброе утро, Анна</h3>
+            <p>Персональный план на сегодня собран из вашей анкеты, динамики и материалов эксперта.</p>
+            <div class="insight">
+              <small>AI-инсайт недели</small>
+              <b>Энергия ниже обычного. Снизим нагрузку и добавим короткую практику восстановления.</b>
+            </div>
+            <div class="mini-stats">
+              <div class="mini-stat"><b>6 дней</b><small>серия привычки</small></div>
+              <div class="mini-stat"><b>82%</b><small>плана выполнено</small></div>
+            </div>
+            <div class="phone-button">Открыть план на сегодня</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-list">
+        <div><b>Один вход</b>прямо из привычного мессенджера</div>
+        <div><b>Ваш бренд</b>дизайн, голос и экспертный контент</div>
+        <div><b>Регулярная ценность</b>не разовый курс, а ежедневный продукт</div>
+        <div><b>Повторная выручка</b>подписка, апгрейды и допродажи</div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container problem-grid">
+        <div>
+          <div class="eyebrow">До → После → Мост</div>
+          <h2>Не ещё один курс. <span class="accent">Продукт, к которому возвращаются</span></h2>
+          <p class="lead">Реклама и запуски дают пики продаж. Подписочный mini-app превращает знания эксперта в сервис, который помогает клиенту между эфирами, консультациями и покупками.</p>
+        </div>
+        <div>
+          <div class="problem-cards">
+            <div class="problem-card"><strong>Контент есть, регулярной выручки нет</strong><p>Полезные посты сохраняют, но путь от контента до повторной оплаты слишком длинный.</p></div>
+            <div class="problem-card"><strong>Курс заканчивается — контакт ослабевает</strong><p>После обучения клиент остаётся без сопровождения, а эксперт снова платит за его возвращение.</p></div>
+            <div class="problem-card"><strong>Идея приложения годами лежит в заметках</strong><p>Кажется, что нужна студия, разработчики, дизайнер, аналитик и технический директор.</p></div>
+          </div>
+          <div class="bridge"><strong>Мост — продукт под ключ</strong>Я перевожу экспертизу в сценарии, собираю приложение, подключаю AI, оплату и аналитику, запускаю и остаюсь на сопровождении.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="platforms">
+      <div class="container">
+        <div class="eyebrow">Один продукт — несколько точек входа</div>
+        <h2>Запускаем там, где уже живёт ваша аудитория</h2>
+        <p class="lead">Сначала выбираем канал с самым коротким путём до оплаты. Затем переносим проверенное продуктовое ядро на другие платформы.</p>
+        <div class="platform-grid">
+          <article class="platform-card"><div class="num">01</div><h3>Telegram</h3><p>Mini App внутри бота: быстрый вход, уведомления, персональные сценарии и подписка. Хороший первый канал для аудитории Telegram.</p><a href="https://core.telegram.org/bots/webapps" target="_blank" rel="noopener">Официальная документация ↗</a></article>
+          <article class="platform-card"><div class="num">02</div><h3>MAX</h3><p>Мини-приложение запускается через чат-бота. Подходит для расширения охвата и российских коммуникационных сценариев.</p><a href="https://dev.max.ru/help/miniapps" target="_blank" rel="noopener">Официальная документация ↗</a></article>
+          <article class="platform-card"><div class="num">03</div><h3>ВКонтакте</h3><p>VK Mini App для сообществ и блогеров с активной аудиторией во ВКонтакте: авторизация, контент и продуктовые сценарии внутри VK.</p><a href="https://github.com/VKCOM/vk-bridge" target="_blank" rel="noopener">VK Bridge ↗</a></article>
+          <article class="platform-card"><div class="num">04</div><h3>Web / PWA</h3><p>Независимая веб-версия с ярлыком на телефоне. Нужна, если важны SEO, собственный домен или доступ вне соцсетей.</p><a href="#pricing">Посмотреть варианты запуска ↓</a></article>
+        </div>
+        <div class="architecture-note"><b>Честно о мультиплатформенности:</b> общий контент, база, AI-логика и аналитическая модель переиспользуются. Авторизация, платежи, интерфейс и бот адаптируются отдельно под правила каждой платформы.</div>
+      </div>
+    </section>
+
+    <section class="section alt" id="ideas">
+      <div class="container">
+        <div class="eyebrow">Библиотека white-label концептов</div>
+        <h2>Какой mini-app можно запустить под вашим именем</h2>
+        <p class="lead">Не копируем шаблон вслепую. Берём проверенное продуктовое ядро и настраиваем его под вашу методику, аудиторию и бизнес-модель.</p>
+        <div class="idea-grid">
+          <article class="idea-card featured"><span class="pill">Женщины 40+ · FemTech</span><h3>AI-компаньон в перименопаузе</h3><p>Дневник самочувствия, персональные рекомендации по образу жизни, динамика симптомов и подготовка вопросов врачу.</p><ul><li>Еженедельный AI-инсайт</li><li>Трекер сна, энергии и симптомов</li><li>Режим поддержки для партнёра — только с согласия женщины</li><li>Экспертный контент по подписке</li></ul></article>
+          <article class="idea-card"><span class="pill">Нутрициолог · врач · wellness</span><h3>Персональный AI-план питания</h3><p>Анкета, ограничения, цели и привычки превращаются в план, список покупок и ежедневное сопровождение.</p><ul><li>Фото и дневник питания</li><li>Рецепты из базы эксперта</li><li>Челленджи и серии привычек</li><li>Апгрейд на консультацию</li></ul></article>
+          <article class="idea-card"><span class="pill">Гинеколог · клиника</span><h3>Подготовка к приёму и сопровождение</h3><p>Помогает структурировать жалобы, собрать вопросы врачу и не потерять рекомендации после консультации.</p><ul><li>Анкета и таймлайн симптомов</li><li>Памятки и напоминания</li><li>Экспорт сводки для приёма</li><li>Без постановки диагноза</li></ul></article>
+          <article class="idea-card"><span class="pill">Фитнес · лицо · осанка</span><h3>AI-тренер по методике блогера</h3><p>Персональный план коротких практик, техника выполнения, прогресс и мотивация возвращаться каждый день.</p><ul><li>План по уровню и ограничениям</li><li>Видео-библиотека</li><li>Серии, баллы и достижения</li><li>Платные программы внутри</li></ul></article>
+          <article class="idea-card"><span class="pill">Экспертный контент</span><h3>AI-навигатор по знаниям</h3><p>Отвечает на вопросы только по проверенной базе блогера, рекомендует материалы и ведёт к следующему действию.</p><ul><li>RAG по видео, постам и гайдам</li><li>Персональная лента</li><li>Платный архив и уровни доступа</li><li>Лиды на продукты и консультации</li></ul></article>
+          <article class="idea-card"><span class="pill">Клуб · онлайн-школа</span><h3>Подписной клуб без хаоса в чатах</h3><p>Программа месяца, задания, эфиры, прогресс и персональные подсказки собраны в одном понятном интерфейсе.</p><ul><li>Онбординг по цели клиента</li><li>Контент-календарь</li><li>Paywall и продление</li><li>Retention D1 / D7 / D30</li></ul></article>
+        </div>
+        <div class="button-row"><a class="btn" href="https://t.me/yanina_ai?text=Хочу%20подобрать%20white-label%20концепт%20mini-app%20под%20мою%20нишу" target="_blank" rel="noopener">Подобрать концепт под мою нишу →</a></div>
+      </div>
+    </section>
+
+    <section class="section" id="monetization">
+      <div class="container">
+        <div class="eyebrow">Монетизация</div>
+        <h2>Один продукт — несколько источников выручки</h2>
+        <div class="money-grid">
+          <div class="revenue-list">
+            <div class="revenue-item"><span>1</span><div><strong>Ежемесячная или годовая подписка</strong><p>Основной тариф за персональные планы, AI-инсайты, трекеры и закрытый контент.</p></div></div>
+            <div class="revenue-item"><span>2</span><div><strong>Премиум-уровень</strong><p>Расширенная аналитика, больше AI-функций, персональные разборы или сопровождение куратора.</p></div></div>
+            <div class="revenue-item"><span>3</span><div><strong>Челленджи и программы</strong><p>Разовые платные интенсивы внутри приложения без нового лендинга и отдельной платформы.</p></div></div>
+            <div class="revenue-item"><span>4</span><div><strong>Консультации и основные продукты</strong><p>Mini-app прогревает и выявляет момент, когда клиенту нужна консультация, курс или услуга клиники.</p></div></div>
+            <div class="revenue-item"><span>5</span><div><strong>B2B и white-label лицензии</strong><p>Проверенный продукт можно адаптировать для партнёров, клиник или других экспертов.</p></div></div>
+          </div>
+          <div class="formula-card">
+            <h3>Экономика считается до разработки</h3>
+            <div class="formula"><b>MRR</b>Аудитория × активация в приложение × конверсия в оплату × цена подписки</div>
+            <div class="formula"><b>Вклад в прибыль</b>MRR − комиссии платежей − AI/API и хостинг − сопровождение</div>
+            <div class="formula"><b>Окупаемость</b>Стоимость запуска ÷ ежемесячный вклад в прибыль</div>
+            <div class="formula"><b>LTV по вкладу</b>(Цена − переменные расходы − комиссия) ÷ месячный churn</div>
+            <p class="microcopy" style="color:rgba(255,255,255,.58)">До налогов, стоимости контента и рекламных расходов. Расчёт — модель для решения, а не гарантия дохода.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="economics">
+      <div class="container">
+        <div class="eyebrow">Интерактивная unit-экономика</div>
+        <h2>Посчитайте свой сценарий окупаемости</h2>
+        <p class="lead">Передвигайте параметры. Калькулятор показывает, сколько платных подписчиков и выручки нужно при вашей аудитории.</p>
+        <div class="calculator">
+          <div class="calc-layout">
+            <div class="controls">
+              <label><span class="control-head"><span>Размер аудитории</span><b id="audienceLabel">50 000</b></span><input id="audience" type="range" min="10000" max="500000" step="5000" value="50000"></label>
+              <label><span class="control-head"><span>Перешли в mini-app</span><b id="activationLabel">4%</b></span><input id="activation" type="range" min="1" max="20" step="0.5" value="4"></label>
+              <label><span class="control-head"><span>Купили подписку от активированных</span><b id="conversionLabel">7%</b></span><input id="conversion" type="range" min="1" max="25" step="0.5" value="7"></label>
+              <label><span class="control-head"><span>Цена подписки в месяц</span><b id="priceLabel">990 ₽</b></span><input id="price" type="range" min="390" max="2990" step="100" value="990"></label>
+              <label><span class="control-head"><span>Стоимость запуска</span><b id="investmentLabel">450 000 ₽</b></span><input id="investment" type="range" min="250000" max="1500000" step="50000" value="450000"></label>
+              <label><span class="control-head"><span>Месячный churn</span><b id="churnLabel">6%</b></span><input id="churn" type="range" min="2" max="20" step="1" value="6"></label>
+            </div>
+            <div>
+              <div class="results">
+                <div class="result"><small>Активировали продукт</small><b id="activatedResult">2 000</b></div>
+                <div class="result"><small>Платных подписчиков</small><b id="paidResult">140</b></div>
+                <div class="result"><small>Прогноз MRR</small><b id="mrrResult">138 600 ₽</b></div>
+                <div class="result"><small>Расходы в месяц</small><b id="costResult">51 051 ₽</b></div>
+                <div class="result highlight"><small>Вклад до налогов</small><b id="contributionResult">87 549 ₽</b></div>
+                <div class="result highlight"><small>Простая окупаемость</small><b id="paybackResult">5,1 мес.</b></div>
+                <div class="result"><small>LTV на подписчика</small><b id="ltvResult">14 592 ₽</b></div>
+                <div class="result"><small>Ориентир допустимого CAC</small><b id="cacResult">4 378 ₽</b></div>
+              </div>
+              <p class="calc-note">В модели заложено: 35 000 ₽ фиксированных расходов в месяц, 80 ₽ AI/API и хостинга на платного пользователя, 3,5% комиссия платежей. LTV рассчитан по валовому вкладу; допустимый CAC — 30% от LTV. Фактические значения зависят от продукта и платформы.</p>
+            </div>
+          </div>
+        </div>
+        <div class="scenario-wrap">
+          <table>
+            <thead><tr><th>Сценарий</th><th>Аудитория</th><th>Активация</th><th>Оплата</th><th>Подписчиков</th><th>MRR</th><th>Вклад/мес.</th><th>Окупаемость</th></tr></thead>
+            <tbody>
+              <tr><td>Малый тест</td><td>30 000</td><td>2%</td><td>5% × 790 ₽</td><td>30</td><td>23 700 ₽</td><td class="negative">−4 530 ₽</td><td>Не окупается — менять оффер</td></tr>
+              <tr><td>Базовый</td><td>50 000</td><td>4%</td><td>7% × 990 ₽</td><td>140</td><td>138 600 ₽</td><td class="positive">87 549 ₽</td><td>≈ 5,1 месяца при 450 000 ₽</td></tr>
+              <tr><td>Сильный запуск</td><td>100 000</td><td>5%</td><td>8% × 1 190 ₽</td><td>400</td><td>476 000 ₽</td><td class="positive">367 340 ₽</td><td>≈ 1,5 месяца при 550 000 ₽</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="microcopy">Сценарии не являются обещанием дохода. Если базовая модель не сходится, я рекомендую сначала проверить оффер через прототип, предзаказ или платный челлендж — и не строить большой продукт.</p>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="eyebrow">От идеи до подписки</div>
+        <h2>Вы не управляете разработчиками. Вы принимаете продукт</h2>
+        <div class="steps">
+          <article class="step"><div class="step-num">01 · 5 дней</div><h3>Диагностика</h3><p>Аудит аудитории, контента, продуктов и каналов. Выбираем проблему, за решение которой готовы платить регулярно.</p></article>
+          <article class="step"><div class="step-num">02 · 2 недели</div><h3>Концепт</h3><p>Ценностное предложение, CJM, прототип, модель подписки, unit-экономика и план проверки спроса.</p></article>
+          <article class="step"><div class="step-num">03 · 4–10 недель</div><h3>Разработка</h3><p>Дизайн под бренд, frontend, backend, AI API, база контента, платежи, аналитика и тестирование.</p></article>
+          <article class="step"><div class="step-num">04 · после запуска</div><h3>Рост</h3><p>Онбординг, уведомления, paywall, retention, A/B-тесты и продуктовые итерации по реальным данным.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="pricing">
+      <div class="container">
+        <div class="eyebrow">Пакеты запуска</div>
+        <h2>Дешевле, чем собирать отдельную продуктовую команду</h2>
+        <p class="lead">Финальная смета зависит от сценариев, AI-нагрузки, платежей и количества платформ. Ниже — ориентиры для решения.</p>
+        <div class="price-grid">
+          <article class="price-card"><span class="price-badge">Проверить спрос</span><h3>White-label Start</h3><div class="price">от 350 000 ₽</div><p>Один главный сценарий и одна платформа.</p><ul><li>Аудит и unit-экономика</li><li>Ваш бренд и контент</li><li>Онбординг и личный кабинет</li><li>Подписка / оплата</li><li>Базовая аналитика</li><li>Запуск за 4–6 недель</li></ul><a class="btn ghost" href="https://t.me/yanina_ai?text=Хочу%20обсудить%20White-label%20Start" target="_blank" rel="noopener">Обсудить Start</a></article>
+          <article class="price-card recommended"><span class="price-badge">Оптимальный</span><h3>AI Subscription Product</h3><div class="price">от 550 000 ₽</div><p>Персональный AI-продукт с retention-механиками.</p><ul><li>Всё из Start</li><li>AI-персонализация и RAG</li><li>Трекеры, планы, инсайты</li><li>Админ-панель и контент</li><li>Уведомления D1 / D7 / D30</li><li>1–2 платформы</li><li>30 дней поддержки</li></ul><a class="btn" href="https://t.me/yanina_ai?text=Хочу%20обсудить%20AI%20Subscription%20Product" target="_blank" rel="noopener">Получить план запуска →</a></article>
+          <article class="price-card"><span class="price-badge">Собственная экосистема</span><h3>Custom Product+</h3><div class="price">от 850 000 ₽</div><p>Новая продуктовая линия под вашу методику.</p><ul><li>Кастомные AI-агенты</li><li>Telegram + MAX + VK / PWA</li><li>Интеграции с CRM и сервисами</li><li>Несколько тарифов и ролей</li><li>Расширенная аналитика</li><li>Масштабируемая архитектура</li></ul><a class="btn ghost" href="https://t.me/yanina_ai?text=Хочу%20обсудить%20Custom%20AI%20Product" target="_blank" rel="noopener">Обсудить Custom</a></article>
+        </div>
+        <p class="support-note">Сопровождение после включённого периода — от 60 000 ₽/мес. Для подтверждённой активной аудитории от 50 000 возможен индивидуальный revenue share после аудита.</p>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="eyebrow">Почему со мной</div>
+        <h2>Один человек отвечает за <span class="accent">весь продуктовый результат</span></h2>
+        <p class="lead">Вам не нужно переводить идею между продюсером, продактом, дизайнером, разработчиком и аналитиком. Я сама проектирую продукт и собираю его с AI-инструментами.</p>
+        <div class="why-grid">
+          <article class="why-card"><b>01</b><h3>Сначала бизнес-модель</h3><p>Начинаю не с экранов, а с боли клиента, оффера, цены, конверсии и сценария окупаемости.</p></article>
+          <article class="why-card"><b>02</b><h3>Продукт + код</h3><p>Проектирую CJM и сама собираю приложение, backend, AI-интеграции, платежи и аналитику.</p></article>
+          <article class="why-card"><b>03</b><h3>Health и женщины 35/40+</h3><p>Понимаю специфику женского здоровья, wellness, нутрициологии и медицински чувствительного контента.</p></article>
+          <article class="why-card"><b>04</b><h3>Ваши знания — внутри AI</h3><p>AI отвечает по вашей проверенной базе, а не генерирует произвольные советы от имени эксперта.</p></article>
+          <article class="why-card"><b>05</b><h3>Без найма команды</h3><p>Claude Code, Codex и другие AI-инструменты ускоряют разработку; у вас одна точка ответственности.</p></article>
+          <article class="why-card"><b>06</b><h3>Не исчезаю после релиза</h3><p>Настраиваю метрики, смотрю на поведение клиентов и продолжаю улучшать продукт на сопровождении.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="eyebrow">Честный фильтр</div>
+        <h2>Кому такой продукт подходит — и кому пока рано</h2>
+        <div class="fit-grid">
+          <div class="fit-card yes"><h3>Есть смысл обсуждать</h3><ul><li>У вас активная аудитория и понятная экспертиза</li><li>Клиенты возвращаются с повторяющимися вопросами</li><li>Есть методика, контент или программы, которые можно превратить в продукт</li><li>Вы готовы регулярно продвигать приложение в своём контенте</li><li>Вам нужна повторная выручка, а не ещё один разовый запуск</li></ul></div>
+          <div class="fit-card no"><h3>Сначала проверим спрос</h3><ul><li>Аудитория меньше 10–20 тысяч и пока почти не покупает</li><li>Нет конкретной проблемы, которую продукт решает регулярно</li><li>Ожидается «пассивный доход» без продвижения и работы с retention</li><li>Нужна диагностика или медицинские обещания вместо wellness-сервиса</li><li>Нет времени предоставить контент и экспертную валидацию</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="faq">
+      <div class="container">
+        <div class="eyebrow">FAQ</div>
+        <h2>Что обычно спрашивают до старта</h2>
+        <div class="faq">
+          <details><summary>Нужно ли мне разбираться в разработке?</summary><p>Нет. От вас нужны экспертиза, контент, понимание аудитории и участие в ключевых продуктовых решениях. Архитектуру, разработку, AI API, платежи, аналитику и деплой беру на себя.</p></details>
+          <details><summary>Можно ли запустить одно приложение сразу в Telegram, MAX и VK?</summary><p>Можно использовать единое веб-ядро, но у каждой платформы свои механики авторизации, ботов, интерфейса, модерации и платежей. Обычно выгоднее проверить продукт на основном канале, затем переносить работающую модель.</p></details>
+          <details><summary>AI не будет давать опасные медицинские советы?</summary><p>В проектах о здоровье я закладываю ограничения: AI работает по согласованной базе, не ставит диагноз, не заменяет врача, показывает дисклеймеры и направляет к специалисту при красных флагах. Медицинская логика требует валидации профильным экспертом.</p></details>
+          <details><summary>Откуда берётся контент приложения?</summary><p>Из ваших материалов: эфиров, курсов, постов, гайдов, протоколов и рекомендаций. Я структурирую базу, проектирую сценарии и подключаю AI-поиск и персонализацию. При необходимости составляем план недостающего контента.</p></details>
+          <details><summary>Когда продукт окупится?</summary><p>Это зависит от размера активной аудитории, цены, конверсии, churn и расходов. Перед разработкой я собираю три сценария — осторожный, базовый и сильный. Если экономика не сходится, начинаем с прототипа или предзаказа.</p></details>
+          <details><summary>Кому принадлежат код, данные и бренд?</summary><p>Условия фиксируются в договоре. В стандартной заказной разработке бренд и клиентские данные принадлежат заказчику, доступы передаются, а состав прав на код и white-label ядро явно прописывается до старта.</p></details>
+          <details><summary>Можно ли работать без большой предоплаты?</summary><p>Проект делится на этапы: диагностика, концепт, разработка и запуск. Для блогеров с подтверждённой активной аудиторией от 50 000 возможна индивидуальная revenue-share модель после проверки потенциала.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container">
+        <div class="eyebrow">Первый шаг — не разработка</div>
+        <h2>За 45 минут поймём, какой продукт ваша аудитория может покупать по подписке</h2>
+        <p>Разберём нишу, текущие продукты и каналы. Я предложу 1–2 концепции, объясню, что запускать первым и какие данные нужны для unit-экономики.</p>
+        <div class="button-row">
+          <a class="btn" href="https://t.me/yanina_ai?text=Здравствуйте%2C%20хочу%20обсудить%20AI%20mini-app%20и%20подписочную%20модель%20для%20моей%20аудитории" target="_blank" rel="noopener">Обсудить мой mini-app →</a>
+          <a class="btn ghost" href="/">Вернуться на основной сайт</a>
+        </div>
+        <p class="microcopy" style="color:rgba(255,255,255,.55)">Telegram: @yanina_ai · Email: chizhevskaya86@gmail.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© 2026 Янина Чижевская · AI Product Manager & Vibe Coder</div>
+      <div class="footer-links"><a href="/">Главная</a><a href="/services">Все услуги</a><a href="/products">Продукты</a><a href="/partnerships">Партнёрство</a><a href="/cases">Кейсы</a><a href="/blog">Блог</a><a href="https://t.me/yanina_ai" target="_blank" rel="noopener">Telegram</a></div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const ids = ['audience', 'activation', 'conversion', 'price', 'investment', 'churn'];
+      const inputs = Object.fromEntries(ids.map(id => [id, document.getElementById(id)]));
+      const rub = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 0 });
+      const num = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 0 });
+
+      function setText(id, value) {
+        const node = document.getElementById(id);
+        if (node) node.textContent = value;
+      }
+
+      function update() {
+        const audience = Number(inputs.audience.value);
+        const activation = Number(inputs.activation.value) / 100;
+        const conversion = Number(inputs.conversion.value) / 100;
+        const price = Number(inputs.price.value);
+        const investment = Number(inputs.investment.value);
+        const churn = Number(inputs.churn.value) / 100;
+        const activated = Math.round(audience * activation);
+        const paid = Math.round(activated * conversion);
+        const mrr = paid * price;
+        const variablePerUser = 80;
+        const paymentFeeRate = 0.035;
+        const fixedCosts = 35000;
+        const costs = fixedCosts + paid * variablePerUser + mrr * paymentFeeRate;
+        const contribution = mrr - costs;
+        const payback = contribution > 0 ? investment / contribution : null;
+        const unitContribution = price * (1 - paymentFeeRate) - variablePerUser;
+        const ltv = Math.max(0, unitContribution / churn);
+        const cac = ltv * 0.3;
+
+        setText('audienceLabel', num.format(audience));
+        setText('activationLabel', (activation * 100).toLocaleString('ru-RU') + '%');
+        setText('conversionLabel', (conversion * 100).toLocaleString('ru-RU') + '%');
+        setText('priceLabel', rub.format(price) + ' ₽');
+        setText('investmentLabel', rub.format(investment) + ' ₽');
+        setText('churnLabel', (churn * 100).toLocaleString('ru-RU') + '%');
+        setText('activatedResult', num.format(activated));
+        setText('paidResult', num.format(paid));
+        setText('mrrResult', rub.format(mrr) + ' ₽');
+        setText('costResult', rub.format(costs) + ' ₽');
+        setText('contributionResult', rub.format(contribution) + ' ₽');
+        setText('paybackResult', payback ? payback.toLocaleString('ru-RU', { maximumFractionDigits: 1 }) + ' мес.' : 'не окупается');
+        setText('ltvResult', rub.format(ltv) + ' ₽');
+        setText('cacResult', rub.format(cac) + ' ₽');
+      }
+
+      ids.forEach(id => inputs[id].addEventListener('input', update));
+      update();
+    })();
+  </script>
+</body>
+</html>

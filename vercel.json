@@ -2,9 +2,20 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/mini-apps-for-bloggers", "destination": "/services/mini-apps-for-bloggers", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/en", "destination": "/en.html" },
     { "source": "/en/", "destination": "/en.html" },
+    { "source": "/services", "destination": "/services.html" },
+    { "source": "/products", "destination": "/products.html" },
+    { "source": "/partnerships", "destination": "/partnerships.html" },
+    { "source": "/cases", "destination": "/cases.html" },
+    { "source": "/blog", "destination": "/blog.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/services/mini-apps-for-bloggers", "destination": "/mini-apps-landing" },
     { "source": "/bdbd15d3d7827d95.html", "destination": "/bdbd15d3d7827d95" }
   ],
   "headers": [
