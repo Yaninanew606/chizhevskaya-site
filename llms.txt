@@ -14,13 +14,15 @@ The primary service is a White Label subscription application under the client's
 
 1. **White Label Fit (5 working days)** — audience, recurring problem, rough economics and recommendation of the right package. Price: 0 RUB for the first 3 qualified projects per month.
 
-2. **Product Blueprint (14 working days)** — market and audience research + value proposition + CJM + clickable prototype + unit economics + AI scenario and risks + Lite PRD + launch estimate. Price: 150,000 RUB. Credited in full toward development when the client continues to White Label Start or White Label + AI.
+2. **AI Product Sprint (5 working days)** — analysis of the audience and current monetization, three product hypotheses, one selected offer and user journey, rough unit economics in three scenarios, one AI scenario with provider costs and fallback, plus a 30-day validation plan. Price: 50,000 RUB. Credited toward Product Blueprint if work continues within 30 days.
 
-3. **White Label Start (4–6 weeks)** — one application, one primary scenario and one launch channel, with Product Blueprint, branding, frontend, backend, onboarding, billing, core analytics and 14 days of stabilization. AI is not included. Total price: from 350,000 RUB including Product Blueprint.
+3. **Product Blueprint (14 working days)** — market and audience research + value proposition + CJM + clickable prototype + unit economics + AI scenario and risks + Lite PRD + launch estimate. Price: 150,000 RUB. Credited in full toward development when the client continues to White Label Start or White Label + AI.
 
-4. **White Label + AI (6–10 weeks)** — everything in Start plus one primary AI scenario, knowledge base, guardrails, fallback, content admin, retention notifications, AI telemetry, cost controls and 30 days of support. Price: from 550,000 RUB.
+4. **White Label Start (4–6 weeks)** — one application, one primary scenario and one launch channel, with Product Blueprint, branding, frontend, backend, onboarding, billing, core analytics and 14 days of stabilization. AI is not included. Total price: from 350,000 RUB including Product Blueprint.
 
-5. **Custom Web SaaS** — multiple roles, integrations, AI scenarios or special security requirements. Custom phased estimate after Blueprint/discovery. After launch: Care from 60,000 RUB/month; Growth with product analytics and experiments from 80,000 RUB/month. Revenue-share partnerships are considered separately for selected experts with an active audience.
+5. **White Label + AI (6–10 weeks)** — everything in Start plus one primary AI scenario, knowledge base, guardrails, fallback, content admin, retention notifications, AI telemetry, cost controls and 30 days of support. Price: from 550,000 RUB.
+
+6. **Custom Web SaaS** — multiple roles, integrations, AI scenarios or special security requirements. Custom phased estimate after Blueprint/discovery. After launch: Care from 60,000 RUB/month; Growth with product analytics and experiments from 80,000 RUB/month. Revenue-share partnerships are considered separately for selected experts with an active audience.
 
 ## Cases (live AI products)
 
@@ -83,7 +85,7 @@ Russian (native), English (working, 1 year at MindBodyFace international team).
 ## Pages
 
 - [Home](https://chizhevskaya.pro/) — main portfolio, services, cases, lead magnet form
-- [Стоимость](https://chizhevskaya.pro/services) — цены и состав White Label Fit, Product Blueprint, White Label Start, White Label + AI, Custom SaaS и сопровождения
+- [Стоимость](https://chizhevskaya.pro/services) — цены и состав White Label Fit, AI Product Sprint за 50 000 ₽, Product Blueprint, White Label Start, White Label + AI, Custom SaaS и сопровождения
 - [Каталог White Label решений](https://chizhevskaya.pro/services/mini-apps-for-bloggers) — интерактивный каталог из 44 концепций приложений для экспертов, врачей, клиник, нутрициологов, фитнес-тренеров, реабилитологов, гинекологов, психологов, коучей и онлайн-школ. Первый запуск — одно приложение под одну задачу и основной канал; второе или третье приложение оплачивается отдельно. AI-функции встраиваются внутрь выбранного приложения, а Web SaaS на собственном домене является более дорогим дополнительным форматом. Визуалы обозначены как примеры интерфейса, а не как готовые продукты.
 - [Products](https://chizhevskaya.pro/products) — own Mini Apps and AI products including Periya and BreathFlow
 - [Partnerships](https://chizhevskaya.pro/partnerships) — white-label and revenue-share launch models for bloggers and experts
