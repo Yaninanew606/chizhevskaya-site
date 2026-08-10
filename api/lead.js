@@ -37,9 +37,15 @@ export default async function handler(request) {
     offer: clean(body.offer, 180),
     audience: clean(body.audience, 300),
     goal: clean(body.goal, 1600),
+    privacyConsent: body.privacyConsent === true,
+    termsConsent: body.termsConsent === true,
+    marketingConsent: body.marketingConsent === true,
+    consentVersion: clean(body.consentVersion, 40),
+    consentTimestamp: clean(body.consentTimestamp, 80),
+    pageUrl: clean(body.pageUrl, 500),
   };
 
-  if (!lead.name || !lead.contact || !lead.type || !lead.offer || !lead.goal) {
+  if (!lead.name || !lead.contact || !lead.type || !lead.offer || !lead.goal || !lead.privacyConsent || !lead.termsConsent) {
     return json({ ok: false, error: 'Missing required fields' }, 400);
   }
 
@@ -62,6 +68,12 @@ export default async function handler(request) {
     lead.audience ? `Аудитория/выручка: ${lead.audience}` : null,
     '',
     `Цель: ${lead.goal}`,
+    '',
+    `Согласие на ПД: да (${lead.consentVersion || 'версия не указана'})`,
+    `Условия заказа: приняты`,
+    `Рекламные сообщения: ${lead.marketingConsent ? 'да' : 'нет'}`,
+    lead.consentTimestamp ? `Время согласия: ${lead.consentTimestamp}` : null,
+    lead.pageUrl ? `Страница: ${lead.pageUrl}` : null,
   ].filter(Boolean).join('\n');
 
   const telegramResponse = await fetch(`${TELEGRAM_API}${token}/sendMessage`, {

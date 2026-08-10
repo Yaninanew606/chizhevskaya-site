@@ -143,7 +143,6 @@
 
 <!-- Yandex.Metrika: queued immediately, network loaded during browser idle time -->
 <script src="/site-analytics.js" defer></script>
-<noscript><div><img src="https://mc.yandex.ru/watch/109180333" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1032,6 +1031,11 @@
   .form-row input::placeholder,
   .form-row textarea::placeholder { color: rgba(255,255,255,0.3); }
   .form-row select option { background: var(--ink); color: var(--bg); }
+  .form-consents { display: grid; gap: 12px; margin: 24px 0 18px; }
+  .form-consent { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; color: rgba(250,250,248,.72); font-size: 11px; line-height: 1.55; cursor: pointer; }
+  .form-consent input { width: 18px; height: 18px; margin-top: 1px; accent-color: var(--gold); }
+  .form-consent a { color: var(--gold); text-decoration: underline; text-underline-offset: 2px; }
+  .form-consent.optional { color: rgba(250,250,248,.54); }
 
   .btn-submit {
     width: 100%;
@@ -1993,14 +1997,14 @@
         </div>
       </div>
 
-      <form id="lead-form" class="lead-form" novalidate>
+      <form id="lead-form" class="lead-form ym-disable-submit" novalidate>
         <div class="form-row">
           <label>Как вас зовут</label>
-          <input type="text" name="name" placeholder="Имя" required>
+          <input class="ym-disable-keys" type="text" name="name" placeholder="Имя" autocomplete="name" required>
         </div>
         <div class="form-row">
           <label>Telegram или email</label>
-          <input type="text" name="contact" placeholder="@username или email" required>
+          <input class="ym-disable-keys" type="text" name="contact" placeholder="@username или email" autocomplete="email" required>
         </div>
         <div class="form-row">
           <label>Что у вас</label>
@@ -2032,12 +2036,18 @@
         </div>
         <div class="form-row">
           <label>Размер аудитории / месячная выручка</label>
-          <input type="text" name="audience" placeholder="напр. 80k подписчиков Telegram / 1.5M ₽ в мес">
+          <input class="ym-disable-keys" type="text" name="audience" placeholder="напр. 80k подписчиков Telegram / 1.5M ₽ в мес">
         </div>
         <div class="form-row">
           <label>Что хотите получить</label>
-          <textarea name="goal" placeholder="Опишите вашу ситуацию и цель в 3–5 предложениях" required></textarea>
+          <textarea class="ym-disable-keys" name="goal" placeholder="Опишите вашу ситуацию и цель в 3–5 предложениях" required></textarea>
         </div>
+        <div class="form-consents">
+          <label class="form-consent"><input type="checkbox" name="privacyConsent" value="yes" required><span>Я даю отдельное <a href="/personal-data-consent" target="_blank">согласие на обработку персональных данных</a> и ознакомилась с <a href="/privacy" target="_blank">Политикой конфиденциальности</a>.</span></label>
+          <label class="form-consent"><input type="checkbox" name="termsConsent" value="yes" required><span>Я принимаю <a href="/terms" target="_blank">условия использования сайта и заказа услуг</a>. Отправка заявки не является покупкой и не создаёт обязанность заключить договор.</span></label>
+          <label class="form-consent optional"><input type="checkbox" name="marketingConsent" value="yes"><span>Хочу получать полезные материалы и предложения. Это необязательно; <a href="/marketing-consent" target="_blank">согласие можно отозвать</a>.</span></label>
+        </div>
+        <input type="hidden" name="consentVersion" value="2026-08-10">
         <button type="submit" class="btn-submit">Отправить заявку →</button>
         <p class="form-status" role="status" aria-live="polite"></p>
         <p class="form-note">
@@ -2075,6 +2085,12 @@
       <div class="footer-col">
         <h5>Документы</h5>
         <ul>
+          <li><a href="/legal">Правовая информация</a></li>
+          <li><a href="/privacy">Политика конфиденциальности</a></li>
+          <li><a href="/personal-data-consent">Согласие на обработку данных</a></li>
+          <li><a href="/cookies">Cookies</a></li>
+          <li><a href="/terms">Условия заказа услуг</a></li>
+          <li><a href="/marketing-consent">Согласие на рекламные сообщения</a></li>
           <li><a href="./resume.html" target="_blank">Резюме (HTML)</a></li>
           <li><a href="./resume.html" target="_blank" onclick="window.print">Скачать как PDF</a></li>
         </ul>
@@ -2359,6 +2375,11 @@
       }
 
       const payload = Object.fromEntries(new FormData(leadForm).entries());
+      payload.privacyConsent = leadForm.elements.privacyConsent.checked;
+      payload.termsConsent = leadForm.elements.termsConsent.checked;
+      payload.marketingConsent = leadForm.elements.marketingConsent.checked;
+      payload.consentTimestamp = new Date().toISOString();
+      payload.pageUrl = window.location.href;
       submit.disabled = true;
       submit.textContent = 'Отправляю...';
 

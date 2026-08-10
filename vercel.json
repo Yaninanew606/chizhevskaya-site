@@ -15,6 +15,12 @@
     { "source": "/blog", "destination": "/blog.html" },
     { "source": "/about", "destination": "/about.html" },
     { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/legal", "destination": "/legal.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/personal-data-consent", "destination": "/personal-data-consent.html" },
+    { "source": "/cookies", "destination": "/cookies.html" },
+    { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/marketing-consent", "destination": "/marketing-consent.html" },
     { "source": "/services/mini-apps-for-bloggers", "destination": "/mini-apps-landing" },
     { "source": "/bdbd15d3d7827d95.html", "destination": "/bdbd15d3d7827d95" }
   ],

@@ -64,6 +64,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://chizhevskaya.pro/legal</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://chizhevskaya.pro/privacy</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://chizhevskaya.pro/terms</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://chizhevskaya.pro/articles/mini-app-monetization</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
