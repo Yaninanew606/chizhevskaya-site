@@ -45,8 +45,8 @@ export default async function handler(request) {
     pageUrl: clean(body.pageUrl, 500),
   };
 
-  if (!lead.name || !lead.contact || !lead.type || !lead.offer || !lead.goal || !lead.privacyConsent || !lead.termsConsent) {
-    return json({ ok: false, error: 'Missing required fields' }, 400);
+  if (!lead.name || !lead.contact) {
+    return json({ ok: false, error: 'Укажите имя и телефон или Telegram' }, 400);
   }
 
   // CODEX_TODO: Add TG_BOT_TOKEN to Vercel environment variables.
