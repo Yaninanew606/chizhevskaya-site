@@ -3,6 +3,7 @@ export const config = { runtime: 'edge' };
 const SHOP_ID = '440587';
 const MAX_AMOUNT = 300000;
 const PRODUCTS = {
+  'Health Expert Deposit': 50000,
   'AI Product Sprint': 50000,
   'Product Blueprint': 150000,
   'Product Owner': 300000,
