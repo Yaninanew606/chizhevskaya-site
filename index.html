@@ -114,7 +114,7 @@
           {"@type": "Offer", "name": "White Label Fit", "description": "Проверка сценария и диапазона экономики за 5 рабочих дней", "price": "0", "priceCurrency": "RUB"},
           {"@type": "Offer", "name": "AI Product Sprint", "description": "Три продуктовые гипотезы, оффер, черновая unit-экономика, AI-сценарий и план проверки за 5 рабочих дней", "price": "50000", "priceCurrency": "RUB"},
           {"@type": "Offer", "name": "Product Blueprint", "description": "Исследование, CJM, прототип, unit-экономика и Lite PRD", "price": "150000", "priceCurrency": "RUB"},
-          {"@type": "Offer", "name": "White Label Start", "description": "Одно приложение, один сценарий и один канал под брендом клиента", "price": "350000", "priceCurrency": "RUB"},
+          {"@type": "Offer", "name": "White Label Start", "description": "Одно приложе��ие, один сценарий и один канал под брендом клиента", "price": "350000", "priceCurrency": "RUB"},
           {"@type": "Offer", "name": "White Label + AI", "description": "White Label приложение с одним основным AI-сценарием и 30 днями поддержки", "price": "550000", "priceCurrency": "RUB"}
         ]
       }
@@ -1481,6 +1481,7 @@
     </button>
     <div class="nav-links" id="navLinks">
       <a href="/services">Услуги</a>
+      <a href="/hot-offer">Hot offer</a>
       <a href="/products">Продукты</a>
       <a href="/partnerships">Партнёрство</a>
       <a href="/cases">Кейсы</a>
@@ -1599,7 +1600,7 @@
         <h3>Перия</h3>
         <div class="case-meta">Wellness Telegram Mini App для женщин 35+ · @PeriyaApp_bot · periya.pro</div>
         <p>
-          Персональный план питания и тренировок с учётом цикла, перименопаузы, ИГ, ограничений по здоровью. Цикло-адаптивная логика (4 фазы), дневник питания с AI-оценкой калорий по фото, тазовое дно, чек-ин, аналитика. Backend на VPS под systemd с auto-restart, Claude API с fallback на расчёт по Миффлину-Сан Жеору. Домен — periya.pro.
+          Персональный план питания и тренировок с учётом цикла, перименопаузы, ИГ, ограничений по здоровью. Цикло-адапт��вная логика (4 фазы), дневник питания с AI-оценкой калорий по фото, тазовое дно, чек-ин, аналитика. Backend на VPS под systemd с auto-restart, Claude API с fallback на расчёт по Миффлину-Сан Жеору. Домен — periya.pro.
         </p>
         <div class="case-stack">
           <span>React 19</span><span>TypeScript</span><span>Tailwind v4</span>
@@ -1698,7 +1699,7 @@
         <div class="step-num">02</div>
         <h3>Product Blueprint</h3>
         <div class="step-meta">14 рабочих дней · 150 000 ₽</div>
-        <p>Исследование, CJM, кликабельный прототип, unit-экономика и Lite PRD. При продолжении разработки сумма полностью засчитывается в выбранный пакет.</p>
+        <p>Исследование, CJM, кликабельный прототип, unit-экономика и Lite PRD. При продолжении разработки сумма ��олностью засчитывается в выбранный пакет.</p>
       </div>
       <div class="process-step">
         <div class="step-num">03</div>
@@ -2403,6 +2404,39 @@
       }
     });
   }
-</script>
-</body>
+  </script>
+
+  <style>
+    .hot-offer-popover{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:20px;background:rgba(23,35,30,.62);opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease}
+    .hot-offer-popover.is-visible{opacity:1;visibility:visible}
+    .hot-offer-card{position:relative;width:min(560px,100%);padding:38px 40px;background:#f6f2e9;color:#17231e;border:1px solid #d8d1c4;box-shadow:0 24px 80px rgba(0,0,0,.22)}
+    .hot-offer-card h2{margin:0 0 12px;font:400 clamp(32px,5vw,52px)/.98 Georgia,serif;letter-spacing:-.04em}
+    .hot-offer-card p{margin:0 0 24px;max-width:430px;color:#536159;line-height:1.55}
+    .hot-offer-card a{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;background:#3f5b4b;color:#fff;font-weight:750;text-decoration:none}
+    .hot-offer-close{position:absolute;top:12px;right:14px;border:0;background:transparent;color:#536159;font-size:28px;line-height:1;cursor:pointer}
+    @media(max-width:520px){.hot-offer-card{padding:34px 24px 28px}}
+  </style>
+  <div class="hot-offer-popover" id="hotOfferPopover" role="dialog" aria-modal="true" aria-labelledby="hotOfferTitle">
+    <div class="hot-offer-card">
+      <button class="hot-offer-close" id="closeHotOffer" type="button" aria-label="Закрыть предложение">×</button>
+      <div class="eyebrow">Ограниченный набор</div>
+      <h2 id="hotOfferTitle">Собственная экосистема продуктов</h2>
+      <p>Книга, Mini App и SEO-сайт под вашим брендом. На странице hot offer — условия, форматы и предоплата.</p>
+      <a href="/hot-offer">Посмотреть hot offer →</a>
+    </div>
+  </div>
+  <script>
+    (function(){
+      const popover=document.getElementById('hotOfferPopover');
+      const close=document.getElementById('closeHotOffer');
+      if(!popover||!close)return;
+      const show=()=>popover.classList.add('is-visible');
+      const hide=()=>popover.classList.remove('is-visible');
+      window.setTimeout(show,30000);
+      close.addEventListener('click',hide);
+      popover.addEventListener('click',event=>{if(event.target===popover)hide()});
+      document.addEventListener('keydown',event=>{if(event.key==='Escape')hide()});
+    })();
+  </script>
+  </body>
 </html>

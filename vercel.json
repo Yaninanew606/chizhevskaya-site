@@ -9,6 +9,7 @@
     { "source": "/en", "destination": "/en.html" },
     { "source": "/en/", "destination": "/en.html" },
     { "source": "/services", "destination": "/services.html" },
+    { "source": "/hot-offer", "destination": "/hot-offer.html" },
     { "source": "/products", "destination": "/products.html" },
     { "source": "/partnerships", "destination": "/partnerships.html" },
     { "source": "/cases", "destination": "/cases.html" },
