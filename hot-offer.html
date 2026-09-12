@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ru">
 <head>
   <meta charset="utf-8">
@@ -20,6 +20,43 @@
   </style>
 </head>
 <body>
+  <style>
+.site-topnav{position:sticky;top:0;z-index:200;border-bottom:1px solid rgba(23,35,30,.12);background:rgba(245,241,232,.95);backdrop-filter:blur(16px)}
+.site-topnav-inner{display:flex;align-items:center;justify-content:space-between;min-height:60px;padding:0 28px;max-width:1500px;margin:0 auto;gap:20px}
+.site-topnav .logo{font:700 22px/1 Georgia,serif;color:#17231e;text-decoration:none}
+.site-topnav .nav-links{display:flex;align-items:center;gap:20px;font-size:13px}
+.site-topnav .nav-links a{color:#17231e;text-decoration:none;font-weight:500}
+.site-topnav .nav-links a:hover{color:#b85d3b}
+.site-topnav .nav-links a[aria-current="page"]{color:#b85d3b;font-weight:700}
+.site-topnav .nav-cta-btn{padding:9px 16px;border-radius:999px;background:#3f5b4b;color:#fff!important;font-weight:700}
+.site-topnav .nav-burger{display:none;width:38px;height:38px;background:transparent;border:1px solid rgba(23,35,30,.18);border-radius:50%;cursor:pointer;padding:0}
+.site-topnav .nav-burger span{display:block;width:16px;height:1.5px;margin:4px auto;background:#17231e;transition:.2s}
+.site-topnav .nav-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(5.5px) rotate(45deg)}
+.site-topnav .nav-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.site-topnav .nav-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
+@media(max-width:700px){
+  .site-topnav .nav-burger{display:block}
+  .site-topnav .nav-links{display:none;position:fixed;inset:60px 0 auto;flex-direction:column;padding:16px 22px 22px;background:rgba(245,241,232,.98);border-bottom:1px solid rgba(23,35,30,.12);box-shadow:0 20px 40px rgba(23,35,30,.1);gap:0}
+  .site-topnav .nav-links.is-open{display:flex}
+  .site-topnav .nav-links a{padding:10px 0;font-size:15px;border-bottom:1px solid rgba(23,35,30,.08)}
+  .site-topnav .nav-links a:last-child{border:0}
+}
+</style>
+<nav class="site-topnav" aria-label="Основная навигация">
+  <div class="site-topnav-inner">
+    <a class="logo" href="/">Chizhevskaya</a>
+    <button class="nav-burger" id="hotOfferNavBurger" type="button" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="hotOfferNavLinks">
+      <a href="/services">Услуги</a>
+      <a href="/hot-offer" aria-current="page">Hot Offer 🔥</a>
+      <a href="/products">Продукты</a>
+      <a href="/partnerships">Партнёрство</a>
+      <a href="/cases">Кейсы</a>
+      <a href="/blog">Блог</a>
+      <a class="nav-cta-btn" href="https://t.me/yanina_ai?text=Хочу%20обсудить%20проект" target="_blank" rel="noopener">Обсудить →</a>
+    </div>
+  </div>
+</nav>
   <main class="shell">
     <header class="topbar"><a class="brand" href="/" aria-label="На главную"><span class="mark">C</span> CHIZHEVSKAYA</a><span class="top-note">Осенний набор · 2026</span><a class="top-link" href="#start">Обсудить проект →</a></header>
     <section class="hero" id="start">
@@ -44,5 +81,23 @@
     function tick(){let d=Math.max(0,deadline-Date.now());const vals=[Math.floor(d/86400000),Math.floor(d%86400000/3600000),Math.floor(d%3600000/60000),Math.floor(d%60000/1000)];['days','hours','minutes','seconds'].forEach((id,i)=>document.getElementById(id).textContent=String(vals[i]).padStart(2,'0'))}tick();setInterval(tick,1000);
     form.onsubmit=async e=>{e.preventDefault();status.className='status';status.textContent='Отправляем…';const data=Object.fromEntries(new FormData(form));data.privacyConsent=true;data.termsConsent=true;data.marketingConsent=false;data.consentVersion='hot-offer-2026-09';data.consentTimestamp=new Date().toISOString();data.pageUrl=location.href;try{const r=await fetch('/api/lead',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(data)});const result=await r.json();if(!r.ok||!result.ok)throw new Error(result.error||'Не удалось отправить заявку');status.className='status success';status.textContent='Заявка отправлена. Переходим на страницу подтверждения…';window.location.href='/thank-you.html'}catch(err){status.className='status error';status.textContent=err.message}};
   </script>
-</body>
+<script>
+(function(){
+  var btn=document.getElementById('hotOfferNavBurger');
+  var links=document.getElementById('hotOfferNavLinks');
+  if(!btn||!links)return;
+  btn.addEventListener('click',function(){
+    var open=links.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded',open);
+  });
+  document.addEventListener('click',function(e){
+    if(!btn.contains(e.target)&&!links.contains(e.target)){
+      links.classList.remove('is-open');btn.setAttribute('aria-expanded','false');
+    }
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){links.classList.remove('is-open');btn.setAttribute('aria-expanded','false');}
+  });
+})();
+</script></body>
 </html>

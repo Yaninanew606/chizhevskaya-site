@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Кейсы AI- и digital-продуктов","url":"https://chizhevskaya.pro/cases","isPartOf":{"@type":"WebSite","name":"Chizhevskaya","url":"https://chizhevskaya.pro"}}</script>
 </head>
 <body>
-<a class="skip-link" href="#content">К содержанию</a><nav><div class="container nav-inner"><a class="logo" href="/">Chizhevskaya</a><div class="nav-links"><a href="/services">Услуги</a><a href="/hot-offer">Hot offer</a><a href="/products">Продукты</a><a href="/partnerships">Партнёрство</a><a href="/cases" aria-current="page">Кейсы</a><a href="/blog">Блог</a><a class="nav-cta" href="https://t.me/yanina_ai?text=Хочу%20обсудить%20похожий%20проект" target="_blank" rel="noopener">Обсудить проект</a></div></div></nav>
+<a class="skip-link" href="#content">К содержанию</a><nav><div class="container nav-inner"><a class="logo" href="/">Chizhevskaya</a><button class="nav-burger" id="navBurger" type="button" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button><div class="nav-links"><a href="/services">Услуги</a><a href="/hot-offer">Hot offer</a><a href="/products">Продукты</a><a href="/partnerships">Партнёрство</a><a href="/cases" aria-current="page">Кейсы</a><a href="/blog">Блог</a><a class="nav-cta" href="https://t.me/yanina_ai?text=Хочу%20обсудить%20похожий%20проект" target="_blank" rel="noopener">Обсудить проект</a></div></div></nav>
 <main id="content"><div class="container breadcrumb"><a href="/">Главная</a> → Кейсы</div>
   <section class="hero"><div class="container hero-grid"><div><div class="eyebrow">Клиентская и продуктовая работа</div><h1>Кейсы: от гипотезы до <span class="accent">продакшена и метрик</span></h1><p class="lead">Здесь собраны проекты, где я отвечала за продуктовую стратегию, UX, экономику, разработку, AI-интеграции или запуск кросс-функциональной команды.</p><div class="button-row"><a class="btn" href="#case-list">Смотреть кейсы ↓</a><a class="btn ghost" href="/products">Мои продукты</a></div></div><aside class="hero-panel"><h2>Что оцениваю в кейсе</h2><ul class="hero-list"><li>Какую бизнес-задачу решали</li><li>Как проверяли гипотезу</li><li>Что изменилось в продукте</li><li>Какая система осталась у команды</li><li>Какие метрики и результаты получили</li></ul></aside></div></section>
   <section class="section alt" id="case-list"><div class="container"><div class="eyebrow">Избранные кейсы</div><h2>AI, wellness, SaaS и мобильные продукты</h2><div class="grid two">
@@ -24,4 +24,23 @@
   <section class="cross-links"><div class="container"><div class="eyebrow">Связанные разделы</div><h2>Выберите способ работать со мной</h2><div class="cross-grid"><div class="cross-card"><h3>Стоимость разработки</h3><p>Фиксированный проект с этапами, сроками и результатом.</p><a href="/services">Посмотреть форматы →</a></div><div class="cross-card"><h3>White Label</h3><p>Подписочный продукт для аудитории блогера, эксперта или врача.</p><a href="/services/mini-apps-for-bloggers">Открыть услугу →</a></div><div class="cross-card"><h3>Запустить вместе</h3><p>Партнёрская модель для сильной аудитории и методики.</p><a href="/partnerships">Партнёрство →</a></div></div></div></section>
   <section class="final-cta"><div class="container"><div class="eyebrow">Ваш кейс может быть следующим</div><h2>Расскажите, что уже есть и какой результат нужен</h2><p>Предложу формат работы и первый проверяемый этап без лишней разработки.</p><div class="button-row"><a class="btn" href="https://t.me/yanina_ai?text=Здравствуйте%2C%20хочу%20обсудить%20проект" target="_blank" rel="noopener">Написать в Telegram →</a></div></div></section>
 </main><footer><div class="container footer-inner"><div>© 2026 Янина Чижевская</div><div class="footer-links"><a href="/">Главная</a><a href="/services">Услуги</a><a href="/hot-offer">Hot offer</a><a href="/products">Продукты</a><a href="/partnerships">Партнёрство</a><a href="/blog">Блог</a></div></div></footer>
-</body></html>
+<script>
+(function(){
+  var btn=document.getElementById('navBurger');
+  var links=document.querySelector('.nav-links');
+  if(!btn||!links)return;
+  btn.addEventListener('click',function(){
+    var open=links.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded',open);
+  });
+  document.addEventListener('click',function(e){
+    if(!btn.contains(e.target)&&!links.contains(e.target)){
+      links.classList.remove('is-open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){links.classList.remove('is-open');btn.setAttribute('aria-expanded','false');}
+  });
+})();
+</script></body></html>

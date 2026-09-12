@@ -2409,24 +2409,35 @@
   <style>
     .hot-offer-popover{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:20px;background:rgba(23,35,30,.62);opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease}
     .hot-offer-popover.is-visible{opacity:1;visibility:visible}
-    .hot-offer-card{position:relative;isolation:isolate;overflow:hidden;width:min(920px,100%);min-height:430px;padding:58px clamp(30px,8vw,120px);display:flex;align-items:center;justify-content:center;text-align:center;color:#17231e;border:1px solid #d8d1c4;box-shadow:0 24px 80px rgba(0,0,0,.22);background:#f6f2e9 url('/hot-offer-banner.jpg') center/cover no-repeat}
-    .hot-offer-card::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(246,242,233,.84) 0%,rgba(246,242,233,.94) 22%,rgba(246,242,233,.95) 50%,rgba(246,242,233,.94) 78%,rgba(246,242,233,.84) 100%)}
-    .hot-offer-card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(246,242,233,.18),rgba(246,242,233,.42))}
-    .hot-offer-content{max-width:620px}
-    .hot-offer-card h2{margin:0 0 12px;font:400 clamp(32px,5vw,62px)/.98 Georgia,serif;letter-spacing:-.04em}
-    .hot-offer-card p{margin:0 auto 24px;max-width:520px;color:#536159;line-height:1.55;font-size:17px}
-    .hot-offer-card a{display:inline-flex;align-items:center;justify-content:center;padding:15px 28px;background:#3f5b4b;color:#fff;font-weight:750;text-decoration:none}
-    .hot-offer-close{position:absolute;z-index:2;top:12px;right:14px;border:0;background:rgba(246,242,233,.72);color:#536159;font-size:28px;line-height:1;cursor:pointer}
-    @media(max-width:620px){.hot-offer-card{min-height:500px;padding:62px 22px 34px;background-position:58% center}.hot-offer-card::before{background:rgba(246,242,233,.86)}.hot-offer-card p{font-size:15px}}
+    .hot-offer-card{position:relative;display:grid;grid-template-columns:1fr 1fr;width:min(900px,100%);min-height:420px;color:#17231e;border:1px solid #d8d1c4;box-shadow:0 24px 80px rgba(0,0,0,.22);background:#f6f2e9;border-radius:6px;overflow:hidden}
+    .hot-offer-left{padding:48px clamp(24px,5vw,56px);display:flex;flex-direction:column;justify-content:center}
+    .hot-offer-badge{display:inline-block;padding:6px 14px;border:1px solid #c2b9a8;border-radius:99px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#536159;margin-bottom:20px}
+    .hot-offer-card h2{margin:0 0 14px;font:400 clamp(28px,3.8vw,48px)/.98 Georgia,serif;letter-spacing:-.04em;color:#17231e}
+    .hot-offer-card p{margin:0 0 28px;color:#536159;line-height:1.6;font-size:16px}
+    .hot-offer-cta{display:inline-flex;align-items:center;gap:8px;padding:15px 28px;background:#3f5b4b;color:#fff;font-weight:700;font-size:15px;text-decoration:none;border-radius:4px;transition:background .2s}
+    .hot-offer-cta:hover{background:#2d4436}
+    .hot-offer-right{position:relative;overflow:hidden;min-height:320px}
+    .hot-offer-right img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+    .hot-offer-close{position:absolute;z-index:10;top:12px;right:14px;border:0;background:rgba(246,242,233,.85);color:#536159;font-size:26px;line-height:1;width:34px;height:34px;cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px)}
+    .hot-offer-close:hover{background:#fff;color:#17231e}
+    @media(max-width:640px){
+      .hot-offer-card{grid-template-columns:1fr}
+      .hot-offer-right{min-height:220px;order:-1}
+      .hot-offer-left{padding:28px 22px 32px}
+      .hot-offer-card h2{font-size:clamp(26px,8vw,36px)}
+    }
   </style>
   <div class="hot-offer-popover" id="hotOfferPopover" role="dialog" aria-modal="true" aria-labelledby="hotOfferTitle">
     <div class="hot-offer-card">
       <button class="hot-offer-close" id="closeHotOffer" type="button" aria-label="Закрыть предложение">×</button>
-      <div class="hot-offer-content">
-        <div class="eyebrow">Ограниченный набор</div>
+      <div class="hot-offer-left">
+        <span class="hot-offer-badge">Ограниченный набор</span>
         <h2 id="hotOfferTitle">Собственная экосистема продуктов</h2>
-        <p>Книга, Mini App и SEO-сайт под вашим брендом. На странице hot offer — условия, форматы и предоплата.</p>
-        <a href="/hot-offer">Подробнее →</a>
+        <p>Книга, Mini App и SEO-сайт под вашим брендом. Условия, форматы и предоплата — на странице Hot Offer.</p>
+        <a class="hot-offer-cta" href="/hot-offer">Подробнее →</a>
+      </div>
+      <div class="hot-offer-right">
+        <img src="/popup-visual.jpg" alt="Книга, ноутбук и мобильное приложение — экосистема продуктов" loading="eager">
       </div>
     </div>
   </div>
