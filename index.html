@@ -114,7 +114,7 @@
           {"@type": "Offer", "name": "White Label Fit", "description": "Проверка сценария и диапазона экономики за 5 рабочих дней", "price": "0", "priceCurrency": "RUB"},
           {"@type": "Offer", "name": "AI Product Sprint", "description": "Три продуктовые гипотезы, оффер, черновая unit-экономика, AI-сценарий и план проверки за 5 рабочих дней", "price": "50000", "priceCurrency": "RUB"},
           {"@type": "Offer", "name": "Product Blueprint", "description": "Исследование, CJM, прототип, unit-экономика и Lite PRD", "price": "150000", "priceCurrency": "RUB"},
-          {"@type": "Offer", "name": "White Label Start", "description": "Одно приложение, один сценарий и один канал под брендом клиента", "price": "350000", "priceCurrency": "RUB"},
+          {"@type": "Offer", "name": "White Label Start", "description": "Одно приложе��ие, один сценарий и один канал под брендом клиента", "price": "350000", "priceCurrency": "RUB"},
           {"@type": "Offer", "name": "White Label + AI", "description": "White Label приложение с одним основным AI-сценарием и 30 днями поддержки", "price": "550000", "priceCurrency": "RUB"}
         ]
       }
@@ -1476,7 +1476,7 @@
 <nav>
   <div class="nav-inner">
     <a href="#" class="logo">Chizhevskaya</a>
-    <button type="button" class="burger" aria-label="Меню" aria-expanded="false" id="burgerBtn">
+    <button type="button" class="burger" aria-label="��еню" aria-expanded="false" id="burgerBtn">
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" id="navLinks">
@@ -2073,7 +2073,7 @@
       <div class="footer-col">
         <h5>Сайт</h5>
         <ul>
-          <li><a href="/services">Услуги</a></li>
+          <li><a href="/services">��слуги</a></li>
           <li><a href="/products">Продукты</a></li>
           <li><a href="/partnerships">Партнёрство</a></li>
           <li><a href="/cases">Кейсы</a></li>
@@ -2124,7 +2124,7 @@
     <button type="button" class="contact-modal-close" data-contact-close aria-label="Закрыть окно">×</button>
     <div class="contact-modal-eyebrow">Связаться со мной</div>
     <h2 class="contact-modal-title" id="contactModalTitle">Где вам удобнее написать?</h2>
-    <p class="contact-modal-lead">Выберите мессенджер. Стартовое сообщение уже подготовлено — его можно изменить перед отправкой.</p>
+    <p class="contact-modal-lead">Выберите мессенджер. Стартовое сообщение уже подготовлено — его можно изменить перед отправ��ой.</p>
     <label class="contact-message-label" for="contactMessage">Ваше сообщение</label>
     <textarea class="contact-message" id="contactMessage"></textarea>
     <button type="button" class="contact-copy" id="contactCopy">Скопировать сообщение</button>
@@ -2409,20 +2409,25 @@
   <style>
     .hot-offer-popover{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:20px;background:rgba(23,35,30,.62);opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease}
     .hot-offer-popover.is-visible{opacity:1;visibility:visible}
-    .hot-offer-card{position:relative;width:min(560px,100%);padding:38px 40px;background:#f6f2e9;color:#17231e;border:1px solid #d8d1c4;box-shadow:0 24px 80px rgba(0,0,0,.22)}
-    .hot-offer-card h2{margin:0 0 12px;font:400 clamp(32px,5vw,52px)/.98 Georgia,serif;letter-spacing:-.04em}
-    .hot-offer-card p{margin:0 0 24px;max-width:430px;color:#536159;line-height:1.55}
-    .hot-offer-card a{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;background:#3f5b4b;color:#fff;font-weight:750;text-decoration:none}
-    .hot-offer-close{position:absolute;top:12px;right:14px;border:0;background:transparent;color:#536159;font-size:28px;line-height:1;cursor:pointer}
-    @media(max-width:520px){.hot-offer-card{padding:34px 24px 28px}}
+    .hot-offer-card{position:relative;isolation:isolate;overflow:hidden;width:min(920px,100%);min-height:430px;padding:58px clamp(30px,8vw,120px);display:flex;align-items:center;justify-content:center;text-align:center;color:#17231e;border:1px solid #d8d1c4;box-shadow:0 24px 80px rgba(0,0,0,.22);background:#f6f2e9 url('/hot-offer-banner.jpg') center/cover no-repeat}
+    .hot-offer-card::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(246,242,233,.84) 0%,rgba(246,242,233,.94) 22%,rgba(246,242,233,.95) 50%,rgba(246,242,233,.94) 78%,rgba(246,242,233,.84) 100%)}
+    .hot-offer-card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(246,242,233,.18),rgba(246,242,233,.42))}
+    .hot-offer-content{max-width:620px}
+    .hot-offer-card h2{margin:0 0 12px;font:400 clamp(32px,5vw,62px)/.98 Georgia,serif;letter-spacing:-.04em}
+    .hot-offer-card p{margin:0 auto 24px;max-width:520px;color:#536159;line-height:1.55;font-size:17px}
+    .hot-offer-card a{display:inline-flex;align-items:center;justify-content:center;padding:15px 28px;background:#3f5b4b;color:#fff;font-weight:750;text-decoration:none}
+    .hot-offer-close{position:absolute;z-index:2;top:12px;right:14px;border:0;background:rgba(246,242,233,.72);color:#536159;font-size:28px;line-height:1;cursor:pointer}
+    @media(max-width:620px){.hot-offer-card{min-height:500px;padding:62px 22px 34px;background-position:58% center}.hot-offer-card::before{background:rgba(246,242,233,.86)}.hot-offer-card p{font-size:15px}}
   </style>
   <div class="hot-offer-popover" id="hotOfferPopover" role="dialog" aria-modal="true" aria-labelledby="hotOfferTitle">
     <div class="hot-offer-card">
       <button class="hot-offer-close" id="closeHotOffer" type="button" aria-label="Закрыть предложение">×</button>
-      <div class="eyebrow">Ограниченный набор</div>
-      <h2 id="hotOfferTitle">Собственная экосистема продуктов</h2>
-      <p>Книга, Mini App и SEO-сайт под вашим брендом. На странице hot offer — условия, форматы и предоплата.</p>
-      <a href="/hot-offer">Посмотреть hot offer →</a>
+      <div class="hot-offer-content">
+        <div class="eyebrow">Ограниченный набор</div>
+        <h2 id="hotOfferTitle">Собственная экосистема продуктов</h2>
+        <p>Книга, Mini App и SEO-сайт под вашим брендом. На странице hot offer — условия, форматы и предоплата.</p>
+        <a href="/hot-offer">Подробнее →</a>
+      </div>
     </div>
   </div>
   <script>
