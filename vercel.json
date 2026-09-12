@@ -3,10 +3,10 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/mini-apps-for-bloggers", "destination": "/services/mini-apps-for-bloggers", "permanent": true }
+    { "source": "/mini-apps-for-bloggers", "destination": "/services/mini-apps-for-bloggers", "permanent": true },
+    { "source": "/hot-offer/", "destination": "/hot-offer", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/", "destination": "/index.html" },
     { "source": "/en", "destination": "/en.html" },
     { "source": "/en/", "destination": "/en.html" },
     { "source": "/services", "destination": "/services.html" },
