@@ -7,7 +7,6 @@
     { "source": "/hot-offer/", "destination": "/hot-offer", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/", "destination": "/index.html" },
     { "source": "/en", "destination": "/en.html" },
     { "source": "/en/", "destination": "/en.html" },
     { "source": "/services", "destination": "/services.html" },
